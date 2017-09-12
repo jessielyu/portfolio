@@ -5,34 +5,24 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="jessielyu">
 
-    <title>Jessie Lyu's Portfolio</title>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
-    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -44,10 +34,7 @@
               <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolios">Portfolios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -57,248 +44,84 @@
       </div>
     </nav>
 
+    <!-- Masthead -->
     <header class="masthead">
-      <div class="header-content">
-        <div class="header-content-inner">
-          <h1 id="homeHeading" class="col col-lg-6">Hi, I'm Jessie</h1>
-          <div class="col col-lg-6">
-            <hr>
-            <p>Full-time engineer, half-time traveler.</p>
-            <p>Working towards as a designer.</p>
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Hi, I'm Jessie Lyu</h1>
+              <p class="intro-text">A Full-time Engineer,
+                <br>Half-time Designer</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class=""></i>
+              </a>
+            </div>
           </div>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <!-- About -->
+    <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">A self-learning UI developer.</h2>
-            <hr class="light">
-            <p class="text-faded">
-                Versatile skill set with experience in:<br>
-                Software system development<br>
-                Database maintainance<br>
-                Backend API Development<br>
-                UI Design<br>
-                Frontend development<br>
-            </p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Download Resume</a>
+          <div class="col-lg-8 mx-auto">
+            <h2>About this page</h2>
+            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+            <ul>
+              <li>Clickable nav links that smooth scroll to page sections</li>
+              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services">
+    <!-- Experience-->
+    <section id="experience" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="primary">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-              <h3>Sturdy Templates</h3>
-              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
-            </div>
+          <div class="col-lg-8 mx-auto">
+            <h2>Services we offer</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="pages/dalian.html">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    IOS App Design
-                  </div>
-                  <div class="project-name">
-                    Dalian 打脸
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    IOS App Design
-                  </div>
-                  <div class="project-name">
-                    Shopping 购物直播
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    IOS App Development
-                  </div>
-                  <div class="project-name">
-                    Lait
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Development
-                  </div>
-                  <div class="project-name">
-                    MovieLog
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Web Design
-                  </div>
-                  <div class="project-name">
-                    iEar
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Game Design
-                  </div>
-                  <div class="project-name">
-                    Series of Unity Games
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Graphic Design
-                  </div>
-                  <div class="project-name">
-                    Posters Design
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Photography
-                  </div>
-                  <div class="project-name">
-                    Photo Retouch
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    To Be Continued
-                  </div>
-                  <div class="project-name">
-                    Current + Future Works
-                  </div>
-                </div>
-              </div>
-            </a>
+    <!-- Portfolios -->
+    <section id="portfolios" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Services we offer</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Conatact -->
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact us</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -307,11 +130,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/script.js"></script>
 
   </body>
 
