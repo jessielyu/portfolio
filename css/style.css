@@ -229,7 +229,7 @@ section {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(78, 81, 94, 0.6);
+  background: rgba(78, 81, 94, 0.8);
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
