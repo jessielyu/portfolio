@@ -1,3 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 body {
   font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
   position: relative;
@@ -47,7 +54,7 @@ section {
   height: auto;
   padding: 10px;
   color: white;
-  background: url("../images/header-1600_large_2x.jpg") no-repeat bottom center scroll;
+  background: url(../images_src/header.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -329,4 +336,8 @@ section {
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0;
+}
+
+#contact h3 {
+  text-align: center;
 }
