@@ -1,17 +1,16 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=brandico|zocial);
 
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
 
 body {
-  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
@@ -28,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Indie Flower', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 25px 0;
   letter-spacing: 1px;
@@ -59,7 +58,7 @@ section {
   height: auto;
   padding: 10px;
   color: white;
-  background: url(../images_src/header.jpg) no-repeat bottom center scroll;
+  background: url(../image/header.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -79,12 +78,6 @@ section {
   text-align: right;
 }
 
-.masthead .intro-body .intro-text {
-  margin: 50px 50px 0 0;
-  font-size: 22px;
-  text-align: right;
-}
-
 @media (min-width: 768px) {
   .masthead {
     height: 100%;
@@ -92,7 +85,7 @@ section {
   .masthead .intro-body .brand-heading {
     font-size: 50px;
   }
-  .masthead .intro-body .intro-text {
+  .masthead .intro-body {
     font-size: 25px;
   }
 }
@@ -100,7 +93,7 @@ section {
 .btn-circle {
   width: 50px;
   height: 50px;
-  margin: 100px 0 20px 0;
+  margin: 200px 0 20px 0;
   line-height: 38px;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -140,12 +133,15 @@ section {
   border-radius: 0;
 }
 
-#contact a:link {
+a {
   color: #4e515e;
+}
+
+a:link {
   text-decoration: none;
 }
 
-#contact a:hover {
+a:hover {
   color: rgba(78, 81, 94, 0.5);
 }
 
@@ -159,18 +155,27 @@ section {
    margin: 20px;
    border: 3px solid #4e515e;
    border-radius: 100px;
+   display: block;
+}
+
+.intro {
+  text-align: right;
+}
+
+.intro-text {
+  padding-top: 80px;
+  text-align: left;
 }
 
 #about ul {
-  position: relative;
-  left: 25%;
-  margin: 20px 0 0 0;
+  list-style: none;
+  padding-left: 35%;
 }
 
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 4px;
   margin: 0 auto;
   padding-top: 50px;
   background: #4e515e;
@@ -182,8 +187,8 @@ section {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: inherit;
 }
@@ -277,9 +282,14 @@ section {
   z-index: 2;
 }
 
+#portfolio .portfolio-item .portfolio-link img {
+  width: 100%;
+}
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+}
 
 .portfolio-modal .modal-dialog {
   max-width: 100%;
@@ -298,6 +308,7 @@ section {
   padding: 100px 0;
   border: 0;
   border-radius: 0;
+  background-color: #f8f9fa;
 }
 
 .portfolio-modal .modal-dialog .modal-content h2 {
@@ -309,10 +320,8 @@ section {
   text-align: left;
 }
 
-.portfolio-modal .modal-dialog .modal-content img {
-  margin: 10px;
-  padding: 0;
-  border: 2px solid #4e515e;
+.portfolio-modal .modal-dialog .modal-content .lead {
+  text-align: center;
 }
 
 .portfolio-modal .close-modal {
@@ -322,36 +331,68 @@ section {
   width: 75px;
   height: 75px;
   cursor: pointer;
-  background-color: transparent; }
-  .portfolio-modal .close-modal:hover {
-    opacity: 0.3; }
-  .portfolio-modal .close-modal .lr {
-    /* Safari and Chrome */
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #2C3E50; }
-    .portfolio-modal .close-modal .lr .rl {
-      /* Safari and Chrome */
-      z-index: 1052;
-      width: 1px;
-      height: 75px;
-      /* IE 9 */
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-      background-color: #2C3E50; }
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
 
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0;
 }
 
+.content-block {
+  margin-bottom: 80px;
+}
+
 #contact h3 {
+  text-align: center;
+}
+
+.portfolio-modal .modal-dialog .modal-content .logo {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+.title_img {
+  width: 300px;
+  margin: 20px;
+  display: block;
+}
+
+.span {
+  width: 100%;
+  border-style: none;
+}
+
+.prototype {
+  margin: 10px;
+  padding: 0;
+}
+
+.desc-text {
+  padding-top: 30px;
+  text-align: left;
+}
+
+.content-block .desc-text ul {
+  list-style: decimal;
+}
+
+.content-block .desc-text ul li ul {
+  list-style: lower-roman;
+}
+
+.content-block video {
+  height: 450px;
+  width: 250px;
+  margin: 10px;
+  display: block;
+}
+
+.img_block {
+  margin-bottom: 60px;
   text-align: center;
 }

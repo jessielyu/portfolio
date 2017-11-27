@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Jessie Lyu's Portfolio</title>
+    <title>Jessie Lyu Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="entypo-home"></span></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="fa fa-home"></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,8 +55,6 @@
           <div class="row">
             <div class="col-lg-12 mx-auto">
               <h1 class="brand-heading">Hi, I'm Jessie Lyu</h1>
-              <p class="intro-text">Full-time Engineer
-                <br>Half-time Designer</p>
               <a href="#about" class="btn btn-circle js-scroll-trigger"></a>
           </div>
         </div>
@@ -67,33 +65,35 @@
     <!-- About -->
     <section id="about">
       <div class="container">
-        <div class="row mx-auto">
-            <h2 class="col-12">About Me</h2>
-            <p class="lead col-12">I'm a self-learning UI developer.</p>
-            <div class="col-12">
-              <img class="mx-auto d-block profile" src="images_src/profilepic-1600.png" srcset="images_src/profilepic-800.png 1x,
-                                                           images_src/profilepic-1600.png 2x"
-              alt="my profile picture">
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li>Software system development</li>
-                <li>Database maintainance</li>
-                <li>Backend API Development</li>
-                <li>Frontend development</li>
-                <li>UI Design</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li>Sketch</li>
-                <li>Java</li>
-                <li>Photoshop</li>
-                <li>Javascript</li>
-                <li>Illustrator</li>
-                <li>PHP</li>
-              </ul>
-            </div>
+        <h2 class="col-12">About Me</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="profile mx-auto" src="image/profilepic-800.png" alt="my profile picture">
+          </div>
+          <div class="col-lg-8 intro">
+            <p class="intro-text">I work in Yahoo as a software engineer. <br>
+            Graduated from University of Illinois in 2016 with B.S. Computer Engineering. <br>
+            I'm actively learning and working as a UI/UX designer.</p>
+            <a class="resume" href="src/JessieResume.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> resume</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Coding Skills</h4>
+            <ul>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _System Development</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _Front-end/Back-end</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _Java/JavaScript/PHP</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h4>Design Skills</h4>
+            <ul>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _Design Thinking</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _UX Development</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> _Adobe Suite/Sketch</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -108,15 +108,15 @@
               <ul>
                 <li>
                   <div>
-                    <h4>2012-2016</h4>
-                    University of Illinois, Urbana-Champaign <br>
-                    Bachelor of Science: Computer Engineering <br>
-                    Minor: Mathematics
+                    <h4><i class="fa fa-briefcase" aria-hidden="true"></i> 2016-now</h4>
+                    Yahoo, Inc. Sunnyvale, CA <br>
+                    Software Engineer, Assoc. <br>
+                    search middleware & internal tool development.
                   </div>
                 </li>
                 <li>
                   <div>
-                    <h4>2015-2016</h4>
+                    <h4><i class="fa fa-briefcase" aria-hidden="true"></i> 2015-2016</h4>
                     Quicket Solutions, Inc. Champaign, IL <br>
                     Software Enginner <br>
                     UI design & development.
@@ -124,10 +124,10 @@
                 </li>
                 <li>
                   <div>
-                    <h4>2016-now</h4>
-                    Yahoo, Inc. Sunnyvale, CA <br>
-                    Software Engineer, Assoc. <br>
-                    Websearch middleware development & tool development.
+                    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> 2012-2016</h4>
+                    University of Illinois, Urbana-Champaign <br>
+                    B.S. Computer Engineering <br>
+                    Minor: Mathematics
                   </div>
                 </li>
               </ul>
@@ -139,72 +139,104 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-      <div class="container">
-        <div class="row">
-            <h2 class="col-12">Portfolio</h2>
-            <div class="row">
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#dalian" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>Dalian App 打脸</p>
-                    </div>
+      <div class="container-fluid">
+          <h2 class="col-12">Portfolio</h2>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#dalian" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Dalian(facepalm)</p>
                   </div>
-                  <img class="img-fluid" src="images_src/portfolio/dalianApp/thumbnail.png" alt="dalianApp">
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#shopping" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>Live Shopping App 购物直播</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="images_src/portfolio/shoppingApp/thumbnail.png" alt="shoppingApp">
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#movie" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>MovieLog</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="images_src/portfolio/movieLog/thumbnail.png" alt="movieLog">
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#poster" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>Posters</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="images_src/portfolio/poster/thumbnail.png" alt="poster">
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#photography" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>Photography</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="images_src/portfolio/photography/thumbnail-800.jpg" srcset="images_src/portfolio/photography/thumbnail-800.jpg 1x, images_src/portfolio/photography/thumbnail-1600.jpg 2x" alt="">
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" href="#college" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <p>College Projects</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="images_src/portfolio/collegeProjects/thumbnail.png" alt="">
-                </a>
-              </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/dalianApp/thumbnail.png" alt="dalianApp">
+              </a>
             </div>
-        </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#shopping" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Live Shopping</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/shoppingApp/thumbnail.png" alt="shoppingApp">
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#habitTracker" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Habit Tracker</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/habitTracker/placeholder.jpg" alt="habit tracker">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#smartLock" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Smart Lock</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/smartLock/thumbnail.jpg" alt="vision tool">
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#educationalGame" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Educational Games</p>
+                  </div>
+                </div>
+                <img class="img-fluid img-responsive" src="image/portfolio/educationalGames/thumbnail.png" alt="educational games">
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#mobileWebDesign" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Mobile/Web Design</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/mobileWebDesign/thumbnail.png" alt="mobile/web design">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#poster" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Posters</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/poster/thumbnail.png" alt="poster">
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#photography" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Photography</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/photography/thumbnail-800.jpg" alt="photography">
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" href="#drawing" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <p>Conceptual Drawing/Illustration</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="image/portfolio/illustration/thumbnail.jpg" alt="illustrations">
+              </a>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -220,16 +252,16 @@
         </div>
         <div class="row">
           <div class="col-lg-3">
-            <a href="https://www.facebook.com/jiexin.lu"><h3 class="zocial-facebook"></h3></a>
+            <a href="https://www.facebook.com/jiexin.lu" target="_blank"><h3 class="brandico-facebook"></h3></a>
           </div>
           <div class="col-lg-3">
-            <a href="https://weibo.com/u/2182014413"><h3 class="zocial-weibo"></h3></a>
+            <a href="https://weibo.com/u/2182014413" target="_blank"><h3 class="zocial-weibo"></h3></a>
           </div>
           <div class="col-lg-3">
-            <a href="https://www.linkedin.com/in/jessielyu/"><h3 class="zocial-linkedin"></h3></a>
+            <a href="https://www.linkedin.com/in/jessielyu/" target="_blank"><h3 class="brandico-linkedin-rect"></h3></a>
           </div>
           <div class="col-lg-3">
-            <a href="https://www.instagram.com/jessielyu/"><h3 class="zocial-instagram"></h3></a>
+            <a href="https://www.instagram.com/jessielyu/" target="_blank"><h3 class="brandico-instagram-filled"></h3></a>
           </div>
         </div>
       </div>
@@ -246,225 +278,484 @@
     <div class="portfolio-modal modal fade" id="dalian" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="dalian_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>Dalian App 打脸</h2>
-                <h4>June.2017 - August.2017</h4>
-                <hr class="star-primary">
-                <h3>Idea</h3>
-                <p>
-                  We see too many fake information online everyday. Sometimes we just want to find a place to debunk those false ans silly ideas.<br>
-                  This app is built upon the idea that we want everybody to say their opinions here. <br>
-                  You could agree on something, diagree on something, as long as you have evidence to support it.
-                </p>
-                <h3>Design</h3>
-                <p>
-                  The app should support functionalities of: User Manipulation, Post View, Post/repost Manipulation.
-                </p>
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img1.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img2.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img3.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img4.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img5.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/dalianApp/img6.png" alt="">
+            <h2>Dalian 打脸 (faceplam)</h2>
+            <h4>June.2017 - August.2017</h4>
+            <img class="title_img mx-auto" src="image/portfolio/dalianApp/logo.png" alt="">
+            <hr class="star-primary">
+            <div class="content-block">
+              <h3>Prject Idea</h3>
+              <p>We see a lot of fake information everyday, from various sources including: internet, news, television, etc. Sometimes we want to find a place that we could post these false and misleading information, and rebuke them.</p>
+              <p>Dalian is an app based on this idea. We want to build such a platform that people could post specious information and dismay them. While other users could advocate or rebut the original post by either citing other sources or commenting.</p>
+              <p>The app is currently in reviewing process by Apple App store.</p>
+            </div>
+            <div class="content-block">
+              <h3>Our Team</h3>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img class="profile mx-auto" src="image/portfolio/dalianApp/Jessie_profile.jpg" alt="my profile picture">
+                  <h5>Jessie Lyu</h5>
+                  <p class="lead">Research and UI/UX designer</p>
+                </div>
+                <div class="col-lg-6">
+                  <img class="profile mx-auto" src="image/portfolio/dalianApp/Qi_profile.jpg" alt="my profile picture">
+                  <h5>Qi Liu</h5>
+                  <p class="lead">Product manager and App developer</p>
+                </div>
               </div>
             </div>
+            <div class="content-block">
+              <h3>User Interview</h3>
+              <p>
+                <b>USER A</b><br>
+                <i>13-year old student from Chengdu, China</i><br>
+                "I rely on internet very much for my school work. Everytime if want to know something I always consult internet. It is bad for my study if I got something wrong. If there is somewhere that I could see all those false information that would be very helpful."
+              </p>
+              <p>
+                <b>USER B</b><br>
+                <i>24-year old software engineer from Mountain View, California</i><br>
+                "I love to read news while I'm not coding. I can always see some misleading articles, especially about high technology. Those fake news are disguisting and their authors just want to attract readers. Sometimes I rebuke them under comments but seems like peple don't really care."
+              </p>
+              <p>
+                <b>USER C</b><br>
+                <i>54-year old professor from Beijing, China</i><br>
+                "Those fallacious content is everywhere: TV, newspaper, internet, magazines. I sometimes remind my students do not trust everything. It's better if they could filter out fake content using the critical thinkg skills."
+              </p>
+            </div>
+            <div class="content-block">
+              <h3>Competitors</h3>
+              <div class="row">
+                <div class="col-lg-3">
+                  <img class="logo" src="image/portfolio/dalianApp/zhihu.png" alt="">
+                  <h5>Zhihu(知乎)</h5>
+                </div>
+                <div class="col-lg-9">
+                  <p>Zhihu is an app for users to share their knowledge to something.</p>
+                  <p>Users could provide their insight on a recent news, explain some technology term, or repudiate a commonly accepted idea.</p>
+                  <p>It is like a knowledge share community.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <img class="logo" src="image/portfolio/dalianApp/wangyi.png" alt="">
+                  <h5>Wangyi(网易)</h5>
+                </div>
+                <div class="col-lg-9">
+                  <p>Wangyi News is a news digesting app.</p>
+                  <p>It's news content are of various aspects, from politics to entertainments. And they are of diffrent forms including articles, videos, or images.</p>
+                  <p>Users could read, share or comment on those news.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <h3>Wireframe</h3>
+              <img class="span" src="image/portfolio/dalianApp/wireframe.jpg" alt="">
+              <div class="desc-text">
+                <p>Our app need to support following basic functionalities: </p>
+                <ul>
+                  <li>Users could read all the content like a normal news digestion app. All the posts should be categorized and displayed title and abstraction on the main page, according to their content.</li>
+                  <li>In each post's detail page. Users could see: title, author, source(where the information comes from), abstraction, content(the basic content format is images or screenshots). And below the post body, there is a section for all the "faceplams"(people cite other source to rebute this post). User could also like, dislike, or comment on this post.</li>
+                  <li>Upon click on each "facepalm", app will direct user to a new post page, with all the information a post needs. So all the post-faceplam-faceplam again... could form a chian.</li>
+                  <li>User should login to create post or respond to an existing post.</li>
+                  <li>On user's profile page, we should list this user's post history, facepalm history, comments number, etc.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-block">
+              <h3>UI sketch</h3>
+              <img class="span" src="image/portfolio/dalianApp/uisketch.jpg" alt="">
+            </div>
+            <div class="content-block">
+              <h3>Revision History</h3>
+              <h4>Version 1.0</h4>
+              <div class="img_block">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version1.1.jpg" alt="">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version1.2.jpg" alt="">
+              </div>
+              <h4>Version 2.0</h4>
+              <div class="img_block">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version2.1.jpg" alt="">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version2.2.jpg" alt="">
+              </div>
+              <h4>Version 3.0</h4>
+              <div class="img_block">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version3.1.jpg" alt="">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version3.2.jpg" alt="">
+              </div>
+              <h4>Version 4.0</h4>
+              <div class="img_block">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version4.1.jpg" alt="">
+                <img class="col-lg-4 span" src="image/portfolio/dalianApp/version4.2.jpg" alt="">
+              </div>
+            </div>
+            <div class="content-block">
+              <h3>Prototyping</h3>
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img0.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img1.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img2.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img3.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img4.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img5.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img6.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img7.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img8.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img9.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img10.png" alt="">
+              <img class="col-lg-4 img-fluid prototype" src="image/portfolio/dalianApp/img11.png" alt="">
+            </div>
           </div>
+          <a href="#dalian_top">Back To Top</a>
         </div>
       </div>
     </div>
     <div class="portfolio-modal modal fade" id="shopping" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="shopping_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>Live Shopping App 购物直播</h2>
-                <h4>May.2017 - June.2017</h4>
-                <hr class="star-primary">
-                <h3>Idea</h3>
-                <p>
-                  This App is used for customers who want to watch how buyers go shopping in real life. <br>
-                  In this way, customers will have the chance to pick up style/color/size in real time.
-                </p>
-                <h3>Design</h3>
-                <p>
-                  The app should support functionalities of: Live Shopping, Product Lists, Make Order, User Manipulation.
-                </p>
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img1.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img2.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img3.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img4.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img5.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/shoppingApp/img6.png" alt="">
+            <h2>Live Shopping App 购物直播</h2>
+            <h4>April.2017 - June.2017</h4>
+            <img class="span" src="image/portfolio/shoppingApp/prototype.jpg" alt="">
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>Prject Idea</h3>
+                <p>Nowadays we see more and more "buyers" emerging among traditional online shopping. Buyers could be a person or a team. Normally they are the third party agency that help clients get their stuff. Besides just doing merchandise, they will recommend products to clients based on clients' preference and need, and based buyers' own insights.</p>
+                <p>Buyers are especially common in fashion industry, including clothes, bags, shoes, etc. Normally they own a website and clients could make orders through that website, then buyers will go shopping per clients' requests.</p>
+                <p>However, clients never know how buyers get their stuff. They never know if there is special discount, or if buyers are faking the price, or if buyers don't tell the truth about the product. The only way clients know the product is through their online description and upon receiving the product. The process of purchasing is like a blackbox.</p>
+                <p>The idea of this project is to create a mobile shopping app that integrates live video streaming in it. By making the process more reliable and clear, clients could watch how buyers get their stuff. This is win-win for both parties, since clients will be more willing to give their money to buyers, and buyers could earn more trust by showing how they do shopping.</p>
               </div>
-            </div>
+              <div class="content-block">
+                <h3>Brainstorming</h3>
+                <img class="span" src="image/portfolio/shoppingApp/brainstorming.jpg" alt="">
+                <div class="desc-text">
+                  <p>Our app should address to suit the following use cases:</p>
+                  <ul>
+                    <li>
+                      The app is for clients not buyers, so it should have basic functionalities a normal shopping app has:
+                      <ul>
+                        <li>Users could browse product lists and see product description, price, style, etc.</li>
+                        <li>Users could add products to shopping cart, fill address form, make payment, etc.</li>
+                        <li>Users could login to see order history, saved payment methods, address book, etc.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Since the app also integrates the functionality of live video streaming, so it should also supports:
+                      <ul>
+                        <li>There should be a button to direct users to current live video streaming event.</li>
+                        <li>On the main page, users could find information about upcoming shopping events.</li>
+                        <li>Users should be able to make purchases inside videa streaming, the screen should have a popup window about the current shopping product.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-block">
+                <h3>UI Sketch</h3>
+                <img class="span" src="image/portfolio/shoppingApp/uisketch.jpg" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Wireframe</h3>
+                <img class="span" src="image/portfolio/shoppingApp/wireframe.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Prototyping</h3>
+                <h5>Live Demo</h5>
+                <div class="row">
+                  <video class="mx-auto" controls>
+                    <source src="src/LiveAppPrototype1stEdition.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h5>Screen Shots</h5>
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img1.png" alt="">
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img2.png" alt="">
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img3.png" alt="">
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img4.png" alt="">
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img5.png" alt="">
+                <img class="col-md-3 col-sm-6 img-fluid prototype" src="image/portfolio/shoppingApp/img6.png" alt="">
+              </div>
           </div>
+          <a href="#shopping_top">Back To Top</a>
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="movie" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="habitTracker" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="habitTracker_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>MovieLog - Creative Movie Recommendation Blogger</h2>
-                <h4>Feb.2016 - Hack Illinois</h4>
-                <hr class="star-primary">
-                <h3>Idea</h3>
-                <p>
-                  We want to create a movie sharing blogger that incorporate with photo albums.<br>
-                  Based on your photo albums, your description, etc. The system will recommend movies for you.
-                </p>
-                <h3>Design</h3>
-                <p>
-                  The app should support functionalities of: User Manipulation, Photo Album Edit, Movie Recommendation.
-                </p>
-                <img class="col-8 img-fluid" src="images_src/portfolio/movieLog/img1.png" alt="">
-                <img class="col-8 img-fluid" src="images_src/portfolio/movieLog/img2.png" alt="">
-                <img class="col-8 img-fluid" src="images_src/portfolio/movieLog/img3.png" alt="">
-                <img class="col-8 img-fluid" src="images_src/portfolio/movieLog/img4.png" alt="">
-              </div>
-            </div>
+            <h2>Habit Tracker</h2>
+            <h4>October.2017</h4>
+            <hr class="star-primary">
+              <h5>This is an onging project. Will keep updating. ^o^ </h5>
           </div>
+          <a href="#habitTracker_top">Back To Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="smartLock" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="lock_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+          </div>
+          <div class="container">
+            <h2>Smart Lock</h2>
+            <h4>January.2016 - May.2016</h4>
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>Description</h3>
+                <p>Wifi, NFC, knock sequence enabledlock device</p>
+              </div>
+              <div class="content-block">
+                <h3>Project Proposal</h3>
+                <p>Home security and privacy matters more and more in modern life. Carrying multiple keys around, or be present when giving access are sometimes inconvenient, especially when you have many guests coming in and out or have multiple rental properties. We want to solve this problem by designing a set of lock and key (your smartphone) that allows user to remotely lock and unlock the doors/drawers from their smartphone and manage user access, track usage activity.</p>
+                <p>This project intends to realize a smart lock device that allow users to open their door without a physical key in multiple ways, and ensures safety and convenience at the same time. For this device, we have three different methods for users to unlock. First one is to unlock with the NFC chip built in user’s smartphone, and user can unlock the door by placing their NFC enabled smartphone within 10 cm (4 inches) of the lock. The second method is unlock with wifi connection and mobile app. The mobile app allows user to manage user access, track usage activity, and unlock their lock with wifi connection. When the mobile app connects to the network and sends a data pack to the microcontroller, the microcontroller will check whether the encryption matches and decide whether to unlock the door. Finally, user can also unlock by knocking a preset knock sequence, the vibration is determined by piezo buzzer and the time intervals between each knock are processed by microcontroller. There is also LED indication whether the user has knocked correct sequence, If there are multiple failed attempts, the lock will produce alarm sound with piezo buzzer.</p>
+              </div>
+              <div class="content-block">
+              	<h3>Our Team</h3>
+              	<img class="span" src="image/portfolio/smartLock/team.jpg">
+              	<h5>Jessie Lyu, Yuki Dong, Boyu Li</h5>
+              </div>
+              <div class="content-block">
+              	<h3>Useage scenarios</h3>
+              	<div class="desc-text">
+              	<p>With our device users could open the door in three different ways without a physical key. All of the unlock method are relatively independent so users have more options of unlocking the door. There are many scenarios where this device could be practical:</p>
+              	<ul>
+              	  <li>When host want to remotely open the door for someone, he/she could open it using web app through Wi-Fi.</li>
+              	  <li>When host want to share/revoke access, he/she could either share the secret knocking pattern, or hand out a set of username and passcode through the web app.</li>
+              	  <li>For host himself, he could use NFC card to open the door fast and conveniently.</li>
+              	  <li>In case that any of the above unlock method is not working, there are always other options, ie, if someone forgets the cellphone, or phone is out of power, or the NFC card is lost, he/she could always unlock by knocking a specific pattern.</li>
+              	  <li>Easy for host to manage several rental properties, the Airbnb hosts for example.</li>
+              	</ul>
+              	</div>
+              </div>
+              <div class="content-block">
+                <h3>Design Flow Chart</h3>
+                <img class="span" src="image/portfolio/smartLock/flowchart.png">
+                <h5>Block Diagram</h5>
+              </div>
+              <div class="content-block">
+                <h3>Circuit Design Snippet</h3>
+                <img class="span" src="image/portfolio/smartLock/circuitDiagram.png">
+                <div class="desc-text">
+                  <h5>PCB Schematics</h5>
+                  <p>The device is small and could be implemented inside a normal house door easily. The system consists of mainly six physical parts: power supply, microcontroller, sensor, alert, LED and locking solenoid, and a user interface which is the web application. The physical unit should be inserted inside a door. More specifically, microcontroller (except the switch button) and power supply should be invisible to the user; LED, alert and sensor unit (including buzzer, Wi-Fi sensor, NFC sensor) should be implemented either inside or outside the door depending on functionalities of each component; lock solenoid should be placed partially outside the door to perform locking mechanism.</p>
+                </div>
+              </div>
+              <div class="content-block">
+                <h3>UI Design</h3>
+                <img class="span" src="image/portfolio/smartLock/ui_flowchart.png">
+                <div class="desc-text">
+                  <h5>UI Flow</h5>
+                  <p>Through Wi-Fi connection, the user can use their mobile phone to log into the web app to send unlock signal (a special character that will be read by wifi module) to the microcontroller. And as long as the microcontroller reads the matching encoded character, it will set specific digital pin to high and retract the solenoid which unlocks the door. Besides the functionality to control locks, users can also use the app to monitor activities of the lock, for example who has unlocked the door at what time. As illustrated in Figure 6 below. The app also allows user to manage access of their lock. On the app, if the user is logged in as host, he or she will see an interface where the host can pick any of their friends and families and give them access or revoke their access. It is also possible to schedule the access for specific day and time for extra safety. As shown in Figure 7 below, once the host adds a guest to list, he/she created a set of username and password for the guest. These information is sent to the guest’s email address automatically through PHP request, and the guest can then use the given username and password the in email to log in to the app and control the lock. The web app is built with HTML and PHP, so it can be easily accessed through any web browser on any platform including desktop and mobile phone.</p>
+                  <h5>UI Prototyping</h5>
+                  <img class="span" src="image/portfolio/smartLock/ui1.png">
+                  <img class="span" src="image/portfolio/smartLock/ui2.png">
+                </div>
+              </div>
+              <div class="content-block">
+                <h3>Product Implementation</h3>
+                <h5>Circuit Wiring</h5>
+                <img class="col-lg-4" src="image/portfolio/smartLock/circuit1.jpg">
+                <img class="col-lg-4" src="image/portfolio/smartLock/circuit2.jpg">
+                <h5>Product Glance</h5>
+                <img class="col-lg-6" src="image/portfolio/smartLock/final.jpg">
+                <h5>Video Demo</h5>
+                <video class="mx-auto" controls>
+                    <source src="src/demo.mp4" type="video/mp4">
+                </video>
+                <a class="resume" href="src/FinalReport.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> report</a>
+              </div>
+          </div>
+          <a href="#lock_top">Back To Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="educationalGame" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="educationalGame_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+          </div>
+          <div class="container">
+            <h2>Educational Games</h2>
+            <h4>January.2015 - December.2015</h4>
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>Prject Summary</h3>
+                <p>This was a joint project based in University of Illinois, Urbana-Champaign. The project is aimed at using computer technologies to create educational games for children and teenagers from age 6-16. The project is hold by Educationa Department and Computer Science Department.</p>
+              </div>
+              <div class="content-block">
+                <h3>3D Unity Energy Game, January 2015 - August 2015</h3>
+                <p>This is a 3D game for elementary school kids to understand energy transger among objects.</p>
+                <p>Started from brainstorming, we first came up with the idea of using a rolling ball to illustrate energy transfer. After implementing a few levels we did the initial testing. However, kids didn't really like the boring ball bouncing on the floor or rolling down the ramp. So we changed our game context: A robot's escape. </p>
+                <p>The basic storyline was: A robot woke up alone in a factory and found everything was on fire. Alarming was going off and he needed to escape the factory in 5 min. There were totally two rooms(levels): in the first room he needed to climb the wall and jump down to a spring to escape; in the second level he needed to roll a boat to cross a room with water and open the door. There was an energy bar on top of the screen to show a direct energy transfer process.</p>
+                <p>Around June we did the second testing and this time seemed all kids liked the "game of robot". We finally displayed the game in Children's Museum in Indianapolis.</p>
+                <img class="col-lg-8 span" src="image/portfolio/educationalGames/unity3d.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>2D Unity Puzzle Games, September 2015 - December 2015</h3>
+                <p>These two games were created for kids to practice their logic thinking skills. </p>
+                <p>The first game was called "Tile_puzzle": players needed to control the character to go through all the blocks without repeating path or hitting any obstacles. </p>
+                <p>The second game was called "Ice Block Puzzle": players needed to control three ice blocks to make one of them finally stay at the center position. Ice blocks would continue slipping to the edge until meet some obstables. </p>
+                <p>
+                  Playable webversions could be found on my github: <br>
+                  <a href="https://github.com/jessielyu/Tile_Puzzle/tree/master/Tile_Puzzle/Tile%20Puzzle/WebGame" target="_blank">Tile Puzzle</a><br>
+                  <a href="https://github.com/jessielyu/ICE_BLOCK_PUZZLE/tree/master/WebVersion2.0" target="_blank">Ice Block Puzzle</a>
+                </p>
+                <img class="col-lg-8 span" src="image/portfolio/educationalGames/unity2d1.png" alt="">
+                <img class="col-lg-8 span" src="image/portfolio/educationalGames/unity2d2.png" alt="">
+              </div>
+          </div>
+          <a href="#educationalGame_top">Back To Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="mobileWebDesign" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="mobileWebDesign_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+          </div>
+          <div class="container">
+            <h2>Mobile & Web Design Work</h2>
+            <h4>Showcase of some previous web/mobile UI design</h4>
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>MovieLog</h3>
+                <p>MovieLog is a Hackthon project, created in Feb 2016 in Hack Illinois. The website allows users to log their movie watching history. It has a small add-on feature that it could recommend movies based on user's movie journal.
+                <br>Team member : Tianyilin Zhu</p>
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/movie1.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/movie2.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/movie3.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/movie4.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>iEar</h3>
+                <p>iEar is a class project, and is also the initial website for a startup company called OmniEar. iEar is based on the idea of earpods customization. The website provides an interactive UI for clients to personalized their earpods. Functionalities include: upload photos of ears, choose earpods chip configuration, visual customization, and place an order.
+                <br>Team members : Yuki Dong, Emma He, Amy Chen, Bobby Zhang</p>
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/iear1.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/iear2.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/iear3.png" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/mobileWebDesign/iear4.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Lait</h3>
+                <p>The Laboratory for Audience Interactive Technologies (LAIT) has been established to research and develop applications for personal mobile devices for use in live performance. The lab is based on National Center for Supercomputing Application(NCSA) in UIUC. I worked as the UI developer for the mobile app from 2015-2016. More information could be found <a href="http://lait.ncsa.illinois.edu/about_lait/" target="_blank">here</a>
+                <br>Professor : John Toenjes</p>
+                <img class="col-lg-4 prototype" src="image/portfolio/mobileWebDesign/lait1.png" alt="">
+                <img class="col-lg-4 prototype" src="image/portfolio/mobileWebDesign/lait2.png" alt="">
+                <img class="col-lg-4 prototype" src="image/portfolio/mobileWebDesign/lait3.png" alt="">
+              </div>
+          </div>
+          <a href="#mobileWebDesign_top">Back To Top</a>
         </div>
       </div>
     </div>
     <div class="portfolio-modal modal fade" id="poster" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="poster_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>Posters Design</h2>
-                <h4>Some posters I designed</h4>
-                <hr class="star-primary">
+            <h2>Posters Design</h2>
+            <hr class="star-primary">
+              <div class="content-block">
                 <h3>Sarah Illenberger</h3>
-                <p>
-                  Sarah Illenberger is a creative artist and I designed two posters of her for the 2016 Art Exhibition at University of Illinois.
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/poster/si1-1600.png" srcset="images_src/portfolio/poster/si1-800.png 1x, images_src/portfolio/poster/si1-1600.png 2x" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/poster/si2-1600.png" srcset="images_src/portfolio/poster/si2-800.png 1x, images_src/portfolio/poster/si2-1600.png 2x" alt="">
-                <h3>UniCal</h3>
-                <p>
-                  This poster is for UniCal - University events calendar web app.
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/poster/unical-1600.png" srcset="images_src/portfolio/poster/unical-800.png 1x, images_src/portfolio/poster/unical-1600.png 2x" alt="">
-                <h3>Home Decoration</h3>
-                <p>
-                  A series of home decoration posters. Used Photoshop and Illustrator.
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/poster/calendar2017-1600.png" srcset="images_src/portfolio/poster/calendar2017-800.png 1x, images_src/portfolio/poster/calendar2017-1600.png 2x" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/poster/food-1600.png" srcset="images_src/portfolio/poster/food-800.png 1x, images_src/portfolio/poster/food-1600.png 2x" alt="">
+                <p>Sarah Illenberger is a Berlin-based artist, illustrator and designer. These two posters are for the art exhibition in University of Illinois, 2016. The idea of these posters are based on two of Sarah's famous art work: trendgemuese.
+                  <br>Tool : Adobe Illustration</p>
+                <img class="col-lg-4 prototype" src="image/portfolio/poster/si1-800.png" alt="">
+                <img class="col-lg-4 prototype" src="image/portfolio/poster/si2-800.png" alt="">
               </div>
-            </div>
+              <div class="content-block">
+                <h3>UniCal</h3>
+                <p>Unical is a poster for a campus-wide events schedule app.
+                  <br>Tool : Adobe Illustration</p>
+                <img class="col-lg-6 prototype" src="image/portfolio/poster/unical-800.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Calandar</h3>
+                <p>This calendar is designed for home decor. All the icons are created by myself.
+                  <br>Tool : Adobe Illustration</p>
+                <img class="col-lg-6 prototype" src="image/portfolio/poster/calendar2017-800.png" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Food</h3>
+                <p>This poster is for kitchen decor.
+                  <br>Tool : Photoshop</p>
+                <img class="col-lg-6 prototype" src="image/portfolio/poster/food-800.png" alt="">
+              </div>
           </div>
+          <a href="#poster_top">Back To Top</a>
         </div>
       </div>
     </div>
     <div class="portfolio-modal modal fade" id="photography" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="photography_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>Photography Album</h2>
-                <h4>Some photography work by me</h4>
-                <hr class="star-primary">
-                <h3>Black & White</h3>
-                <p>
-                  Photos in black and white.
-                </p>
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/bw1-1600.jpg" srcset="images_src/portfolio/photography/bw1-800.jpg 1x, images_src/portfolio/photography/bw1-1600.jpg 2x" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/bw2-1600.jpg" srcset="images_src/portfolio/photography/bw2-800.jpg 1x, images_src/portfolio/photography/bw2-1600.jpg 2x" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/bw3-1600.jpg" srcset="images_src/portfolio/photography/bw3-800.jpg 1x, images_src/portfolio/photography/bw3-1600.jpg 2x" alt="">
-                <h3>New York Impression</h3>
-                <p>
-                  Photo collection of New York City
-                </p>
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/ny1-1600.jpg" srcset="images_src/portfolio/photography/ny1-800.jpg 1x, images_src/portfolio/photography/ny1-1600.jpg 2x" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/ny2-1600.jpg" srcset="images_src/portfolio/photography/ny2-800.jpg 1x, images_src/portfolio/photography/ny2-1600.jpg 2x" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/photography/ny3-1600.jpg" srcset="images_src/portfolio/photography/ny3-800.jpg 1x, images_src/portfolio/photography/ny3-1600.jpg 2x" alt="">
-                <h3>California By the Sea</h3>
-                <p>
-                  Some photos along 17-mile Drive
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/photography/ca1-1600.jpg" srcset="images_src/portfolio/photography/ca1-800.jpg 1x, images_src/portfolio/photography/ca1-1600.jpg 2x" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/photography/ca2-1600.jpg" srcset="images_src/portfolio/photography/ca2-800.jpg 1x, images_src/portfolio/photography/ca2-1600.jpg 2x" alt="">
+            <h2>Photography</h2>
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>B & W</h3>
+                <img class="col-lg-6 prototype" src="image/portfolio/photography/bw1-800.jpg" alt="">
+                <img class="col-lg-6 prototype" src="image/portfolio/photography/bw2-800.jpg" alt="">
+                <img class="col-lg-6 prototype" src="image/portfolio/photography/bw3-800.jpg" alt="">
               </div>
-            </div>
+              <div class="content-block">
+                <h3>Cities</h3>
+                <img class="col-lg-8 prototype" src="image/portfolio/photography/ca1-800.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/photography/ca2-800.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/photography/ny1-800.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/photography/ny2-800.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/photography/ny3-800.jpg" alt="">
+              </div>
           </div>
+          <a href="#photography_top">Back To Top</a>
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="college" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="drawing" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+          <div id="drawing_top" class="close-modal" data-dismiss="modal">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <h2>College Projects</h2>
-                <h4>Past projects I have done in school</h4>
-                <hr class="star-primary">
-                <h3>Lait</h3>
-                <p>
-                  Lait is an App for audience-performance interaction. Audience could interact with performers on stage based on instructions through Lait. <br>
-                  Website: http://lait.ncsa.illinois.edu/
-                </p>
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/lait1.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/lait2.png" alt="">
-                <img class="col-md-3 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/lait3.png" alt="">
-                <h3>iEar</h3>
-                <p>
-                  iEar is a website for customers to create their own personalized ear pod. <br>
-                  The website supports interactive model picker, color picker, checkout, etc.
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/iear1.png" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/iear2.png" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/iear3.png" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/iear4.png" alt="">
-                <h3>Unity Games</h3>
-                <p>
-                  A Series of 2D and 3D games built on Unity.3D platform.
-                </p>
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/unity2d1.png" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/unity2d2.png" alt="">
-                <img class="col-md-4 col-sm-6 img-fluid" src="images_src/portfolio/collegeProjects/energyGame.png" alt="">
+            <h2>Conceptual Drawings & Illustrations</h2>
+            <hr class="star-primary">
+              <div class="content-block">
+                <h3>Ladies</h3>
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/lady1.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/lady2.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/lady3.jpg" alt="">
               </div>
-            </div>
+              <div class="content-block">
+                <h3>Couples</h3>
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/couple1.jpg" alt="">
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/couple2.jpg" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Lazy Panda</h3>
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/panda.jpg" alt="">
+              </div>
+              <div class="content-block">
+                <h3>Icons</h3>
+                <img class="col-lg-8 prototype" src="image/portfolio/illustration/iconDesign.jpg" alt="">
+              </div>
           </div>
+          <a href="#drawing_top">Back To Top</a>
         </div>
       </div>
     </div>
