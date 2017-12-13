@@ -8,10 +8,6 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-a:hover {
-  border-bottom: 1px solid;
-  background: #CDFEAA;
-}
 
 /* Grid System */
 .col-1 {
@@ -70,6 +66,12 @@ a:hover {
 #menu {
   text-align: right;
 }
+#menu a:hover {
+  background-color: #999999;
+}
+#menu .menu-active {
+  background-color: #999999;
+}
 
 /* Thumbnail */
 #portfolio {
@@ -77,7 +79,7 @@ a:hover {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
-@media all and (min-height: 500px) and (min-width: 1000px) {
+@media all and (min-height: 570px) and (min-width: 1000px) {
   #portfolio {
     position:absolute;
     bottom:0;
