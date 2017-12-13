@@ -1,63 +1,15 @@
-var template = {
-    Modal:'<div id="portfolio">{{#each this}}<div class="col-2 portfolio-item"><a href="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>'
-};
+/**
+ * Created by jessielyu on 12/12/17.
+ */
 
-var modalList = {
-    facepalm: {
-        name: 'FACEPALM(打脸)',
-        image: 'image/portfolio/thumbnail/dalian.png',
-        href:'#dalian'
-    },
-    shopping: {
-        name: 'LIVE SHOPPING(购物直播)',
-        image: 'image/portfolio/thumbnail/shoppingLive.png',
-        href:'#shoppingLive'
-    },
-    habitTracker: {
-        name: 'HABIT TRACKER',
-        image: 'image/portfolio/thumbnail/habitTracker.jpg',
-        href:'#habitTracker'
-    },
-    smartLock:{
-        name: 'SMART LOCKER',
-        image: 'image/portfolio/thumbnail/smartLock.jpg',
-        href: '#smartLock'
-    },
-    educationGame:{
-        name: 'EDUCATION GAMES',
-        image: 'image/portfolio/thumbnail/educationGame.png',
-        href: '#educationGame'
-    },
-    iEar:{
-        name: 'IEAR',
-        image: 'image/placeholder.png',
-        href: '#iEar'
-    },
-    movieLog:{
-        name: 'MOVIE LOG',
-        image: 'image/portfolio/thumbnail/movieLog.png',
-        href: '#movieLog'
-    },
-    lait:{
-        name: 'LAIT',
-        image: 'image/placeholder.png',
-        href: '#lait'
-    },
-    scratch:{
-        name: 'SCRATCH',
-        image: 'image/portfolio/thumbnail/scratch.jpg',
-        href: '#scratch'
-    },
-    graphicDesign:{
-        name: 'GRAPHIC DESIGN',
-        image: 'image/portfolio/thumbnail/graphicDesign.png',
-        href: '#graphicDesign'
-    },
-    photography:{
-        name: 'PHOTOGRAPHY',
-        image: 'image/portfolio/thumbnail/photography.jpg',
-        href: '#photography'
-    }
+var curTarget;
+
+var template = {
+    Portfolio:'<div id="portfolio">{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
+    Experiences: '<div id="experiences">hellp</div>',
+    About: '<div id="about">Hello Again</div>',
+    Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3 header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><h2>{{header.title}}</h2><h4>{{header.date}}</h4><p>{{header.txt}}</p></div>' +
+    '<div class="col-9 sections">{{#each sections}}<h3>{{title}}</h3>{{/each}}</div></div>{{/each}}'
 };
 
 function compileTemplate() {
@@ -67,7 +19,56 @@ function compileTemplate() {
 }
 
 function init() {
-    $('#content').html(template.Modal(modalList));
+    var container = $('#content'),
+        portfolio;
+
+    container.html(template.Portfolio(thumbnails));
+    container.append(template.Experiences);
+    container.append(template.About);
+    container.append(template.Modal(modals));
+
+    $('#experiences').hide();
+    $('#about').hide();
+
+    portfolio = $('#portfolio');
+    portfolio.on('click', 'a', function (e) {
+        var target = e.currentTarget.getAttribute('id');
+        $('#portfolio').hide();
+        $(target).addClass('modal-active');
+        curTarget = target;
+    });
+    container.on('click', '.close-btn', function (e) {
+        $(curTarget).removeClass('modal-active');
+        portfolio.show();
+    });
+
+    $('#menu').on('click', 'a', function (e) {
+        var target = e.currentTarget.getAttribute('id');
+
+        switch (target) {
+            case '#portfolio': {
+                if ($(curTarget).hasClass('modal-active')) $(curTarget).removeClass('modal-active');
+                $('#experiences').hide();
+                $('#about').hide();
+                $('#portfolio').show();
+                break;
+            }
+            case '#experiences': {
+                if ($(curTarget).hasClass('modal-active')) $(curTarget).removeClass('modal-active');
+                $('#portfolio').hide();
+                $('#about').hide();
+                $('#experiences').show();
+                break;
+            }
+            case '#about': {
+                if ($(curTarget).hasClass('modal-active')) $(curTarget).removeClass('modal-active');
+                $('#experiences').hide();
+                $('#portfolio').hide();
+                $('#about').show();
+                break;
+            }
+        }
+    })
 }
 
 window.onload = function () {
