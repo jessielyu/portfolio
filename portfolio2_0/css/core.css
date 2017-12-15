@@ -1,3 +1,7 @@
+/**
+ * Created by jessielyu on 12/11/17.
+ */
+
 body {
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
@@ -7,6 +11,9 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
 /* Grid System */
@@ -134,8 +141,26 @@ a {
 .header .close-btn{
   margin-left: 5px;
 }
-.header h2, .header h4 {
-  text-align: center;
+.sections .section-block {
+  display: flex;
+  margin-bottom: 80px;
 }
-.sections {
+.sections .img-lg {
+  max-height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.sections .img-sm {
+  max-height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.sections .img-sm-round {
+  max-height: 150px;
+  border-radius: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }

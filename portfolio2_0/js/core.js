@@ -9,8 +9,10 @@ var template = {
     Portfolio:'<div id="portfolio">{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
     Experiences: '<div id="experiences">Hello</div>',
     About: '<div id="about">Hello Again</div>',
-    Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3 header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><h2>{{header.title}}</h2><h4>{{header.date}}</h4><p>{{header.txt}}</p></div>' +
-    '<div class="col-9 sections">{{#each sections}}<h3>{{title}}</h3>{{/each}}</div></div>{{/each}}'
+    Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3 header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div>' +
+    '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
+    '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "img-txt"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}"><h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>' +
+    '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}'
 };
 
 function compileTemplate() {
