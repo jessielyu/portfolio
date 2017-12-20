@@ -45,7 +45,7 @@ var thumbnails = {
     },
     habitTracker: {
         name: 'HABIT TRACKER',
-        image: 'image/portfolio/thumbnail/habitTracker.jpg',
+        image: 'image/portfolio/thumbnail/habitTracker.png',
         href:'#habitTracker'
     },
     graphicDesign:{
@@ -60,7 +60,7 @@ var thumbnails = {
     },
     photography:{
         name: 'PHOTOGRAPHY',
-        image: 'image/portfolio/thumbnail/photography.jpg',
+        image: 'image/portfolio/thumbnail/photography.png',
         href: '#photography'
     }
 };
@@ -1501,7 +1501,7 @@ var about = {
         year: '2012-2016',
         major: 'B.S. Computer Engineering',
         minor: 'Mathematics',
-        logo: ''
+        logo: 'image/about/education.png'
     },
     work: [
         {
@@ -1509,20 +1509,19 @@ var about = {
             location: 'Sunnyvale, CA',
             year: '2016-now',
             position: 'Software Engineer, Assoc.',
-            desc: 'Search Middleware & internal tool development.',
-            logo: ''
+            desc: 'Search Middleware & internal tool development.'
         },
         {
             company: 'Quicket Solutions, Inc.',
             location: 'Champaign, IL',
             year: '2015-2016',
             position: 'Software Enginner',
-            desc: 'UI design & development.',
-            logo: ''
+            desc: 'UI design & development.'
         }
     ],
     contact: {
         email: 'jiexinlyu@gmail.com',
-        phone: '(669)-246-2810'
+        phone: '(669)-246-2810',
+        logo: 'image/about/contact.png'
     }
 };

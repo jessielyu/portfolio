@@ -12,10 +12,10 @@ var template = {
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
     About: '<div id="about"><div class="section-block"><div class="col-6"><img src="{{profile}}" class="img-sm-round"></div><div class="col-6"><h1>Hi, I\'m Jessie Lyu</h1><h2>{{intro}}</h2><a href="{{resume}}">Resume</a></div></div>' +
-    '<div class="section-block"><h1 class="col-12">My Skills</h1><div class="col-4"><h2>Design Skills</h2>{{#each skills.design}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><h2>Coding Skills</h2>{{#each skills.coding}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><h2>Innovation Skills</h2>{{#each skills.innovation}}<p>{{name}}</p>{{/each}}</div></div>' +
+    '<div class="section-block"><h1 class="col-12">My Skills</h1><div class="col-8"><h2>Design Skills</h2>{{#each skills.design}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><img src="image/about/skill.png" alt="skill logo"></div><div class="col-8"><h2>Coding Skills</h2>{{#each skills.coding}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><h2>Innovation Skills</h2>{{#each skills.innovation}}<p>{{name}}</p>{{/each}}</div></div>' +
     '<div class="section-block"><h1 class="col-12">Education</h1><div class="col-4"><img src="{{education.logo}}" alt="school icon"></div><div class="col-8"><h2>{{education.school}}</h2><h3>{{education.year}}</h3><h4>{{education.major}}</h4><h4>{{education.minor}}</h4></div></div>' +
-    '<div class="section-block"><h1 class="col-12">Work Experiences</h1>{{#each work}}<div class="col-8"><h2>{{company}}</h2><h3>{{location}}, {{year}}</h3><h4>{{position}}</h4><h5>{{desc}}</h5></div><div class="col-4"><img src="work.logo" alt="company1"></div>{{/each}}</div>' +
-    '<div class="section-block"><h1 class="col-12">Contact</h1><div class="col-12"><h3>{{contact.email}}</h3><h3>{{contact.phone}}</h3></div></div>' +
+    '<div class="section-block"><h1 class="col-12">Work Experiences</h1><div class="col-8">{{#each work}}<div class="col-8"><h2>{{company}}</h2><h3>{{location}}, {{year}}</h3><h4>{{position}}</h4></div>{{/each}}</div><div class="col-4"><img src="image/about/work.png" alt="work logo"></div></div>' +
+    '<div class="section-block"><h1 class="col-12">Contact</h1><div class="col-4"><img src="image/about/contact.png" alt="contact icon"></div><div class="col-8"><h3>{{contact.email}}</h3><h3>{{contact.phone}}</h3></div></div>' +
     '</div>'
 };
 
