@@ -15,7 +15,7 @@ var thumbnails = {
     },
     smartLock:{
         name: 'SMART LOCKER',
-        image: 'image/portfolio/thumbnail/smartLock.jpg',
+        image: 'image/portfolio/thumbnail/smartLock.png',
         href: '#smartLock'
     },
     educationGame:{
@@ -25,7 +25,7 @@ var thumbnails = {
     },
     iEar:{
         name: 'IEAR',
-        image: 'image/placeholder.png',
+        image: 'image/portfolio/thumbnail/iear.png',
         href: '#iEar'
     },
     movieLog:{
@@ -35,12 +35,12 @@ var thumbnails = {
     },
     lait:{
         name: 'LAIT',
-        image: 'image/placeholder.png',
+        image: 'image/portfolio/thumbnail/lait.png',
         href: '#lait'
     },
     projecto:{
         name: 'PROJECT(O)',
-        image: 'image/placeholder.png',
+        image: 'image/portfolio/thumbnail/projecto.png',
         href: '#projecto'
     },
     habitTracker: {
@@ -55,7 +55,7 @@ var thumbnails = {
     },
     scratch:{
         name: 'SCRATCH',
-        image: 'image/portfolio/thumbnail/scratch.jpg',
+        image: 'image/portfolio/thumbnail/scratch.png',
         href: '#scratch'
     },
     photography:{

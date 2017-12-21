@@ -79,6 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 .img-md {
   max-height: 600px;
 }
+.img-md-round {
+  max-height: 200px;
+}
 .span {
   width: 98%;
   margin-bottom: 5px;
