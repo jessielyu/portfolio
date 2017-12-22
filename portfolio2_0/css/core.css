@@ -4,6 +4,8 @@
 
 body {
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: large;
+  line-height: 1.5;
   color: #40302A;
   margin: 0;
 }
@@ -13,8 +15,6 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6 {
 }
 
 /* Grid System */
@@ -64,27 +64,37 @@ h1, h2, h3, h4, h5, h6 {
 .center-align {
   text-align: center;
 }
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
 .img-center {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
+.img-inline {
+  height: 0.8em;
+  display: inline;
+}
 .img-sm {
-  max-height: 150px;
+  max-height: 125px;
 }
 .img-sm-round {
-  max-height: 150px;
+  max-height: 125px;
   border-radius: 100px;
 }
 .img-md {
   max-height: 600px;
 }
 .img-md-round {
-  max-height: 200px;
+  max-height: 250px;
 }
 .span {
-  width: 98%;
-  margin-bottom: 5px;
+  width: 90%;
+  margin-bottom: 20px;
   display: block;
 }
 
@@ -94,10 +104,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 30px;
   top: 0;
   position: fixed;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
 }
 #logo {
   padding-left: 30px;
+  cursor: pointer;
 }
 #menu {
   padding: 10px 30px 0 0;
@@ -155,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   margin-top: -12px;
   text-align: center;
-  color: #40302A;
+  color: #FFF7FF;
 }
 #portfolio .thumbnail-item a img {
   object-fit: cover;
@@ -200,4 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #about .section-block {
   padding: 0 10%;
+}
+#about h1 {
+  color: #FF8B5D;
 }

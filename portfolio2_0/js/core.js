@@ -11,11 +11,11 @@ var template = {
     '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
-    About: '<div id="about"><div class="section-block"><div class="col-6"><img src="{{profile}}" class="img-center img-md-round"></div><div class="col-6"><h1>Hi, I\'m Jessie Lyu</h1><h2>{{intro}}</h2><a href="{{resume}}">Resume</a></div></div>' +
-    '<div class="section-block"><h1 class="col-12">My Skills</h1><div class="col-8"><h2>Design Skills</h2>{{#each skills.design}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><img src="image/about/skill.png" alt="skill logo"></div><div class="col-8"><h2>Coding Skills</h2>{{#each skills.coding}}<p>{{name}}:{{level}}</p>{{/each}}</div><div class="col-4"><h2>Innovation Skills</h2>{{#each skills.innovation}}<p>{{name}}</p>{{/each}}</div></div>' +
-    '<div class="section-block"><h1 class="col-12">Education</h1><div class="col-4"><img src="{{education.logo}}" alt="school icon"></div><div class="col-8"><h2>{{education.school}}</h2><h3>{{education.year}}</h3><h4>{{education.major}}</h4><h4>{{education.minor}}</h4></div></div>' +
-    '<div class="section-block"><h1 class="col-12">Work Experiences</h1><div class="col-8">{{#each work}}<div class="col-8"><h2>{{company}}</h2><h3>{{location}}, {{year}}</h3><h4>{{position}}</h4></div>{{/each}}</div><div class="col-4"><img src="image/about/work.png" alt="work logo"></div></div>' +
-    '<div class="section-block"><h1 class="col-12">Contact</h1><div class="col-4"><img src="image/about/contact.png" alt="contact icon"></div><div class="col-8"><h3>{{contact.email}}</h3><h3>{{contact.phone}}</h3></div></div>' +
+    About: '<div id="about"><div class="section-block"><div class="col-6"><img src="{{profile}}" class="img-center img-md-round"></div><div class="col-6 left-align"><h1 class="center-align">Jessie Lyu</h1><hr><p><b>{{subtitle}}</b></p><p>{{intro}}</p><a href="{{resume}}" target="_blank">Resume</a></div></div>' +
+    '<div class="section-block"><div class="col-6 center-align"><h1>My Skills</h1><hr><p>{{#each skills.innovation}} - {{name}} {{/each}} - </p></div><div class="col-6"><img src="{{skills.logo}}" alt="skills logo"></div><div class="col-5 right-align">{{#each skills.design}}<p>{{name}} : <img class="img-inline" src="{{level}}" alt="level"></p>{{/each}}</div><div class="col-1"></div><div class="col-5 right-align">{{#each skills.coding}}<p>{{name}} : <img class="img-inline" src="{{level}}" alt="level"></p>{{/each}}</div><div class="col-1"></div></div>' +
+    '<div class="section-block"><div class="col-6"><img src="{{education.logo}}" alt="education logo"></div><div class="col-6 center-align"><h1>Education</h1><hr><div class="left-align"><h4>{{education.year}} : {{education.school}}</h4><p>Major: {{education.major}}</p><p>Minor: {{education.minor}}</p></div></div></div>' +
+    '<div class="section-block"><div class="col-6"><h1>Work Experience</h1><hr></div><div class="col-6"><img src="{{work.logo}}"></div>{{#each work.experience}}<div class="col-1"></div><div class="col-11 left-align"><h3>{{year}} : {{company}}</h3><h5>{{location}}</h5><p><b>{{position}}</b></p><p>{{desc}}</p></div>{{/each}}</div>' +
+    '<div class="section-block"><div class="col-6"><img src="{{contact.logo}}" alt="contact logo"></div><div class="col-6"><h1>Contact</h1><hr><h4>{{contact.email}}</h4><h4>{{contact.phone}}</h4></div></div>' +
     '</div>'
 };
 
@@ -72,6 +72,14 @@ function init() {
                 break;
             }
         }
+    });
+
+    $('#logo').on('click', function (e) {
+        if ($(curTarget).hasClass('modal-active')) $(curTarget).removeClass('modal-active');
+        curPage = '#portfolio_pg';
+        $(curPage).addClass('menu-active');
+        $('#about').hide();
+        $('#portfolio').show();
     })
 }
 
