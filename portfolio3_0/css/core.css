@@ -1,0 +1,236 @@
+/**
+ * Created by jessielyu on 12/11/17.
+ */
+html, body {
+     padding:0;
+     margin:0;
+     height:100%;
+}
+body {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: large;
+  line-height: 1.5;
+  color: #40302A;
+}
+img {
+  max-width: 100%;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Grid System */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.67%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.67%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.67%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* Universal*/
+.section-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.center-align {
+  text-align: center;
+}
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.img-center {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.img-inline {
+  height: 0.8em;
+  display: inline;
+}
+.img-sm {
+  max-height: 125px;
+}
+.img-sm-round {
+  max-height: 125px;
+  border-radius: 100px;
+}
+.img-md {
+  max-height: 600px;
+}
+.img-md-round {
+  max-height: 250px;
+}
+.span {
+  width: 90%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Home Page */
+.row {
+  width: 100%;
+  height: 50%;
+}
+.image-block {
+  width: 50%;
+  height:100%;
+  float:left;
+}
+.text-block {
+  width: 50%;
+  height:100%;
+  float:left;
+}
+
+/* Navigation */
+#navigation {
+  display: flex;
+  padding-top: 30px;
+  top: 0;
+  position: fixed;
+  background-color: rgba(255,255,255,0.9);
+}
+#logo {
+  padding-left: 30px;
+  cursor: pointer;
+}
+#menu {
+  padding: 10px 30px 0 0;
+  text-align: right;
+}
+#menu a {
+  margin: 0 10px;
+}
+#menu a:hover {
+  background-color: #FFD4C3;
+}
+#menu .menu-active {
+  color: #FF8B5D;
+}
+
+/* Content */
+#content {
+  margin-top: 100px;
+}
+
+/* Thumbnail */
+#portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+@media all and (min-height: 570px) and (min-width: 1000px) {
+  #portfolio {
+    position:absolute;
+    bottom:0;
+  }
+}
+#portfolio .thumbnail-item .portfolio-link {
+  position: relative;
+  display: flex;
+}
+#portfolio .thumbnail-item .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: #FFC2AA;
+}
+#portfolio .thumbnail-item .caption:hover {
+  opacity: 1;
+}
+#portfolio .thumbnail-item .caption p {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: #FFF7FF;
+}
+#portfolio .thumbnail-item a img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Modal */
+.modal {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.modal-active {
+  display: flex;
+}
+.header {
+  position: fixed;
+  width: inherit;
+  word-wrap: break-word;
+  text-align: center;
+}
+.header a {
+  margin-left: 80%;
+  color: #40302A;
+  font-size: 20pt;
+}
+.title {
+  margin-top: 100px;
+  padding: 10px;
+}
+.sections {
+  padding: 10px;
+}
+
+/* About */
+#about {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+  text-align: center;
+}
+#about .section-block {
+  padding: 0 10%;
+}
+#about h1 {
+  color: #FF8B5D;
+}
