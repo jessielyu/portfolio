@@ -1,6 +1,7 @@
 /**
  * Created by jessielyu on 7/10/18.
  */
+const passcode = 'loveYahoo2016';
 
 let curTarget;
 let curPage;
@@ -25,6 +26,15 @@ function compileTemplate() {
     }
 }
 
+function passwordPromp(target) {
+    let result = window.prompt('Please enter passcode for this project:', '');
+    if (result === passcode) {
+        $('#portfolio').hide();
+        $(target).addClass('modal-active');
+        curTarget = target;
+    }
+}
+
 function init() {
     const container = $('#content');
     let portfolio;
@@ -39,9 +49,13 @@ function init() {
     portfolio = $('#portfolio');
     portfolio.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
-        $('#portfolio').hide();
-        $(target).addClass('modal-active');
-        curTarget = target;
+        if (target === '#vision' || target === '#wizard') {
+            passwordPromp(target);
+        } else {
+            $('#portfolio').hide();
+            $(target).addClass('modal-active');
+            curTarget = target;
+        }
     });
 
     container.on('click', '.close-btn', function (e) {
