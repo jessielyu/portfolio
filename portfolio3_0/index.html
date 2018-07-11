@@ -4,28 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jessie Lyu Portfolio</title>
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="shortcut icon" href="image/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/core.css" rel="stylesheet">
   </head>
   <body>
-
-    <div class="row">
-      <div class="image-block backgroundA">
-        <h1>Hi, I'm Jessie Lyu</h1>
+    <!-- Navigation -->
+    <div class="col-12" id="navigation">
+      <div class="col-1" id="logo">
+        <img src="image/logo.png" alt="logo">
       </div>
-      <div class="image-block backgroundB">
-        <p>About</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="image-block backgroundC">
-      </div>
-      <div class="image-block backgroundD">
-        <h3>I'm a motivated designer<br> I design with love and passion.</h3>
+      <div class="col-11" id="menu">
+        <a id="portfolio_pg" class="menu-active">PORTFOLIOS</a>
+        <a id="about_pg">ABOUT</a>
       </div>
     </div>
+    <!-- Content -->
+    <div class="col-12" id="content"></div>
 
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/handlebarHelpers.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/core.js"></script>
   </body>
 </html>

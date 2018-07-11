@@ -1,12 +1,12 @@
 /**
- * Created by jessielyu on 12/12/17.
+ * Created by jessielyu on 7/10/18.
  */
 
-var curTarget;
-var curPage;
+let curTarget;
+let curPage;
 
-var template = {
-    Portfolio:'<div id="portfolio">{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
+const template = {
+    Portfolio:'<div id="portfolio"><h1 class="col-12">Hi, I\'m Jessie Lyu!</h1>{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div></div></div>' +
     '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
@@ -20,14 +20,14 @@ var template = {
 };
 
 function compileTemplate() {
-    for (var key in template) {
+    for (let key in template) {
         template[key] = Handlebars.compile(template[key]);
     }
 }
 
 function init() {
-    var container = $('#content'),
-        portfolio;
+    const container = $('#content');
+    let portfolio;
 
     container.html(template.Portfolio(thumbnails));
     container.append(template.About(about));
@@ -38,7 +38,7 @@ function init() {
 
     portfolio = $('#portfolio');
     portfolio.on('click', 'a', function (e) {
-        var target = e.currentTarget.getAttribute('id');
+        const target = e.currentTarget.getAttribute('id');
         $('#portfolio').hide();
         $(target).addClass('modal-active');
         curTarget = target;
@@ -50,7 +50,7 @@ function init() {
     });
 
     $('#menu').on('click', 'a', function (e) {
-        var target = e.currentTarget;
+        const target = e.currentTarget;
 
         switch (target.getAttribute('id')) {
             case 'portfolio_pg': {

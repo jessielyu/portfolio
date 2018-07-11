@@ -1,75 +1,45 @@
 /**
- * Created by jessielyu on 12/12/17.
+ * Created by jessielyu on 7/10/18.
  */
 
-var thumbnails = {
-    facepalm: {
-        name: 'DALIAN(facepalm)',
-        image: 'image/portfolio/thumbnail/dalian.png',
-        href:'#dalian'
+const thumbnails = {
+    vision: {
+        name: 'VISION TOOL',
+        image: '',
+        href: '#vision'
     },
-    shopping: {
-        name: 'LIVE SHOPPING',
-        image: 'image/portfolio/thumbnail/shoppingLive.png',
-        href:'#shoppingLive'
-    },
-    smartLock:{
-        name: 'SMART LOCKER',
-        image: 'image/portfolio/thumbnail/smartLock.png',
-        href: '#smartLock'
-    },
-    educationGame:{
-        name: 'EDUCATION GAMES',
-        image: 'image/portfolio/thumbnail/educationGame.png',
-        href: '#educationGame'
-    },
-    iEar:{
-        name: 'IEAR',
-        image: 'image/portfolio/thumbnail/iear.png',
-        href: '#iEar'
-    },
-    movieLog:{
-        name: 'MOVIE LOG',
-        image: 'image/portfolio/thumbnail/movieLog.png',
-        href: '#movieLog'
-    },
-    lait:{
-        name: 'LAIT',
-        image: 'image/portfolio/thumbnail/lait.png',
-        href: '#lait'
-    },
-    projecto:{
-        name: 'PROJECT(O)',
-        image: 'image/portfolio/thumbnail/projecto.png',
-        href: '#projecto'
+    wizard: {
+        name: 'WIZARD TOOL',
+        image: '',
+        href: '#wizard'
     },
     habitTracker: {
         name: 'HABIT TRACKER',
         image: 'image/portfolio/thumbnail/habitTracker.png',
-        href:'#habitTracker'
+        href: '#habitTracker'
     },
-    graphicDesign:{
-        name: 'GRAPHIC DESIGN',
-        image: 'image/portfolio/thumbnail/graphicDesign.png',
-        href: '#graphicDesign'
+    laishuati: {
+        name: '来刷题',
+        image: '',
+        href: '#laishuati'
     },
-    scratch:{
-        name: 'SCRATCH',
-        image: 'image/portfolio/thumbnail/scratch.png',
-        href: '#scratch'
+    facepalm: {
+        name: '打脸APP',
+        image: 'image/portfolio/thumbnail/dalian.png',
+        href: '#dalian'
     },
-    photography:{
-        name: 'PHOTOGRAPHY',
-        image: 'image/portfolio/thumbnail/photography.png',
-        href: '#photography'
+    shopping: {
+        name: '购物直播',
+        image: 'image/portfolio/thumbnail/shoppingLive.png',
+        href: '#shoppingLive'
     }
 };
 
-var modals = [
+const modals = [
     {
         name: 'dalian',
         header: {
-            title:'DALIAN',
+            title: 'DALIAN',
             date: 'June.2017 - August.2017',
             txt: 'Creative News Digestion APP'
         },
@@ -440,7 +410,7 @@ var modals = [
     {
         name: 'shoppingLive',
         header: {
-            title:'Shopping Live',
+            title: 'Shopping Live',
             date: 'April.2017 - June.2017',
             txt: 'Live streaming shopping APP'
         },
@@ -562,7 +532,7 @@ var modals = [
     {
         name: 'smartLock',
         header: {
-            title:'Smart Lock',
+            title: 'Smart Lock',
             date: 'January.2016 - May.2016',
             txt: 'Wifi, NFC, Knock Enabled Smart Lock Device'
         },
@@ -664,7 +634,7 @@ var modals = [
     {
         name: 'educationGame',
         header: {
-            title:'Education Games',
+            title: 'Education Games',
             date: 'January.2015 - December.2015',
             txt: 'Game Serious for Kids'
         },
@@ -674,7 +644,7 @@ var modals = [
                 data: [
                     {
                         type: 'txt',
-                        class :'col-12',
+                        class: 'col-12',
                         txt: 'This was a joint project based in University of Illinois, Urbana-Champaign. The project is aimed at using computer technologies to create educational games for children and teenagers from age 6-16. The project is hold by Education Department and Computer Science Department.'
                     }
                 ]
@@ -686,7 +656,7 @@ var modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'This is a 3D game for elementary school kids to understand energy transfer among objects.</p>' +
-                            '<p>Started from brainstorming, we first came up with the idea of using a rolling ball to illustrate energy transfer. After implementing a few levels we did the initial testing. However, kids did not really like the boring ball bouncing on the floor or rolling down the ramp. So we changed our game context: A robot escape from factory.'
+                        '<p>Started from brainstorming, we first came up with the idea of using a rolling ball to illustrate energy transfer. After implementing a few levels we did the initial testing. However, kids did not really like the boring ball bouncing on the floor or rolling down the ramp. So we changed our game context: A robot escape from factory.'
                     },
                     {
                         type: 'txt',
@@ -725,8 +695,8 @@ var modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'These two games were created for kids to practice their logic thinking skills. </p>' +
-                            '<p>The first game was called "Tile_puzzle": players needed to control the character to go through all the blocks without repeating path or hitting any obstacles. </p>' +
-                            '<p>The second game was called "Ice Block Puzzle": players needed to control three ice blocks to make one of them finally stay at the center position. Ice blocks would continue slipping to the edge until meet some obstacles. '
+                        '<p>The first game was called "Tile_puzzle": players needed to control the character to go through all the blocks without repeating path or hitting any obstacles. </p>' +
+                        '<p>The second game was called "Ice Block Puzzle": players needed to control three ice blocks to make one of them finally stay at the center position. Ice blocks would continue slipping to the edge until meet some obstacles. '
                     },
                     {
                         type: 'img',
@@ -774,13 +744,13 @@ var modals = [
     {
         name: 'iEar',
         header: {
-            title:'iEar',
+            title: 'iEar',
             date: 'January.2015 - May.2015',
             txt: 'UI for Earpods Customization'
         },
         sections: [
             {
-                title:'Introduction',
+                title: 'Introduction',
                 data: [
                     {
                         type: 'txt',
@@ -874,7 +844,7 @@ var modals = [
     {
         name: 'movieLog',
         header: {
-            title:'Movie Log',
+            title: 'Movie Log',
             date: 'March.2016',
             txt: 'Personalized Movie Journal'
         },
@@ -950,7 +920,7 @@ var modals = [
     {
         name: 'lait',
         header: {
-            title:'LAIT',
+            title: 'LAIT',
             date: 'Sep.2015 - May.2016',
             txt: 'Audience-Performer Interaction App '
         },
@@ -1099,14 +1069,14 @@ var modals = [
     {
         name: 'habitTracker',
         header: {
-            title:'Habit Tracker',
+            title: 'Habit Tracker',
             date: 'Dec.2017 - Now'
         }
     },
     {
         name: 'graphicDesign',
         header: {
-            title:'Graphic Design'
+            title: 'Graphic Design'
         },
         sections: [
             {
@@ -1199,7 +1169,7 @@ var modals = [
     {
         name: 'scratch',
         header: {
-            title:'Conceptual Drawings & Illustrations'
+            title: 'Conceptual Drawings & Illustrations'
         },
         sections: [
             {
@@ -1290,7 +1260,7 @@ var modals = [
     {
         name: 'photography',
         header: {
-            title:'Photography'
+            title: 'Photography'
         },
         sections: [
             {
@@ -1383,7 +1353,7 @@ var about = {
     subtitle: 'I am a full-time software engineer and a half-time designer. ',
     intro: 'I specialize in Web/Mobile development, with experience in designing, programming and prototyping. ',
     profile: 'image/profilepic-800.png',
-    resume: 'src/JessieResume.pdf',
+    resume: 'src/resume.pdf',
     skills: {
         logo: 'image/about/skill.png',
         design: [
