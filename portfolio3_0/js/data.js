@@ -13,7 +13,7 @@ const thumbnails = {
         image: 'image/portfolio/thumbnail/graphicDesign.png',
         href: '#wizard'
     },
-    habitTracker: {
+    taskMate: {
         name: 'TASK MATE',
         image: 'image/portfolio/thumbnail/habitTracker.png',
         href: '#taskMate'
@@ -23,12 +23,12 @@ const thumbnails = {
         image: 'image/portfolio/thumbnail/projecto.png',
         href: '#laishuati'
     },
-    facepalm: {
+    dalian: {
         name: '打脸APP Dalian',
         image: 'image/portfolio/thumbnail/dalian.png',
         href: '#dalian'
     },
-    shopping: {
+    shoppingLive: {
         name: '购物直播 Live Shopping',
         image: 'image/portfolio/thumbnail/shoppingLive.png',
         href: '#shoppingLive'
@@ -51,8 +51,12 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'Dalian App is used to change the traditional way people digest news everyday. </p>' +
-                        '<p>Normally people receive information passively -- by television or internet -- that we people can only read content that has been created for them. </p>' +
-                        '<p>Dalian is an App that users could create content themselves, with cited source and users\' own opinion. Other users could comment, thumbs-up/down, or create another post to repute the previous one. The purpose of Dalian is to build a user-generated content news platform, and form a community where everyone could freely express their ideas and thoughts.'
+                        '<p>Normally people receive information passively -- by television or internet -- that ' +
+                        'we people can only read content that has been created for them. </p>' +
+                        '<p>Dalian is an App that users could create content themselves, with cited source and users\' ' +
+                        'own opinion. Other users could comment, thumbs-up/down, or create another post to repute the ' +
+                        'previous one. The purpose of Dalian is to build a user-generated content news platform, and form ' +
+                        'a community where everyone could freely express their ideas and thoughts.'
                     }
                 ]
             },
@@ -99,21 +103,26 @@ const modals = [
                         class: 'col-12',
                         title: 'USER A',
                         subtitle: '13-year old student from Chengdu, China',
-                        txt: '"My school work requires some knowledge of the latest news. I want to find a reliable source to get the information with less bias."'
+                        txt: '"My school work requires some knowledge of the latest news. I want to find a reliable source ' +
+                        'to get the information with less bias."'
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
                         title: 'USER B',
                         subtitle: '24-year old software engineer from Mountain View, California',
-                        txt: '"I love to read news while I am not coding. However, many news articles on internet, especially those regarding high-tech, are misleading and full of exaggeration. I want to find a place where information comes from real professionals."'
+                        txt: '"I love to read news while I am not coding. However, many news articles on internet, especially ' +
+                        'those regarding high-tech, are misleading and full of exaggeration. I want to find a place where ' +
+                        'information comes from real professionals."'
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
                         title: 'USER C',
                         subtitle: '54-year old professor from Beijing, China',
-                        txt: '"I think sometimes news content are deliberately misguiding people towards an opinion. I think this is not good for a student to form their critical thinking skills since they need to know different -- even opposite -- opinions to get a more comprehensive understanding."'
+                        txt: '"I think sometimes news content are deliberately misguiding people towards an opinion. I ' +
+                        'think this is not good for a student to form their critical thinking skills since they need to ' +
+                        'know different -- even opposite -- opinions to get a more comprehensive understanding."'
                     }
                 ]
             },
@@ -135,7 +144,8 @@ const modals = [
                         class: 'col-9',
                         title: 'Zhihu',
                         txt: 'Zhihu is a community for users to share their knowledge.<br>' +
-                        'Users could provide their insight on a recent news, explain some technology term, or repudiate a commonly accepted idea.'
+                        'Users could provide their insight on a recent news, explain some technology term, or repudiate ' +
+                        'a commonly accepted idea.'
                     },
                     {
                         type: 'img',
@@ -171,11 +181,17 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        title: 'Dalian should be a combination of knowledge sharing community and a news digestiong platform, with user-generated content.',
-                        subtitle: 'The App need to support following basic functionalities: ',
-                        txt: '1. Users could read all the content like a normal news digestion app. All the posts should be categorized and displayed title and abstraction on the main page, according to their content.<br>' +
-                        '2. In each post detail page. Users could see: title, author, source(where the information comes from), abstraction, content(the basic content format is images or screenshots). And below the post body, there is a section for all the "dalian-post"(people cite other source to refute this post). User could also like, dislike, or comment on this post.<br>' +
-                        '3. Upon click on each "dalian-post", app will direct user to a new post page, with all the information a post needs. So all the post-dalian-dalian again... could form a chain.<br>' +
+                        title: 'Dalian should be a combination of knowledge sharing community and a news digestion platform, ' +
+                        'with user-generated content.',
+                        subtitle: 'The App need to support following basic functionality: ',
+                        txt: '1. Users could read all the content like a normal news digestion app. All the posts should be ' +
+                        'categorized and displayed title and abstraction on the main page, according to their content.<br>' +
+                        '2. In each post detail page. Users could see: title, author, source(where the information comes from), ' +
+                        'abstraction, content(the basic content format is images or screenshots). And below the post body, ' +
+                        'there is a section for all the "dalian-post"(people cite other source to refute this post). ' +
+                        'User could also like, dislike, or comment on this post.<br>' +
+                        '3. Upon click on each "dalian-post", app will direct user to a new post page, with all the information a post needs. ' +
+                        'So all the post-dalian-dalian again... could form a chain.<br>' +
                         '4. User should login to create post or respond to an existing post.<br>' +
                         '5. On user profile page, we should list this user post history, dalian history, comments number, etc.'
                     }
@@ -421,10 +437,16 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'People\'s shopping habits have undergone tremendous changes with globalization and hi-tech. Consumers nowadays could shop for products over the world online or in store.</p>' +
-                        '<p>As shopping becomes easier for everyone, doing shopping business also becomes easier. More small parties and individuals get involved in online shopping business, and various type of shopping patterns has emerged.</p>' +
-                        '<p>One shopping pattern is the buyers pattern. Generally, for products that is not accessible by either online or real shops, consumers could still buy the products through some third-party -- buyers. They serve as a media or intermediate step since they have access to both goods and consumers. </p>' +
-                        '<p>Live shopping is an App for buyers and consumers. By providing a platform with Live Streaming, buyers could post their services for consumers. When doing merchandise, consumers could make choices at real-time. At the same time, the App could make third-party shopping more trustful and reliable.'
+                        txt: 'People\'s shopping habits have undergone tremendous changes with globalization and hi-tech. ' +
+                        'Consumers nowadays could shop for products over the world online or in store.</p>' +
+                        '<p>As shopping becomes easier for everyone, doing shopping business also becomes easier. ' +
+                        'More small parties and individuals get involved in online shopping business, and various type of shopping patterns has emerged.</p>' +
+                        '<p>One shopping pattern is the buyers pattern. Generally, for products that is not accessible by either online or real shops, ' +
+                        'consumers could still buy the products through some third-party -- buyers. ' +
+                        'They serve as a media or intermediate step since they have access to both goods and consumers. </p>' +
+                        '<p>Live shopping is an App for buyers and consumers. By providing a platform with Live Streaming, ' +
+                        'buyers could post their services for consumers. When doing merchandise, consumers could make choices at real-time. ' +
+                        'At the same time, the App could make third-party shopping more trustful and reliable.'
                     }
                 ]
             },
@@ -451,10 +473,12 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        title: 'Since the app also integrates the functionality of live video streaming, so it should also supports: ',
+                        title: 'Since the app also integrates the functionality of live video streaming, so it should ' +
+                        'also supports: ',
                         txt: '1. There should be a button to direct users to current live video streaming event.<br>' +
                         '2. On the main page, users could find information about upcoming shopping events.<br>' +
-                        '3. Users should be able to make purchases inside videa streaming, the screen should have a popup window about the current shopping product.<br>'
+                        '3. Users should be able to make purchases inside video streaming, the screen should have a ' +
+                        'popup window about the current shopping product.<br>'
                     }
                 ]
             },
@@ -580,7 +604,8 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'Vision Tool is an internal debugging tool for Yahoo Search Middleware.</p>' +
-                        '<p>It contains debugging information such as search backend calling sequence, request latency, script running status, etc.'
+                        '<p>It contains debugging information such as search backend calling sequence, request latency, ' +
+                        'script running status, etc.'
                     }
                 ]
             },
@@ -590,7 +615,10 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Yahoo Search Middleware is the platform which connects search backend and frontend. It controls all incoming queries from users, parses queries using NLP algorithm, dispatches queries to different backends, then it organizes data returned by backends, and returns a page response for rendering by frontend to users.</p>' +
+                        txt: 'Yahoo Search Middleware is the platform which connects search backend and frontend. ' +
+                        'It controls all incoming queries from users, parses queries using NLP algorithm, ' +
+                        'dispatches queries to different backend, then it organizes data returned by backend, ' +
+                        'and returns a page response for rendering by frontend to users.</p>' +
                         '<p>Yahoo Search Middleware serves millions of users all over the world, and processes billions of user queries everyday.'
                     },
                     {
@@ -605,8 +633,12 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Debugging processes could be very painful for a large-scale system like this. For the past two years in Yahoo I was working on building a comprehensive debugging tool for engineers and editors, and here comes the <strong>Vision Tool</strong>.</p>' +
-                        'Vision Tool covers debugging information for almost every steps in a single search query processing. From request analysis, backend call sequence, to module rendering UI components. It has been proved to be very helpful for developers in Yahoo Search Team.'
+                        txt: 'Debugging processes could be very painful for a large-scale system like this. ' +
+                        'For the past two years in Yahoo I was working on building a comprehensive debugging tool for engineers and editors, ' +
+                        'and here comes the <strong>Vision Tool</strong>.</p>' +
+                        '<p>Vision Tool covers debugging information for almost every steps in a single search query processing. ' +
+                        'From request analysis, backend call sequence, to module rendering UI components. ' +
+                        'It has been proved to be very helpful for developers in Yahoo Search Team.'
                     }
                 ]
             },
@@ -617,15 +649,17 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'Firstly we need to find out types of data for the tool, and how we could retrieve those information from Search platform.</p>' +
-                        '<p>I conducted user interviews with many teams, including engineers who are responsible for platform coding, and editors who are responsible for building search result data modules.</p>' +
+                        '<p>I conducted user interviews with many teams, including engineers who are responsible for platform coding, ' +
+                        'and editors who are responsible for building search result data modules.</p>' +
                         '<p>The interview result from users showed that we need to have the following debugging data in the tool:</p>' +
                         '<p>' +
                         '1. API information, including request information, dimension information(intl, device...), etc.<br>' +
-                        '2. Data parsing and configuration information for each steps. eg. script to parse data from raw backend data to UI component(image, text, header...), and script to config data from UI components to UI module(a complete search result item).<br>' +
+                        '2. Data parsing and configuration information for each steps. eg. script to parse data from raw backend data to UI component' +
+                        '(image, text, header...), and script to config data from UI components to UI module(a complete search result item).<br>' +
                         '3. Overall search result data configuration and data layout.<br>' +
                         '4. Search performance like backend calling latencies and data parsing time efficiency.' +
                         '</p>' +
-                        '<p>All of the debugging information above could be retrieved from Search Middleware System. </p>'
+                        '<p>All of the debugging information above could be retrieved from Search Middleware System.'
                     }
                 ]
             },
@@ -635,7 +669,8 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'After discussing with users back and forth, we finally decided to use three types of visualization methods for the debugging data.'
+                        txt: 'After discussions with users back and forth, we finally decided to use three types of ' +
+                        'visualization methods for the debugging data.'
                     },
                     {
                         type: 'img',
@@ -678,6 +713,38 @@ const modals = [
                         type: 'txt',
                         class: 'col-4 center-align',
                         subtitle: 'graph format'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Json Format',
+                        txt: 'Json format is best for rendering raw data. Since all of the debugging information is returned ' +
+                        'as json object. Json Format is the easiest way to render information.</p>' +
+                        '<p>However, users can\'t get a straightforward overview of information among json data. And sometimes ' +
+                        'it could be hard for non-technical users to understand pure json data.</p>' +
+                        '<p>So I used json format to render data which contains information that was hard to be visualized ' +
+                        'using graphs, and information used mostly by only engineers.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Table Format',
+                        txt: 'Table format is majorly used to debug entities. Each entity stands for a phase of data configuration. ' +
+                        'In Yahoo Search System, a query will be firstly parsed as <em>Intents</em>, and according to ' +
+                        'different Intents it will triggering different backend and get <em>DataObjects</em>. A DataObject could ' +
+                        'be formatted as a <em>Module</em>, which is also a UI component like text or image. Finally different ' +
+                        'Modules will form a <em>ModuleGroup</em>, which stands for a search result item.</p>' +
+                        '<p>However, the downside of table format is that it could only render limited amount of information. ' +
+                        'For more complex information, we still need to use json format.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Graph Format',
+                        txt: 'Graph format is the best visualization method for a straightforward and user-friendly data view. ' +
+                        'It could be understandable by any users, especially users without tech background.</p>' +
+                        '<p>For graph format visualization the most difficult part is to construct and organize data for the graph.' +
+                        'I used graphs for debugging data like backend calling latency, and search performance etc.'
                     }
                 ]
             }
@@ -768,7 +835,7 @@ const about = {
                 company: 'Quicket Solutions, Inc.',
                 location: 'Champaign, IL',
                 year: '2015-2016',
-                position: 'Software Enginner',
+                position: 'Software Engineer',
                 desc: 'UI design & development.'
             }
         ],
