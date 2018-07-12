@@ -103,6 +103,7 @@ a {
 }
 
 .img-sm-round {
+    clip-path: circle(62.5px at center);
     max-height: 125px;
     border-radius: 100px;
 }
@@ -133,6 +134,10 @@ a {
 #logo {
     padding-left: 30px;
     cursor: pointer;
+}
+
+#logo img {
+    height: 60px;
 }
 
 #menu {
@@ -173,7 +178,7 @@ a {
 
 #portfolio h1 {
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     color: #FF8B5D;
 }
 

@@ -14,9 +14,9 @@ const thumbnails = {
         href: '#wizard'
     },
     habitTracker: {
-        name: 'HABIT TRACKER',
+        name: 'TASK MATE',
         image: 'image/portfolio/thumbnail/habitTracker.png',
-        href: '#habitTracker'
+        href: '#taskMate'
     },
     laishuati: {
         name: '来刷题 laishuati.com',
@@ -530,9 +530,9 @@ const modals = [
         ]
     },
     {
-        name: 'habitTracker',
+        name: 'taskMate',
         header: {
-            title: 'Habit Tracker',
+            title: 'Task Mate',
             date: 'Mar.2018 - June.2018',
             txt: 'UX Research and UI Design on Time Management APP'
         }
@@ -551,7 +551,137 @@ const modals = [
             title: 'Vision Tool',
             date: 'July.2016 - July.2018',
             txt: 'Internal Debugging Tool for Yahoo Search Middleware.'
-        }
+        },
+        sections: [
+            {
+                title: 'Introduction',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-sm',
+                            src: 'image/portfolio/visionTool/yahoo_logo.png',
+                            alt: 'Yahoo! logo'
+                        }
+
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-sm',
+                            src: 'image/portfolio/visionTool/vision_logo.png',
+                            alt: 'Yahoo! logo'
+                        }
+
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Vision Tool is an internal debugging tool for Yahoo Search Middleware.</p>' +
+                        '<p>It contains debugging information such as search backend calling sequence, request latency, script running status, etc.'
+                    }
+                ]
+            },
+            {
+                title: 'Ideas',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Yahoo Search Middleware is the platform which connects search backend and frontend. It controls all incoming queries from users, parses queries using NLP algorithm, dispatches queries to different backends, then it organizes data returned by backends, and returns a page response for rendering by frontend to users.</p>' +
+                        '<p>Yahoo Search Middleware serves millions of users all over the world, and processes billions of user queries everyday.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/visionTool/gsmFlow.png',
+                            alt: 'GSM Flow'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Debugging processes could be very painful for a large-scale system like this. For the past two years in Yahoo I was working on building a comprehensive debugging tool for engineers and editors, and here comes the <strong>Vision Tool</strong>.</p>' +
+                        'Vision Tool covers debugging information for almost every steps in a single search query processing. From request analysis, backend call sequence, to module rendering UI components. It has been proved to be very helpful for developers in Yahoo Search Team.'
+                    }
+                ]
+            },
+            {
+                title: 'Define Data Needed',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Firstly we need to find out types of data for the tool, and how we could retrieve those information from Search platform.</p>' +
+                        '<p>I conducted user interviews with many teams, including engineers who are responsible for platform coding, and editors who are responsible for building search result data modules.</p>' +
+                        '<p>The interview result from users showed that we need to have the following debugging data in the tool:</p>' +
+                        '<p>' +
+                        '1. API information, including request information, dimension information(intl, device...), etc.<br>' +
+                        '2. Data parsing and configuration information for each steps. eg. script to parse data from raw backend data to UI component(image, text, header...), and script to config data from UI components to UI module(a complete search result item).<br>' +
+                        '3. Overall search result data configuration and data layout.<br>' +
+                        '4. Search performance like backend calling latencies and data parsing time efficiency.' +
+                        '</p>' +
+                        '<p>All of the debugging information above could be retrieved from Search Middleware System. </p>'
+                    }
+                ]
+            },
+            {
+                title: 'Data Visualization',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'After discussing with users back and forth, we finally decided to use three types of visualization methods for the debugging data.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/visionTool/json_format.png',
+                            alt: 'json format'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/visionTool/table_format.png',
+                            alt: 'table format'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/visionTool/graph_format.png',
+                            alt: 'graph format'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-4 center-align',
+                        subtitle: 'json format'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-4 center-align',
+                        subtitle: 'table format'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-4 center-align',
+                        subtitle: 'graph format'
+                    }
+                ]
+            }
+        ]
     },
     {
         name: 'wizard',
