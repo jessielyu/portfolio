@@ -573,7 +573,7 @@ const modals = [
         name: 'vision',
         header: {
             title: 'Vision Tool',
-            date: 'July.2016 - July.2018',
+            date: 'June.2016 - July.2018',
             txt: 'Internal Debugging Tool for Yahoo Search Middleware.'
         },
         sections: [
@@ -625,7 +625,7 @@ const modals = [
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-md img-center',
+                            style: 'img-lg img-center',
                             src: 'image/portfolio/visionTool/gsmFlow.png',
                             alt: 'GSM Flow'
                         }
@@ -648,10 +648,10 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Firstly we need to find out types of data for the tool, and how we could retrieve those information from Search platform.</p>' +
+                        txt: 'Firstly I need to find out types of data for the tool, and how I could retrieve those information from Search platform.</p>' +
                         '<p>I conducted user interviews with many teams, including engineers who are responsible for platform coding, ' +
                         'and editors who are responsible for building search result data modules.</p>' +
-                        '<p>The interview result from users showed that we need to have the following debugging data in the tool:</p>' +
+                        '<p>The interview result from users showed that the tool need to have the following debugging data in the tool:</p>' +
                         '<p>' +
                         '1. API information, including request information, dimension information(intl, device...), etc.<br>' +
                         '2. Data parsing and configuration information for each steps. eg. script to parse data from raw backend data to UI component' +
@@ -669,7 +669,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'After discussions with users back and forth, we finally decided to use three types of ' +
+                        txt: 'After discussions with users back and forth, I finally decided to use three types of ' +
                         'visualization methods for the debugging data.'
                     },
                     {
@@ -734,6 +734,8 @@ const modals = [
                         'different Intents it will triggering different backend and get <em>DataObjects</em>. A DataObject could ' +
                         'be formatted as a <em>Module</em>, which is also a UI component like text or image. Finally different ' +
                         'Modules will form a <em>ModuleGroup</em>, which stands for a search result item.</p>' +
+                        '<p>All of the objects mentioned above are entities: DataObject, ModuleGroup, and Intents. ' +
+                        'Entity has information such as id, scripts, status, etc. The information is very suitable for table format visualization.</p>' +
                         '<p>However, the downside of table format is that it could only render limited amount of information. ' +
                         'For more complex information, we still need to use json format.'
                     },
@@ -743,8 +745,181 @@ const modals = [
                         title: 'Graph Format',
                         txt: 'Graph format is the best visualization method for a straightforward and user-friendly data view. ' +
                         'It could be understandable by any users, especially users without tech background.</p>' +
-                        '<p>For graph format visualization the most difficult part is to construct and organize data for the graph.' +
+                        '<p>For graph format visualization the most difficult part is to construct and organize data for the graph. ' +
                         'I used graphs for debugging data like backend calling latency, and search performance etc.'
+                    }
+                ]
+            },
+            {
+                title: 'User Feedback for First Version',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg',
+                            src: 'image/portfolio/visionTool/version1_0.png',
+                            alt: 'version 1.0'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'UI version 1.0'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The first version of UI is very simple, with only basic debugging information. ' +
+                        'Most of the information is rendered using table or json format. </p>' +
+                        '<p>I received a lot of useful feedback from the initial round of user testing. ' +
+                        'Some major potential enhancements I concluded from user feedback include:'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: '1. Lack of Query Information',
+                        txt: 'Users didn\'t know what query they were searching for or debugging at. Query info was not shown on the UI.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: '2. Incomplete Debugging information',
+                        txt: 'Even though I thought I\'ve covered all major debugging data that an engineer or an editor could ever needs, ' +
+                        'there were still not sufficient enough to address all the user requirements.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: '3. Query and Header Update Functionality',
+                        txt: 'If users want to debug another query, or update header information to customize search result, ' +
+                        'they should be able to do it in the tool instead of going to search page to perform the task.'
+                    }
+                ]
+            },
+            {
+                title: 'Tool Enhancements',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Accroding to user feedback, I made some enhancements to the tool.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: 'I added query information, so users could easily find out current query information.</p>' +
+                        '<p>I also added query and header update for users to conveniently update search request.</p>' +
+                        '<p>I added more panels with more thorough debugging information. In order to prevent long data loading time, ' +
+                        'I added debugging panel toggle button so users could choose types of information they want to see. ' +
+                        'That way users could eliminate loading time for panels they don\'t need.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/visionTool/query_form.png',
+                            alt: 'query form'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-3',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/visionTool/panel_menu.png',
+                            alt: 'panel menu'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-9',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/visionTool/graph.png',
+                            alt: 'graph enhancement'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I also added more graphical data visualizations for users to understand debugging information easier.</p>' +
+                        '<p>Besides, I\'ve also changed the page to be responsible to accommodate users debugging using mobile devices.'
+                    },
+                    {
+                        type: 'txt',
+                        title: 'Feedback',
+                        txt: 'The second round of user testing went very well. Most users seemed to be pretty comfortable with the UI. ' +
+                        'I felt so grateful that more and more people are using the tool for debugging Search System, ' +
+                        'and I could make developing process more efficient. </p>' +
+                        '<p>I still received minor enhancements requests from users after the tool had been launched. ' +
+                        'Perfecting the tool is a long and on-going process since more data will be added to the system.</p>' +
+                        '<p>I learned a lot from this project in Yahoo, not only in technical perspective. I developed my user research skills, and user-centered product design skills. ' +
+                        'Through working with other teams I\'ve also practiced cross-team coordinating skills. ' +
+                        'Finally I learned the lifecycle of a product, from research, design to develop and launch. ' +
+                        'Thanks Yahoo to give me this chance.'
+                    }
+                ]
+            },
+            {
+                title: 'Final Design',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center',
+                            src: 'image/portfolio/visionTool/visionAPI.png',
+                            alt: 'Vision API'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'Vision API'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center',
+                            src: 'image/portfolio/visionTool/entity.png',
+                            alt: 'Vision Entity'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'Vision Entity'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center',
+                            src: 'image/portfolio/visionTool/column_chart.png',
+                            alt: 'Column Chart'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'Column Chart'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center',
+                            src: 'image/portfolio/visionTool/network_chart.png',
+                            alt: 'Network Chart'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'Network Chart'
                     }
                 ]
             }
@@ -754,7 +929,7 @@ const modals = [
         name: 'wizard',
         header: {
             title: 'Wizard Tool',
-            date: 'July.2016 - July.2018',
+            date: 'June.2016 - July.2018',
             txt: 'Configuration Tool for Yahoo Search Data Output.'
         }
     }
