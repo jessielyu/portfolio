@@ -559,7 +559,226 @@ const modals = [
             title: 'Task Mate',
             date: 'Mar.2018 - June.2018',
             txt: 'UX Research and UI Design on Time Management APP'
-        }
+        },
+        sections: [
+            {
+                title: 'Project Proposal',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'We face so many distractions when we trying to finish a task. Various attractions such as cell-phone, ' +
+                        'computer games, fast food...make it harder to reach goals like study for an hour, or lose 10 pounds, etc.</p>' +
+                        '<p>I figured out that goal/task accomplishing difficulty has became a major problem in people from all ages, ' +
+                        'especially young people from 15 - 40. However, it’s critical for everybody to set up different ' +
+                        'type of goals and try to reach them, in order to improve his own skill set and abilities. ' +
+                        'So it’s important to find a way to help people finishing tasks and accomplishing goals efficiently.'
+                    }
+                ]
+            },
+            {
+                title: 'User Research',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I’ve conducted comprehensive surveys to people from 20 - 50, and among 50 responses I received, I found most people prefer to:</p>' +
+                        '<p>1. Setup medium-detailed plan such as: lose 10 pounds in a month(not as detailed as daily diet menu), or study CFA 3 times/week.<br>' +
+                        '2. Adjust the goals according to the progress. For example, if the initial goal is to study CFA 3 times/week but the person is too busy, ' +
+                        'then he will change the goal to 2 times/week.</p>' +
+                        '<p>And their major reasons for “goal/task accomplishing difficulty” are:'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mini img-center',
+                            src: 'image/portfolio/taskMate/difficulties.png',
+                            alt: 'difficulties'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Most people is willing to try a mobile/desktop application to help them increase their task performing efficiency and goal accomplishing rate. ' +
+                        'Based on the result of user surveys, I think it would be helpful if an application could support the following functionalities:'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-mdlg',
+                            src: 'image/portfolio/taskMate/research_result.png',
+                            alt: 'user research result'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'So I propose to build an mobile application to help people accomplishing their goals and finishing their tasks with the above functionalities.'
+                    }
+                ]
+            },
+            {
+                title: 'Competitive Analysis',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-3',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/taskMate/streaks.png',
+                            alt: 'streaks'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-3',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/taskMate/strides.png',
+                            alt: 'strides'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-3',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/taskMate/wunderlist.png',
+                            alt: 'wunderlist'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-3',
+                        img: {
+                            style: 'img-sm-round img-center',
+                            src: 'image/portfolio/taskMate/today.png',
+                            alt: 'today'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3 center-align',
+                        subtitle: 'Streaks'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3 center-align',
+                        subtitle: 'Strides'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3 center-align',
+                        subtitle: 'Wunderlist'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3 center-align',
+                        subtitle: 'Today'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/taskMate/compare_table.png',
+                            alt: 'comparison table'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Brainstorming',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-mdlg',
+                            src: 'image/portfolio/taskMate/page_relationship.png',
+                            alt: 'page relationship'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12 center-align',
+                        subtitle: 'Page Relationship'
+                    }
+                ]
+            },
+            {
+                title: 'Information Organization',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: 'Task Page Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-mdlg',
+                            src: 'image/portfolio/taskMate/task_page_organization.png',
+                            alt: 'Task Page Organization'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: 'Community Page Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-md',
+                            src: 'image/portfolio/taskMate/community_page_organization.png',
+                            alt: 'Community Page Organization'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        subtitle: 'Profile Page Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-md',
+                            src: 'image/portfolio/taskMate/profile_page_organization.png',
+                            alt: 'Profile Page Organization'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Prototyping',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-lg',
+                            src: 'image/portfolio/taskMate/prototype1.gif',
+                            alt: 'prototype 1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-lg',
+                            src: 'image/portfolio/taskMate/prototype2.gif',
+                            alt: 'prototype 1'
+                        }
+                    }
+                ]
+            }
+        ]
     },
     {
         name: 'laishuati',
@@ -858,7 +1077,7 @@ const modals = [
                         '<p>I learned a lot from this project in Yahoo, not only in technical perspective. I developed my user research skills, and user-centered product design skills. ' +
                         'Through working with other teams I\'ve also practiced cross-team coordinating skills. ' +
                         'Finally I learned the lifecycle of a product, from research, design to develop and launch. ' +
-                        'Thanks Yahoo to give me this chance.'
+                        'Thanks Yahoo of giving me this chance.'
                     }
                 ]
             },

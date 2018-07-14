@@ -98,13 +98,17 @@ a {
     display: inline;
 }
 
+.img-mini {
+    max-height: 75px;
+}
+
 .img-sm {
     max-height: 125px;
 }
 
 .img-sm-round {
-    clip-path: circle(62.5px at center);
     max-height: 125px;
+    clip-path: circle(62.5px at 62.5px 62.5px);
     border-radius: 100px;
 }
 
@@ -113,9 +117,13 @@ a {
 }
 
 .img-md-round {
-    clip-path: circle(125px at center);
+    clip-path: circle(125px at 125px 125px);
     max-height: 250px;
     border-radius: 100px;
+}
+
+.img-mdlg {
+    max-height: 350px;
 }
 
 .img-lg {
@@ -136,6 +144,7 @@ a {
     top: 0;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
 }
 
 #logo {
