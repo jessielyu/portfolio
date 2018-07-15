@@ -850,6 +850,15 @@ const modals = [
                         txt: 'laishuati.com has two major components -- coding online judgement system and group community. ' +
                         'The home page is used to show main content and functionality of the website. Once login, ' +
                         'users could join groups, practice problems, and check progress.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/laishuati/page_relationship.png',
+                            alt: 'Page Relationship'
+                        }
                     }
                 ]
             },
@@ -860,6 +869,15 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         title: 'Information Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-md img-center',
+                            src: 'image/portfolio/laishuati/home_info.png',
+                            alt: 'Home Page Information Organization'
+                        }
                     },
                     {
                         type: 'txt',
@@ -896,6 +914,15 @@ const modals = [
                         title: 'Information Organization'
                     },
                     {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/laishuati/group_info.png',
+                            alt: 'Group Page Information Organization'
+                        }
+                    },
+                    {
                         type: 'txt',
                         class: 'col-12',
                         title: 'UI Mockup'
@@ -927,6 +954,15 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         title: 'Information Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/laishuati/problem_info.png',
+                            alt: 'Problem Page Information Organization'
+                        }
                     },
                     {
                         type: 'txt',
@@ -978,6 +1014,15 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         title: 'Information Organization'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/laishuati/user_info.png',
+                            alt: 'User Page Information Organization'
+                        }
                     },
                     {
                         type: 'txt',
@@ -1387,7 +1432,21 @@ const modals = [
             title: 'Wizard Tool',
             date: 'June.2016 - July.2018',
             txt: 'Configuration Tool for Yahoo Search Data Output.'
-        }
+        },
+        sections: [
+            {
+                title: 'Introduction'
+            },
+            {
+                title: 'Information Organization'
+            },
+            {
+                title: 'User Workflow'
+            },
+            {
+                title: 'UI Design'
+            }
+        ]
     }
 ];
 
@@ -1447,10 +1506,20 @@ const about = {
         ]
     },
     education: {
-        school: 'University of Illinois, Urbana-Champaign',
-        year: '2012-2016',
-        major: 'B.S. Computer Engineering',
-        minor: 'Mathematics',
+        experience: [
+            {
+                school: 'University of California - Berkeley',
+                year: '2018-2020',
+                degree: 'M.I.M.S Master of Information Management and System',
+                focus: 'UX Design, UX Research'
+            },
+            {
+                school: 'University of Illinois, Urbana-Champaign',
+                year: '2012-2016',
+                major: 'B.S. Computer Engineering',
+                minor: 'Mathematics'
+            }
+        ],
         logo: 'image/about/education.png'
     },
     work: {
@@ -1458,7 +1527,7 @@ const about = {
             {
                 company: 'Yahoo, Inc.',
                 location: 'Sunnyvale, CA',
-                year: '2016-now',
+                year: '2016-2018',
                 position: 'Software Engineer, Assoc.',
                 desc: 'Search Middleware & internal tool development.'
             },
