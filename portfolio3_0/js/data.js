@@ -786,7 +786,244 @@ const modals = [
             title: '来刷题 laishuati.com',
             date: 'Jan.2018 - Mar.2018',
             txt: 'Coding Interview Preparation Platform.'
-        }
+        },
+        sections: [
+            {
+                title: 'Introduction',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: '来刷题 (laishuati.com) is a web platform for group coding exercises. ' +
+                        'It could help people practice their software engineering skills, especially programming skills. ' +
+                        'Laishuati supports coding problems such as algorithm, system design, database, etc. ' +
+                        'The main functionality is that users could form groups to practice together.'
+                    }
+                ]
+            },
+            {
+                title: 'Ideas',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'With the trending of computer technology, Software Engineer has became one of the most popular job in the world. ' +
+                        'Nowadays a typical software engineer interview will always include coding skill and algorithm questions. ' +
+                        'In order to prepare for coding interviews, most candidates will practice quite a number of programming and algorithm questions. ' +
+                        'The idea of Laishuati is based on coding interview preparing processes, that users could group up and practice together.</p>' +
+                        '<p>There are numerous preparing methods for coding interview. Bootcamps, books, online-judgment platforms... ' +
+                        'Each of them has their own advantages and disadvantage. Book is the best for understanding fundamental theories but it doesn\'t provide any real practice. ' +
+                        'Online-judgement is good for real practice but is lacks knowledge illustration. ' +
+                        'Bootcamp is probably the best way to ramp up both algorithm and coding skills, but it is expensive, too.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Competitor -- LeetCode'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-center img-md',
+                            src: 'image/portfolio/laishuati/leetCode.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: 'LeetCode is the most popular online judgement platform, used by thousands of users who are looking for jobs as Software Engineer. ' +
+                        'LeetCode has a large questions base, including coding problems from various tech companies. ' +
+                        'It also has a community which people could share their solutions and ideas. </p>' +
+                        '<p>However, LeetCode does not have group training feature, which allow users to practice together. ' +
+                        'It does have personal progress status, but without peers, people tend to lose enthusiasm  easily.'
+                    }
+                ]
+            },
+            {
+                title: 'Page Relationship',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'laishuati.com has two major components -- coding online judgement system and group community. ' +
+                        'The home page is used to show main content and functionality of the website. Once login, ' +
+                        'users could join groups, practice problems, and check progress.'
+                    }
+                ]
+            },
+            {
+                title: 'Home Page Design',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Information Organization'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'UI Mockup'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3',
+                        txt: ''
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/HomePage.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3',
+                        txt: ''
+                    }
+                ]
+            },
+            {
+                title: 'Group Page Design',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Information Organization'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'UI Mockup'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/GroupPage.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/CreateGroupPage.png',
+                            alt: 'Leet Code'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Problem Page Design',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Information Organization'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'UI Mockup'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/ProblemPage.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/ProblemPage-2.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/ProblemPage-3.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/ProblemPage-4.png',
+                            alt: 'Leet Code'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'User Page Design',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Information Organization'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'UI Mockup'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/UserPage.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/UserPage-2.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3',
+                        txt: ''
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span',
+                            src: 'image/portfolio/laishuati/UserPage-3.png',
+                            alt: 'Leet Code'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3',
+                        txt: ''
+                    }
+                ]
+            }
+        ]
     },
     {
         name: 'vision',
