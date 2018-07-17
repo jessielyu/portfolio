@@ -50,10 +50,7 @@ function init() {
     portfolio.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
         if (target === '#vision' || target === '#wizard') {
-            $('#portfolio').hide();
-            $(target).addClass('modal-active');
-            curTarget = target;
-            // passwordPromp(target);
+            passwordPromp(target);
         } else {
             $('#portfolio').hide();
             $(target).addClass('modal-active');
