@@ -1435,16 +1435,203 @@ const modals = [
         },
         sections: [
             {
-                title: 'Introduction'
+                title: 'Introduction',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-sm',
+                            src: 'image/portfolio/visionTool/yahoo_logo.png',
+                            alt: 'Yahoo! logo'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-sm',
+                            src: 'image/portfolio/visionTool/yahoo_logo.png',
+                            alt: 'Yahoo! logo'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Wizard Tool is an internal configuration tool for Yahoo Search. It is widely used by both developers and editors. ' +
+                        'The main purpose of Wizard Tool is to transform raw data to UI output with text, title, images, etc. ' +
+                        'I designed and developed Wizard Triggering Tool, which is focus on user intent to data source, and to output template mapping.</p>' +
+                        '<p>Every user request from Search frontend will be analyzed through Yahoo NLP algorithm, ' +
+                        'then each query will be reduced to a list of Intents. An Intent could trigger one or more backends, ' +
+                        'which will then return data for frontend to render. Most of the Intent->Backend mapping is done by developers and editors, ' +
+                        'who manually define a certain intent could trigger some specific backends. ' +
+                        'Triggering Tool could help users easily config those mappings.'
+                    }
+                ]
             },
             {
-                title: 'Information Organization'
+                title: 'Information Organization',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'A complete triggering chain is composed of Rule, UseCase, and Domain. Rule and UseCase should all belong to a certain Domain. ' +
+                        'A Rule defines triggering pattern, which configs how a data could be formatted. All data is coming from feeds. ' +
+                        'A UseCase is used to select data for a template, which will be used for frontend rendering. ' +
+                        'A Rule could be used by many UseCases for their data selection.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/wizardTool/information_organization.png',
+                            alt: 'Information Organization'
+                        }
+                    }
+                ]
             },
             {
-                title: 'User Workflow'
+                title: 'User Workflow',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I anticipated how a user would use this tool for a triggering configuration. '
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center',
+                            src: 'image/portfolio/wizardTool/user_flow.png',
+                            alt: 'User Workflow'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Users would first create or select a Domain, and under this Domain, users will create/edit a UseCase. ' +
+                        'For each UseCase, a user should be able to select a Rule under current Domain. If a Rule is not available, ' +
+                        'a user could go to Rule page to create a new one. Users could also update an existing Rule. ' +
+                        'The tool also have Conflicts section which specify priority of UseCases in same page region. ' +
+                        'Once a user finish all the changes, he should be able to publish triggering chain to a dimension.'
+                    }
+                ]
             },
             {
-                title: 'UI Design'
+                title: 'UI Design',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Overview Pages'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/DomainView Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/UseCaseView Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/DispatchConflictsView Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/DisplayConflictsView Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/RuleView Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'span img-center',
+                            src: 'image/portfolio/wizardTool/Publisher Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        title: 'Create Entity Pages'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'span',
+                            src: 'image/portfolio/wizardTool/CreateDomain Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'span',
+                            src: 'image/portfolio/wizardTool/CreateUC Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'span',
+                            src: 'image/portfolio/wizardTool/CreateRule Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'span',
+                            src: 'image/portfolio/wizardTool/CreateDiaplayConflicts Retina.png',
+                            alt: 'UI Design'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'span',
+                            src: 'image/portfolio/wizardTool/CreatePublisher Retina.png',
+                            alt: 'UI Design'
+                        }
+                    }
+                ]
             }
         ]
     }
