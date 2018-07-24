@@ -32,6 +32,30 @@ const thumbnails = {
         name: '购物直播 Live Shopping',
         image: 'image/portfolio/thumbnail/shoppingLive.png',
         href: '#shoppingLive'
+    },
+    placeholder1: {
+        name: 'placeholder1',
+        image: 'image/portfolio/thumbnail/lait.png'
+    },
+    placeholder2: {
+        name: 'placeholder2',
+        image: 'image/portfolio/thumbnail/educationGame.png'
+    },
+    placeholder3: {
+        name: 'placeholder3',
+        image: 'image/portfolio/thumbnail/movieLog.png'
+    },
+    placeholder4: {
+        name: 'placeholder4',
+        image: 'image/portfolio/thumbnail/iear.png'
+    },
+    placeholder5: {
+        name: 'placeholder5',
+        image: 'image/portfolio/thumbnail/scratch.png'
+    },
+    placeholder6: {
+        name: 'placeholder6',
+        image: 'image/portfolio/thumbnail/smartLock.png'
     }
 };
 

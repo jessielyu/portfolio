@@ -4,10 +4,10 @@
 const passcode = 'loveYahoo2016';
 
 let curTarget;
-let curPage;
+let curPage = '#placeholder';
 
 const template = {
-    Portfolio: '<div id="portfolio"><h1 class="col-12">Hi, I\'m Jessie Lyu!</h1>{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
+    Portfolio: '<div id="portfolio">{{#each this}}<div class="col-2 thumbnail-item"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div></div></div>' +
     '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
@@ -35,18 +35,10 @@ function passwordPromp(target) {
     }
 }
 
-function init() {
+function portfolioEvent() {
     const container = $('#content');
-    let portfolio;
+    let portfolio = $('#portfolio');
 
-    container.html(template.Portfolio(thumbnails));
-    container.append(template.About(about));
-    container.append(template.Modal(modals));
-    curPage = '#portfolio_pg';
-
-    $('#about').hide();
-
-    portfolio = $('#portfolio');
     portfolio.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
         if (target === '#vision' || target === '#wizard') {
@@ -62,7 +54,9 @@ function init() {
         $(curTarget).removeClass('modal-active');
         portfolio.show();
     });
+}
 
+function menuEvent() {
     $('#menu').on('click', 'a', function (e) {
         const target = e.currentTarget;
 
@@ -90,11 +84,50 @@ function init() {
 
     $('#logo').on('click', function (e) {
         if ($(curTarget).hasClass('modal-active')) $(curTarget).removeClass('modal-active');
-        curPage = '#portfolio_pg';
-        $(curPage).addClass('menu-active');
+        $(curPage).removeClass('menu-active');
+        curPage = '#placeholder';
+        $('#content').hide();
+        $('#navigation').hide();
+        $('#home').show();
+    });
+}
+
+function init() {
+    const container = $('#content');
+
+    container.hide();
+
+    container.html(template.Portfolio(thumbnails));
+    container.append(template.About(about));
+    container.append(template.Modal(modals));
+
+    $('#portfolio_direct').on('click', function (e) {
+        $('#home').hide();
+        $('#content').show();
+        $('#navigation').show();
         $('#about').hide();
         $('#portfolio').show();
-    })
+
+        $(curPage).removeClass('menu-active');
+        curPage = '#portfolio_pg';
+        $(curPage).addClass('menu-active');
+    });
+
+    $('#about_direct').on('click', function (e) {
+        $('#home').hide();
+        $('#content').show();
+        $('#navigation').show();
+        $('#portfolio').hide();
+        $('#about').show();
+
+        $(curPage).removeClass('menu-active');
+        curPage = '#about_pg';
+        $(curPage).addClass('menu-active');
+    });
+
+    menuEvent();
+
+    portfolioEvent();
 }
 
 window.onload = function () {

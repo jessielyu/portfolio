@@ -178,6 +178,32 @@ a {
     margin-top: 100px;
 }
 
+/* Home */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#home .bg-image img {
+    height: 100%;
+    width: auto;
+}
+
+#home .home-title {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+#home .home-title a {
+    margin: 0 10px;
+}
+
+#home .home-title a:hover {
+    background-color: #FFD4C3;
+}
+
 /* Thumbnail */
 #portfolio {
     display: flex;
@@ -190,12 +216,6 @@ a {
         position: absolute;
         bottom: 0;
     }
-}
-
-#portfolio h1 {
-    text-align: center;
-    margin-bottom: 150px;
-    color: #FF8B5D;
 }
 
 #portfolio .thumbnail-item .portfolio-link {
