@@ -9,9 +9,9 @@ let windowPosition = 0;
 
 const template = {
     Portfolio: '<div id="portfolio">{{#each this}}<div class="col-12 thumbnail-item">' +
-    '{{#ifCond position "===" "right"}}<div class="col-6 thumbnail-desc"><h1>{{name}}</h1><h2>{{time}}</h2><h3>{{desc}}</h3></div>{{/ifCond}}' +
+    '{{#ifCond position "===" "right"}}<div class="col-6 thumbnail-desc"><h1>{{name}}</h1><h3>{{time}}</h3><h4>{{desc}}</h4></div>{{/ifCond}}' +
     '<div class="col-6"><a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div><img src="{{this.image}}" alt="{{this.name}}"></a></div>' +
-    '{{#ifCond position "===" "left"}}<div class="col-6 thumbnail-desc"><h1>{{name}}</h1><h2>{{time}}</h2><h3>{{desc}}</h3></div>{{/ifCond}}' +
+    '{{#ifCond position "===" "left"}}<div class="col-6 thumbnail-desc"><h1>{{name}}</h1><h3>{{time}}</h3><h4>{{desc}}</h4></div>{{/ifCond}}' +
     '</div>{{/each}}</div>',
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div></div></div>' +
     '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
