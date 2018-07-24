@@ -1,61 +1,83 @@
 /**
  * Created by jessielyu on 7/10/18.
  */
-
 const thumbnails = {
     vision: {
         name: 'VISION TOOL',
         image: 'image/portfolio/thumbnail/photography.png',
-        href: '#vision'
+        href: '#vision',
+        position: "left",
+        time: 'June.2016 - July.2018',
+        desc: 'Internal Debugging Tool for Yahoo Search System'
     },
     wizard: {
         name: 'WIZARD TOOL',
         image: 'image/portfolio/thumbnail/graphicDesign.png',
-        href: '#wizard'
+        href: '#wizard',
+        position: "right",
+        time: 'June.2016 - July.2018',
+        desc: 'Frontend UI Configuration Tool for Yahoo Search System'
     },
     taskMate: {
         name: 'TASK MATE',
         image: 'image/portfolio/thumbnail/habitTracker.png',
-        href: '#taskMate'
+        href: '#taskMate',
+        position: "left",
+        time: 'March.2018 - June.2018',
+        desc: 'UX Research on Task Tracking Applications'
     },
     laishuati: {
         name: '来刷题 laishuati.com',
         image: 'image/portfolio/thumbnail/projecto.png',
-        href: '#laishuati'
+        href: '#laishuati',
+        position: "right",
+        time: 'January.2018 - March.2018',
+        desc: 'Coding Interview Preparation Platform for Group Practicing'
     },
     dalian: {
         name: '打脸APP Dalian',
         image: 'image/portfolio/thumbnail/dalian.png',
-        href: '#dalian'
+        href: '#dalian',
+        position: "left",
+        time: 'June.2017 - August.2017',
+        desc: 'User-Generated Content News Digestion IOS APP'
     },
     shoppingLive: {
         name: '购物直播 Live Shopping',
         image: 'image/portfolio/thumbnail/shoppingLive.png',
-        href: '#shoppingLive'
+        href: '#shoppingLive',
+        position: "right",
+        time: 'April.2017 - June.2017',
+        desc: 'Live Streaming Online Shopping IOS APP'
     },
-    placeholder1: {
-        name: 'placeholder1',
-        image: 'image/portfolio/thumbnail/lait.png'
-    },
-    placeholder2: {
-        name: 'placeholder2',
-        image: 'image/portfolio/thumbnail/educationGame.png'
-    },
-    placeholder3: {
-        name: 'placeholder3',
-        image: 'image/portfolio/thumbnail/movieLog.png'
+    quicket: {
+        name: 'Quicket Solutions',
+        image: 'image/portfolio/thumbnail/movieLog.png',
+        href: '#quicket',
+        position: "left",
+        time: 'September.2015 - June.2016',
+        desc: 'Cloud Based E-Tickets System for Police Officers'
     },
     placeholder4: {
         name: 'placeholder4',
-        image: 'image/portfolio/thumbnail/iear.png'
+        image: 'image/portfolio/thumbnail/iear.png',
+        position: "right",
+        time: 'June.2016 - July.2018',
+        desc: 'Coming Soon'
     },
     placeholder5: {
         name: 'placeholder5',
-        image: 'image/portfolio/thumbnail/scratch.png'
+        image: 'image/portfolio/thumbnail/scratch.png',
+        position: "left",
+        time: 'June.2016 - July.2018',
+        desc: 'Coming Soon'
     },
     placeholder6: {
         name: 'placeholder6',
-        image: 'image/portfolio/thumbnail/smartLock.png'
+        image: 'image/portfolio/thumbnail/smartLock.png',
+        position: "right",
+        time: 'June.2016 - July.2018',
+        desc: 'Coming Soon'
     }
 };
 
@@ -1662,7 +1684,7 @@ const modals = [
 ];
 
 const about = {
-    subtitle: 'I am a full-time software engineer and a half-time designer. ',
+    subtitle: 'I\'m a Master student of Information Management and System in UC Berkeley. ',
     intro: 'I specialize in Web/Mobile development, with experience in designing, programming and prototyping. ',
     profile: 'image/profilepic-800.png',
     resume: 'src/resume.pdf',
