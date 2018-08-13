@@ -81,6 +81,7 @@ function menuEvent() {
                 $(curPage).addClass('menu-active');
                 $('#about').hide();
                 $('#portfolio').show();
+                window.scrollTo(0, 0);
                 break;
             }
             case 'about_pg': {
@@ -90,6 +91,7 @@ function menuEvent() {
                 $(curPage).addClass('menu-active');
                 $('#portfolio').hide();
                 $('#about').show();
+                window.scrollTo(0, 0);
                 break;
             }
         }
