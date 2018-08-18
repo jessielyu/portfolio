@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gaegu', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 35px;
 }
 
@@ -264,6 +264,60 @@ a {
 }
 
 #portfolio .thumbnail-item a img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+#work {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#work .thumbnail-item {
+    position: relative;
+    display: flex;
+    max-height: 500px;
+    text-align: center;
+}
+
+#work .thumbnail-item .thumbnail-desc {
+    margin-top: 8%;
+}
+
+#work .thumbnail-item .portfolio-link {
+    position: relative;
+    display: flex;
+    max-height: 100%;
+}
+
+#work .thumbnail-item .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background: #FFC2AA;
+}
+
+#work .thumbnail-item .caption:hover {
+    opacity: 1;
+}
+
+#work .thumbnail-item .caption p {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    color: #FFF7FF;
+}
+
+#work .thumbnail-item a img {
     object-fit: cover;
     height: 500px;
     width: 100%;

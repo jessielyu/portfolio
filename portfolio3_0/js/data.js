@@ -2,6 +2,41 @@
  * Created by jessielyu on 7/10/18.
  */
 const thumbnails = {
+    taskMate: {
+        name: 'TASK MATE',
+        image: 'image/portfolio/thumbnail/habitTracker.png',
+        href: '#taskMate',
+        position: "left",
+        time: 'March.2018 - June.2018',
+        desc: 'UX Research on Task Tracking Applications'
+    },
+    laishuati: {
+        name: '来刷题 LAISHUATI.COM',
+        image: 'image/portfolio/thumbnail/projecto.png',
+        href: '#laishuati',
+        position: "right",
+        time: 'January.2018 - March.2018',
+        desc: 'Coding Interview Preparation Platform for Group Practicing'
+    },
+    dalian: {
+        name: '打脸APP DALIAN',
+        image: 'image/portfolio/thumbnail/dalian.png',
+        href: '#dalian',
+        position: "left",
+        time: 'June.2017 - August.2017',
+        desc: 'User-Generated Content News Digestion IOS APP'
+    },
+    shoppingLive: {
+        name: '购物直播 LIVE SHOPPING',
+        image: 'image/portfolio/thumbnail/shoppingLive.png',
+        href: '#shoppingLive',
+        position: "right",
+        time: 'April.2017 - June.2017',
+        desc: 'Live Streaming Online Shopping IOS APP'
+    }
+};
+
+const thumbnails_work = {
     vision: {
         name: 'VISION TOOL',
         image: 'image/portfolio/thumbnail/photography.png',
@@ -18,66 +53,13 @@ const thumbnails = {
         time: 'June.2016 - July.2018',
         desc: 'Frontend UI Configuration Tool for Yahoo Search System'
     },
-    taskMate: {
-        name: 'TASK MATE',
-        image: 'image/portfolio/thumbnail/habitTracker.png',
-        href: '#taskMate',
-        position: "left",
-        time: 'March.2018 - June.2018',
-        desc: 'UX Research on Task Tracking Applications'
-    },
-    laishuati: {
-        name: '来刷题 laishuati.com',
-        image: 'image/portfolio/thumbnail/projecto.png',
-        href: '#laishuati',
-        position: "right",
-        time: 'January.2018 - March.2018',
-        desc: 'Coding Interview Preparation Platform for Group Practicing'
-    },
-    dalian: {
-        name: '打脸APP Dalian',
-        image: 'image/portfolio/thumbnail/dalian.png',
-        href: '#dalian',
-        position: "left",
-        time: 'June.2017 - August.2017',
-        desc: 'User-Generated Content News Digestion IOS APP'
-    },
-    shoppingLive: {
-        name: '购物直播 Live Shopping',
-        image: 'image/portfolio/thumbnail/shoppingLive.png',
-        href: '#shoppingLive',
-        position: "right",
-        time: 'April.2017 - June.2017',
-        desc: 'Live Streaming Online Shopping IOS APP'
-    },
     quicket: {
-        name: 'Quicket Solutions',
+        name: 'QUICKET SOLUTIONS',
         image: 'image/portfolio/thumbnail/movieLog.png',
         href: '#quicket',
         position: "left",
         time: 'September.2015 - June.2016',
         desc: 'Cloud Based E-Tickets System for Police Officers'
-    },
-    placeholder4: {
-        name: 'placeholder4',
-        image: 'image/portfolio/thumbnail/iear.png',
-        position: "right",
-        time: 'June.2016 - July.2018',
-        desc: 'Coming Soon'
-    },
-    placeholder5: {
-        name: 'placeholder5',
-        image: 'image/portfolio/thumbnail/scratch.png',
-        position: "left",
-        time: 'June.2016 - July.2018',
-        desc: 'Coming Soon'
-    },
-    placeholder6: {
-        name: 'placeholder6',
-        image: 'image/portfolio/thumbnail/smartLock.png',
-        position: "right",
-        time: 'June.2016 - July.2018',
-        desc: 'Coming Soon'
     }
 };
 
@@ -1675,6 +1657,85 @@ const modals = [
                             style: 'span',
                             src: 'image/portfolio/wizardTool/CreatePublisher Retina.png',
                             alt: 'UI Design'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: 'quicket',
+        header: {
+            title: 'Quicket Solutions',
+            date: 'Sep.2015 - June.2016',
+            txt: 'Quicket Solutions is a cloud based e-ticket system which faster PD working processes.'
+        },
+        sections: [
+            {
+                title: 'Introduction',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-sm img-center',
+                            src: 'image/portfolio/quicket/quicket_logo.png',
+                            alt: 'Quicket Solutions logo'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Quicket Solutions is a cloud based e-ticket system for Police Department. For many states ' +
+                        'in the United States, PD are using hand writing methods to issue traffic violence tickets, ' +
+                        'and manually track violence records of citizens and vehicles. However, this way is very low-efficient, ' +
+                        'since most of the information are stored in main database in the PD offices. ' +
+                        'The motivation of Quicket Solutions is to help police officers speed up their working processes by the leverage of computer technology.</p>' +
+                        '<p>Quicket Solutions is a comprehensive cloud platform which keeps all information in one place. ' +
+                        'Through mobile/tablet devices, officers could easily find records for vehicles or drivers, ' +
+                        'assigning tickets in just a few taps and selections, and immediately upload updates to the system. ' +
+                        'It significantly reduced the efforts of keeping track of records, decreased the time of issuing tickets, ' +
+                        'and increased the convenience of finding information. </p>' +
+                        '<p>In 2015, Quicket Solutions won the finalist of Amazon\'s "City on the Cloud" award.'
+                    }
+                ]
+            },
+            {
+                title: 'Old Design and Feedback',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-6',
+                        txt: 'The company was founded in 2014. I joined the team when the product was still at its initial testing stage.' +
+                        'I joined as a UI designer and developer, to help improve the e-ticket interface on Android tablet.</p>' +
+                        'Before I joined there was already an initial version of the product. The whole application was built on .NET platform. ' +
+                        'The first app version was very simple with key-value pair forms.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/quicket/old_design.jpg',
+                            alt: 'old design'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Even though the UI for the initial design was very straightforward and simple. ' +
+                        'The first round of user testing was not going so well. From engineers mind, ' +
+                        'a simple UI with necessary functionalists such as input form, drop down list, true-false toggle will be easy enough to use. ' +
+                        'However, officers from PD were not satisfied with this design. They had been using paper-based tickets forms for years, ' +
+                        'and they are very used to the form layout of paper-based tickets.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: '',
+                            class: '',
+                            atl: ''
                         }
                     }
                 ]
