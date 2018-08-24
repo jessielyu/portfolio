@@ -1694,9 +1694,95 @@ const modals = [
                         '<p>Quicket Solutions is a comprehensive cloud platform which keeps all information in one place. ' +
                         'Through mobile/tablet devices, officers could easily find records for vehicles or drivers, ' +
                         'assigning tickets in just a few taps and selections, and immediately upload updates to the system. ' +
-                        'It significantly reduced the efforts of keeping track of records, decreased the time of issuing tickets, ' +
+                        'All the devices will be paired with a pocket printer which could print ticket on-site.</p>' +
+                        '<p>It significantly reduced the efforts of keeping track of records, decreased the time of issuing tickets, ' +
                         'and increased the convenience of finding information. </p>' +
                         '<p>In 2015, Quicket Solutions won the finalist of Amazon\'s "City on the Cloud" award.'
+                    }
+                ]
+            },
+            {
+                title: 'Usage Scenario',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'It is common for PD officers to issue traffic tickets from time to time. ' +
+                        'The traditional style is to use paper-based tickets, take photos for evidence, ' +
+                        'and manually input the information into database later. Even though officers are used to the old way, ' +
+                        'we could easily find many inconveniences by using an example: '
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-1',
+                        txt: ''
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-10',
+                        txt: 'Suppose policy officer John Doe in Chicago district received a call one day around 9pm, ' +
+                        'reporting an car window broken accident at White and 5th St. ' +
+                        'He quickly went to the location and found out it was a normal car breaking issue. ' +
+                        'A backpack with about $500 cash and a wallet full of Ids and credit cards was stolen. ' +
+                        'This case was very common in this area, especially in night time. </p>' +
+                        'He needed to record the accident so he took out a booklet and started to fill the information.' +
+                        '<p>When he filled the form, he needed the following information: </p>' +
+                        '<p>- Driver\'s identity (from driver\'s license)<br>' +
+                        '- Vehicle information (license plate, model, etc.)<br>' +
+                        '- Case information (date, location, lost value, etc.)<br>' +
+                        '- Photos of the scene</p>' +
+                        '<p>However, the driver\'s driving license was in the wallet and it was stolen, ' +
+                        'and the driver does not have a photo copy of his license. So officer Doe has no way to verify driver\'d identity. </p>' +
+                        'Moreover, when officer Doe returned to office and want to input the case information to their system, ' +
+                        'he found he has too many scene photos in his camera and it was hard to tell which one was related to today\'s case.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-1',
+                        txt: ''
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: '',
+                            src: '',
+                            alt: 'officer\'s difficulties'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Quicket Solutions was built to address officer\'s difficulties. ' +
+                        'With a cloud-based system and easy-to-use UI, officers could record and sync violence information in just one minute.' +
+                        'If we reconsider the above case in a Quicket context:'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-1',
+                        txt: ''
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: 'Even without a driver\'s license, officer could easily access driver\'s information because everything was stored in the cloud. ' +
+                        'When he filled the information on an Android device, he could lookup for driver\'s information by search for his first and last name, or social security number. ' +
+                        'Moreover, he could use the device to take photos for the case and would never confuse these photos with photos for other cases. ' +
+                        'Finally, everything will be uploaded to the cloud immediately and he did not need to do anything after returning to the office.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-1',
+                        txt: ''
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            src: '',
+                            style: '',
+                            alt: 'officer\'s solutions'
+                        }
                     }
                 ]
             },
@@ -1709,7 +1795,9 @@ const modals = [
                         txt: 'The company was founded in 2014. I joined the team when the product was still at its initial testing stage.' +
                         'I joined as a UI designer and developer, to help improve the e-ticket interface on Android tablet.</p>' +
                         'Before I joined there was already an initial version of the product. The whole application was built on .NET platform. ' +
-                        'The first app version was very simple with key-value pair forms.'
+                        'The first app version was very simple: we supported search, create, and view history functions. ' +
+                        'When create ticket, we categorized tickets into different types: accident, over-speed, etc. ' +
+                        'The ticket form was also straightforward, with a buch of key-value pairs. '
                     },
                     {
                         type: 'img',
@@ -1734,9 +1822,68 @@ const modals = [
                         class: 'col-12',
                         img: {
                             style: '',
-                            class: '',
-                            atl: ''
+                            src: '',
+                            alt: 'problems with the old design'
                         }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'After working back and forth with local PD officers in Champaign, ' +
+                        'a group of 3-4 engineers had been delegated to work on creating the new design of the e-ticket system. ' +
+                        'I was also part of the UI team, helping to redesign ticket input interface based on user feedback. '
+                    }
+                ]
+            },
+            {
+                title: 'Design Improvement',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'We realize the major difficulties PD officers had when using the application were:'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: '- They found it was hard to navigate between pages, and find the desired tickets they need. <br>' +
+                        '- They were not used to the UI layout. <br>' +
+                        '- They complained that everything was re-organized and they could not locate information they need.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-mdlg img-center',
+                            src: 'image/portfolio/quicket/electronic_design.jpg',
+                            alt: 'electronic design'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6',
+                        txt: 'With the feedback we received, we decided to re-design the UI as traditional paper-based ticket layout. ' +
+                        'We tried our best to design the format as similar as possible to paper tickets, and made only tiny changes. ' +
+                        'This approach solved the problem of "not used to the new layout". </p>' +
+                        '<p>In order to address the problem of locating right kind of tickets they want to use, ' +
+                        'we used a centralized navigation menu that made users to select ticket type first and then generate appropriate ticket format accordingly. ' +
+                        'This approach solved the problem of "navigation problem". </p>' +
+                        '<p>We also held regular knowledge transfer meetings with officers on teaching them the basics of Android devices, ' +
+                        'and how to take pictures within the application.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The second round of user testing went very well, just as what we had expected. ' +
+                        'It turned out this version was much more welcomed by officers. When I left the company, ' +
+                        'our business was rapidly expanded, from Champaign to Chicago, and to some districts in Indiana. ' +
+                        'I was so glad of increasing PD officers working proficiency and I was also pound of the work, ' +
+                        'time and effort we spent on improving user experiences. </p>' +
+                        '<p>My gain from this project was tremendous: I spent so much time directly contacting with users, ' +
+                        'learning their feedback and complaints, and addressing their needs. ' +
+                        'For the first time I was working on a user-centered product design, and had been through a very complete process of product iteration. ' +
+                        'Being in a startup company also gave me a lot of perspectives no initial stage of product management. ' +
+                        'The skills I built during this one-year working experience turned to be very useful in my future career.'
                     }
                 ]
             }
@@ -1745,99 +1892,26 @@ const modals = [
 ];
 
 const about = {
-    subtitle: 'I\'m a Master student of Information Management and System in UC Berkeley. ',
-    intro: 'I specialize in Web/Mobile development, with experience in designing, programming and prototyping. ',
-    profile: 'image/profilepic-800.png',
+    header: 'image/about/header.jpg',
+    subtitle: 'I\'m a designer based in bay area, California. ',
+    intro: 'Currently I\'m pursuing my master\'s degree of Information Management and Systems in University of California, Berkeley. ',
     resume: 'src/resume.pdf',
-    skills: {
-        logo: 'image/about/skill.png',
-        design: [
-            {
-                name: 'Adobe Photoshop',
-                level: 'image/about/intermediate.png'
-            },
-            {
-                name: 'Adobe Illustrator',
-                level: 'image/about/experienced.png'
-            },
-            {
-                name: 'Adobe XD',
-                level: 'image/about/experienced.png'
-            },
-            {
-                name: 'Sketch',
-                level: 'image/about/experienced.png'
-            }
-        ],
-        coding: [
-            {
-                name: 'HTML/CSS',
-                level: 'image/about/professional.png'
-            },
-            {
-                name: 'Javascript/Jquery',
-                level: 'image/about/professional.png'
-            },
-            {
-                name: 'PHP',
-                level: 'image/about/experienced.png'
-            },
-            {
-                name: 'Java',
-                level: 'image/about/professional.png'
-            }
-        ],
-        innovation: [
-            {
-                name: 'Design Thinking'
-            },
-            {
-                name: 'User Interview'
-            },
-            {
-                name: 'Prototyping'
-            }
-        ]
-    },
-    education: {
-        experience: [
-            {
-                school: 'University of California - Berkeley',
-                year: '2018-2020',
-                degree: 'M.I.M.S Master of Information Management and System',
-                focus: 'UX Design, UX Research'
-            },
-            {
-                school: 'University of Illinois, Urbana-Champaign',
-                year: '2012-2016',
-                major: 'B.S. Computer Engineering',
-                minor: 'Mathematics'
-            }
-        ],
-        logo: 'image/about/education.png'
-    },
-    work: {
-        experience: [
-            {
-                company: 'Yahoo, Inc.',
-                location: 'Sunnyvale, CA',
-                year: '2016-2018',
-                position: 'Software Engineer, Assoc.',
-                desc: 'Search Middleware & internal tool development.'
-            },
-            {
-                company: 'Quicket Solutions, Inc.',
-                location: 'Champaign, IL',
-                year: '2015-2016',
-                position: 'Software Engineer',
-                desc: 'UI design & development.'
-            }
-        ],
-        logo: 'image/about/work.png'
-    },
+    path: 'I found my interests in HCI when I was still studying <b>Computer Engineering</b> in <a href="https://ece.illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>. ' +
+    'In my junior year I took a class named <b>"User Interface Design"</b>, and that class changed my life. ' +
+    'After finished the course I started to do research with my HCI professor, and learned a lot about processes of <b>UX research and UX design.</b></p>' +
+    '<p>In <b>2015</b> I joined a startup company <a href="https://www.quicketsolutions.com/qs/" target="_blank">Quicket Solutions, Inc.</a> in Chicago. ' +
+    'I worked as a UI engineer and UI designer. ' +
+    'In Quicket I firstly applied the HCI knowledge I learned in class and research to real industrial use. ' +
+    'I learned a lot about <b>user-centered product design</b> strategies. which aimed at improving user experiences using innovative design thinking skills.</p>' +
+    '<p>In <b>2016</b> I joined <a href="https://search.yahoo.com/" target="_blank">Yahoo Inc.</a> and moved to California. ' +
+    'I worked in Yahoo Search team as a software engineer, supporting search system development. ' +
+    'In Yahoo I worked closely with UX researchers, designers, and product managers. ' +
+    'I learned a lot about software design strategies and product iterations from my colleagues. ' +
+    'Over the two years I designed and developed two internal tools for editors and engineers to config and debug search output. ' +
+    'And I gradually feel my strong enthusiasm in <b>product design and product management</b>. </p>' +
+    '<p>In <b>2018</b> I decided to return back to school, and begin pursuing my master\'s degree of <b>Information Management and Systems</b> in <a href="https://www.ischool.berkeley.edu/" target="_blank">Unersity of California, Berkeley</a>. ',
     contact: {
         email: 'jiexinlyu@gmail.com',
-        phone: '(669)-246-2810',
-        logo: 'image/about/contact.png'
+        phone: '(669)-246-2810'
     }
 };

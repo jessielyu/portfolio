@@ -22,12 +22,12 @@ const template = {
     '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
-    About: '<div id="about"><div class="section-block"><div class="col-6"><img src="{{profile}}" class="img-center img-md-round"></div><div class="col-6 left-align"><h1 class="center-align">Nice to meet you!</h1><hr><p><b>{{subtitle}}</b></p><p>{{intro}}</p><a href="{{resume}}" target="_blank">Resume</a></div></div>' +
-    '<div class="section-block"><div class="col-6 center-align"><h1>My Skills</h1><hr><p>{{#each skills.innovation}} - {{name}} {{/each}} - </p></div><div class="col-6"><img src="{{skills.logo}}" alt="skills logo"></div><div class="col-5 right-align">{{#each skills.design}}<p>{{name}} : <img class="img-inline" src="{{level}}" alt="level"></p>{{/each}}</div><div class="col-1"></div><div class="col-5 right-align">{{#each skills.coding}}<p>{{name}} : <img class="img-inline" src="{{level}}" alt="level"></p>{{/each}}</div><div class="col-1"></div></div>' +
-    '<div class="section-block"><div class="col-6"><img src="{{education.logo}}" alt="education logo"></div><div class="col-6 center-align"><h1>Education</h1><hr>{{#each education.experience}}<div class="left-align"><h3>{{year}} : {{school}}</h3>{{#if major}}<p>Major: {{major}}</p>{{/if}}{{#if degree}}<p>Degree: {{degree}}</p>{{/if}}{{#if minor}}<p>Minor: {{minor}}</p>{{/if}}{{#if focus}}<p>Focus: {{focus}}</p>{{/if}}</div>{{/each}}</div></div>' +
-    '<div class="section-block"><div class="col-6"><h1>Work Experience</h1><hr></div><div class="col-6"><img src="{{work.logo}}"></div>{{#each work.experience}}<div class="col-1"></div><div class="col-11 left-align"><h3>{{year}} : {{company}}</h3><h5>{{location}}</h5><p><b>{{position}}</b></p><p>{{desc}}</p></div>{{/each}}</div>' +
-    '<div class="section-block"><div class="col-6"><img src="{{contact.logo}}" alt="contact logo"></div><div class="col-6"><h1>Contact</h1><hr><h4>{{contact.email}}</h4><h4>{{contact.phone}}</h4></div></div>' +
-    '</div>'
+    About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h1 class="center-align">Nice to meet you!</h1><h3>{{subtitle}}</h3><p>{{intro}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
+    '<div class="section-block"><h1 class="col-12">About Me</h1><h3 class="col-12 center-align"><i class="fa fa-hourglass"></i> Persistent, <i class="fa fa-star"></i> Creativity, <i class="fa fa-heart"></i> Love</h3>' +
+    '<p class="col-12">{{{path}}}</p><h1 class="col-12">Contact</h1>' +
+    '<p class="col-12"><i class="fa fa-phone"></i> Phone: {{contact.phone}}<br>' +
+    '<i class="fa fa-envelope"></i> Email: {{contact.email}}</p>' +
+    '</div></div>'
 };
 
 function compileTemplate() {
