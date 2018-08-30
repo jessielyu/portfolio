@@ -55,7 +55,7 @@ const thumbnails_work = {
     },
     quicket: {
         name: 'QUICKET SOLUTIONS',
-        image: 'image/portfolio/thumbnail/movieLog.png',
+        image: 'image/portfolio/thumbnail/quicket.png',
         href: '#quicket',
         position: "left",
         time: 'September.2015 - June.2016',
@@ -1686,7 +1686,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Quicket Solutions is a cloud based e-ticket system for Police Department. For many states ' +
+                        txt: '<a href="https://www.quicketsolutions.com/qs/" target="_blank">Quicket Solutions</a> is a cloud based e-ticket system for Police Department. For many states ' +
                         'in the United States, PD are using hand writing methods to issue traffic violence tickets, ' +
                         'and manually track violence records of citizens and vehicles. However, this way is very low-efficient, ' +
                         'since most of the information are stored in main database in the PD offices. ' +
@@ -1745,8 +1745,8 @@ const modals = [
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: '',
-                            src: '',
+                            style: 'img-mdlg',
+                            src: 'image/portfolio/quicket/difficulties.png',
                             alt: 'officer\'s difficulties'
                         }
                     },
