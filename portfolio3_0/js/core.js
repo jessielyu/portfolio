@@ -8,10 +8,10 @@ let curPage = '#placeholder';
 let windowPosition = 0;
 
 const template = {
-    Portfolio: '<div id="portfolio">{{#each this}}<div class="col-6 thumbnail-item">' +
+    Portfolio: '<div id="portfolio">{{#each this}}<div class="col-4 thumbnail-item">' +
     '<a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div>' +
     '<img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
-    Work: '<div id="work">{{#each this}}<div class="col-6 thumbnail-item">' +
+    Work: '<div id="work">{{#each this}}<div class="col-4 thumbnail-item">' +
     '<a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div>' +
     '<img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div></div></div>' +

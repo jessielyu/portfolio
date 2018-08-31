@@ -225,7 +225,7 @@ a {
 .thumbnail-item {
     position: relative;
     display: flex;
-    max-height: 520px;
+    max-height: 345px;
     text-align: center;
 }
 
@@ -233,7 +233,7 @@ a {
     position: relative;
     display: flex;
     max-height: 100%;
-    margin: 10px;
+    margin: 5px;
 }
 
 .thumbnail-item .caption {

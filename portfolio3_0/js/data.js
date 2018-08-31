@@ -4,7 +4,7 @@
 const thumbnails = {
     taskMate: {
         name: 'TASK MATE',
-        image: 'image/portfolio/thumbnail/habitTracker.png',
+        image: 'image/portfolio/thumbnail/vision.png',
         href: '#taskMate',
         position: "left",
         time: 'March.2018 - June.2018',
@@ -12,7 +12,7 @@ const thumbnails = {
     },
     laishuati: {
         name: '来刷题 LAISHUATI.COM',
-        image: 'image/portfolio/thumbnail/projecto.png',
+        image: 'image/portfolio/thumbnail/laishuati.png',
         href: '#laishuati',
         position: "right",
         time: 'January.2018 - March.2018',
@@ -28,7 +28,7 @@ const thumbnails = {
     },
     shoppingLive: {
         name: '购物直播 LIVE SHOPPING',
-        image: 'image/portfolio/thumbnail/shoppingLive.png',
+        image: 'image/portfolio/thumbnail/wizard.png',
         href: '#shoppingLive',
         position: "right",
         time: 'April.2017 - June.2017',
@@ -39,7 +39,7 @@ const thumbnails = {
 const thumbnails_work = {
     vision: {
         name: 'VISION TOOL',
-        image: 'image/portfolio/thumbnail/photography.png',
+        image: 'image/portfolio/thumbnail/vision.png',
         href: '#vision',
         position: "left",
         time: 'June.2016 - July.2018',
@@ -47,7 +47,7 @@ const thumbnails_work = {
     },
     wizard: {
         name: 'WIZARD TOOL',
-        image: 'image/portfolio/thumbnail/graphicDesign.png',
+        image: 'image/portfolio/thumbnail/wizard.png',
         href: '#wizard',
         position: "right",
         time: 'June.2016 - July.2018',
