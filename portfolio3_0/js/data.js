@@ -4,7 +4,7 @@
 const thumbnails = {
     taskMate: {
         name: 'TASK MATE',
-        image: 'image/portfolio/thumbnail/vision.png',
+        image: 'image/portfolio/thumbnail/taskMate.png',
         href: '#taskMate',
         position: "left",
         time: 'March.2018 - June.2018',
@@ -28,7 +28,7 @@ const thumbnails = {
     },
     shoppingLive: {
         name: '购物直播 LIVE SHOPPING',
-        image: 'image/portfolio/thumbnail/wizard.png',
+        image: 'image/portfolio/thumbnail/shoppingLive.png',
         href: '#shoppingLive',
         position: "right",
         time: 'April.2017 - June.2017',
@@ -1909,9 +1909,5 @@ const about = {
     'I learned a lot about software design strategies and product iterations from my colleagues. ' +
     'Over the two years I designed and developed two internal tools for editors and engineers to config and debug search output. ' +
     'And I gradually feel my strong enthusiasm in <b>product design and product management</b>. </p>' +
-    '<p>In <b>2018</b> I decided to return back to school, and begin pursuing my master\'s degree of <b>Information Management and Systems</b> in <a href="https://www.ischool.berkeley.edu/" target="_blank">Unersity of California, Berkeley</a>. ',
-    contact: {
-        email: 'jiexinlyu@gmail.com',
-        phone: '(669)-246-2810'
-    }
+    '<p>In <b>2018</b> I decided to return back to school, and begin pursuing my master\'s degree of <b>Information Management and Systems</b> in <a href="https://www.ischool.berkeley.edu/" target="_blank">Unersity of California, Berkeley</a>. '
 };

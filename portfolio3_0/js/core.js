@@ -5,7 +5,6 @@ const passcode = 'loveYahoo2016';
 
 let curTarget;
 let curPage = '#placeholder';
-let windowPosition = 0;
 
 const template = {
     Portfolio: '<div id="portfolio">{{#each this}}<div class="col-4 thumbnail-item">' +
@@ -19,11 +18,8 @@ const template = {
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
     About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h1 class="center-align">Nice to meet you!</h1><h3>{{subtitle}}</h3><p>{{intro}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
-    '<div class="section-block"><h1 class="col-12">About Me</h1><h3 class="col-12 center-align"><i class="fa fa-hourglass"></i> Persistent, <i class="fa fa-star"></i> Creativity, <i class="fa fa-heart"></i> Love</h3>' +
-    '<p class="col-12">{{{path}}}</p><h1 class="col-12">Contact</h1>' +
-    '<p class="col-12"><i class="fa fa-phone"></i> Phone: {{contact.phone}}<br>' +
-    '<i class="fa fa-envelope"></i> Email: {{contact.email}}</p>' +
-    '</div></div>'
+    '<div class="section-block"><h2 class="col-12 center-align">PERSISTENT | CREATIVITY | LOVE</h2>' +
+    '<p class="col-12">{{{path}}}</p><h1 class="col-12 center-align"><a href="https://www.facebook.com/jiexin.lu/" target="_blank"><i class="fa fa-facebook-square"></i></a> <a href="https://www.linkedin.com/in/jessielyu/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.pinterest.com/jiexinlu2/" target="_blank"><i class="fa fa-pinterest-square"></i></a> <a href="mailto:jessie_lyu@berkeley.edu"><i class="fa fa-envelope-square"></i></a></h1></div></div>'
 };
 
 function compileTemplate() {
@@ -50,7 +46,6 @@ function portfolioEvent() {
 
     work.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
-        windowPosition = window.scrollY;
         if (target === '#vision' || target === '#wizard') {
             passwordPromp(target);
         } else {
@@ -64,7 +59,6 @@ function portfolioEvent() {
 
     portfolio.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
-        windowPosition = window.scrollY;
         if (target === '#vision' || target === '#wizard') {
             passwordPromp(target);
         } else {
@@ -80,10 +74,7 @@ function portfolioEvent() {
         e.preventDefault();
         $(curTarget).removeClass('modal-active');
         $(curPage.slice(0, -3)).show();
-        window.scrollTo({
-            top: windowPosition,
-            behavior: "smooth"
-        });
+        window.scrollTo(0, 0);
     });
 }
 

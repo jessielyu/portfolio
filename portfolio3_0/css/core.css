@@ -206,6 +206,14 @@ a {
     margin-top: 25vh;
 }
 
+#home .home-title h1 {
+    color: #EB8A96;
+}
+
+#home .home_nav {
+    margin-top: 100px;
+}
+
 #home .home-title a {
     margin: 0 10px;
 }
@@ -333,11 +341,13 @@ a {
 }
 
 #about .section-block {
-    padding: 10% 10%;
+    padding: 10% 10% 5% 10%;
     text-align: left;
+    margin-bottom: 0;
 }
 
-#about .section-block h3 {
+#about .section-block h2 {
+    font-family: 'Gaegu', Arial, Helvetica, sans-serif;
     color: #EB8A96;
 }
 
