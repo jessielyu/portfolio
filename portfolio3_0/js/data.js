@@ -1139,7 +1139,7 @@ const modals = [
                 ]
             },
             {
-                title: 'Ideas',
+                title: 'Background',
                 data: [
                     {
                         type: 'txt',
@@ -1172,7 +1172,11 @@ const modals = [
                 ]
             },
             {
-                title: 'Define Data Needed',
+                title: 'Problems',
+                data: []
+            },
+            {
+                title: 'Define Information Structure',
                 data: [
                     {
                         type: 'txt',
@@ -1193,7 +1197,7 @@ const modals = [
                 ]
             },
             {
-                title: 'Data Visualization',
+                title: 'Visual Design',
                 data: [
                     {
                         type: 'txt',
@@ -1280,7 +1284,7 @@ const modals = [
                 ]
             },
             {
-                title: 'User Feedback for First Version',
+                title: 'Version_1.0',
                 data: [
                     {
                         type: 'img',
@@ -1327,7 +1331,11 @@ const modals = [
                 ]
             },
             {
-                title: 'Tool Enhancements',
+                title: 'Critiques',
+                data: []
+            },
+            {
+                title: 'Data Visualization Enhancements',
                 data: [
                     {
                         type: 'txt',
@@ -1451,6 +1459,10 @@ const modals = [
                         subtitle: 'Network Chart'
                     }
                 ]
+            },
+            {
+                title: 'Feedback',
+                data: []
             }
         ]
     },
@@ -1546,6 +1558,10 @@ const modals = [
                         'Once a user finish all the changes, he should be able to publish triggering chain to a dimension.'
                     }
                 ]
+            },
+            {
+                title: 'Storyboard',
+                data: []
             },
             {
                 title: 'UI Design',
@@ -1660,6 +1676,10 @@ const modals = [
                         }
                     }
                 ]
+            },
+            {
+                title: 'Feedback',
+                data: []
             }
         ]
     },
@@ -1702,7 +1722,7 @@ const modals = [
                 ]
             },
             {
-                title: 'Usage Scenario',
+                title: 'Contextual Inquiry',
                 data: [
                     {
                         type: 'txt',
@@ -1743,9 +1763,9 @@ const modals = [
                     },
                     {
                         type: 'img',
-                        class: 'col-12',
+                        class: 'col-12 center-align',
                         img: {
-                            style: 'img-mdlg',
+                            style: 'img-md',
                             src: 'image/portfolio/quicket/difficulties.png',
                             alt: 'officer\'s difficulties'
                         }
@@ -1787,7 +1807,19 @@ const modals = [
                 ]
             },
             {
-                title: 'Old Design and Feedback',
+                title: 'Brainstorming',
+                data: []
+            },
+            {
+                title: 'Persona',
+                data: []
+            },
+            {
+                title: 'Storyboard',
+                data: []
+            },
+            {
+                title: 'Design Version_1.0',
                 data: [
                     {
                         type: 'txt',
@@ -1836,7 +1868,11 @@ const modals = [
                 ]
             },
             {
-                title: 'Design Improvement',
+                title: 'Critiques',
+                data: []
+            },
+            {
+                title: 'Design Version_2.0',
                 data: [
                     {
                         type: 'txt',
