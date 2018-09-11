@@ -13,13 +13,14 @@ const template = {
     Work: '<div id="work">{{#each this}}<div class="col-4 thumbnail-item">' +
     '<a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div>' +
     '<img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
-    Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="col-3"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><h3>{{header.date}}</h3><p>{{header.txt}}</p></div></div></div>' +
-    '<div class="col-9 sections">{{#each sections}}<h2>{{title}}</h2><div class="section-block">{{#each data}}' +
-    '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<h3>{{title}}</h3><p><b>{{subtitle}}</b></p><p>{{{txt}}}</p>{{else ifCond type "===" "link"}}<a href="{{link.href}}" target="_blank">{{link.title}}</a>' +
+    Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><hr><h4>{{header.date}}</h4><p>{{header.txt}}</p></div></div>' +
+    '<div class="sections">{{#if header.header_img}}<div class="col-12"><img src="{{header.header_img}}" class="header_img"></div>{{/if}}' +
+    '{{#each sections}}<div class="section-block"><h2 class="col-12">{{title}}</h2>{{#each data}}' +
+    '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<p>{{{txt}}}</p>{{else ifCond type "===" "header"}}<{{header_class}}>{{header_txt}}</{{header_class}}>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
-    About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h1 class="center-align">Nice to meet you!</h1><h3>{{subtitle}}</h3><p>{{intro}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
-    '<div class="section-block"><h2 class="col-12 center-align">PERSISTENT | CREATIVITY | LOVE</h2>' +
-    '<p class="col-12">{{{path}}}</p><h1 class="col-12 center-align"><a href="https://www.facebook.com/jiexin.lu/" target="_blank"><i class="fa fa-facebook-square"></i></a> <a href="https://www.linkedin.com/in/jessielyu/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.pinterest.com/jiexinlu2/" target="_blank"><i class="fa fa-pinterest-square"></i></a> <a href="mailto:jessie_lyu@berkeley.edu"><i class="fa fa-envelope-square"></i></a></h1></div></div>'
+    About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h2 class="center-align">Nice to meet you!</h2><h3>{{subtitle}}</h3><p>{{intro}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
+    '<div class="section-block"><h2 class="col-12 center-align">PERSISTENT &middot CREATIVITY &middot LOVE</h2>' +
+    '<p class="col-12">{{{path}}}</p><h1 class="col-12 center-align"><a href="https://dribbble.com/jessielyu75" target="_blank"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/jiexin.lu/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://www.linkedin.com/in/jessielyu/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.pinterest.com/jiexinlu2/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="mailto:jessie_lyu@berkeley.edu"><i class="fa fa-envelope"></i></a></h1></div></div>'
 };
 
 function compileTemplate() {
@@ -30,9 +31,10 @@ function compileTemplate() {
 
 function passwordPromp(target) {
     let result = window.prompt('Please enter passcode for this project:', '');
-    if (1) {
+    if (result === passcode) {
         $('#portfolio').hide();
         $('#work').hide();
+        $('#navigation').hide();
         $(target).addClass('modal-active');
         curTarget = target;
         window.scrollTo(0, 0);
@@ -47,10 +49,17 @@ function portfolioEvent() {
     work.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
         if (target === '#vision' || target === '#wizard') {
-            passwordPromp(target);
+            // passwordPromp(target);
+            $('#portfolio').hide();
+            $('#work').hide();
+            $('#navigation').hide();
+            $(target).addClass('modal-active');
+            curTarget = target;
+            window.scrollTo(0, 0);
         } else {
             $('#portfolio').hide();
             $('#work').hide();
+            $('#navigation').hide();
             $(target).addClass('modal-active');
             curTarget = target;
             window.scrollTo(0, 0);
@@ -64,6 +73,7 @@ function portfolioEvent() {
         } else {
             $('#portfolio').hide();
             $('#work').hide();
+            $('#navigation').hide();
             $(target).addClass('modal-active');
             curTarget = target;
             window.scrollTo(0, 0);
@@ -74,6 +84,7 @@ function portfolioEvent() {
         e.preventDefault();
         $(curTarget).removeClass('modal-active');
         $(curPage.slice(0, -3)).show();
+        $('#navigation').show();
         window.scrollTo(0, 0);
     });
 }

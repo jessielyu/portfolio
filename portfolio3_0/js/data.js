@@ -67,7 +67,7 @@ const modals = [
     {
         name: 'dalian',
         header: {
-            title: '打脸APP DALIAN',
+            title: 'DALIAN',
             date: 'June.2017 - August.2017',
             txt: 'Creative News Digestion APP'
         },
@@ -454,7 +454,7 @@ const modals = [
     {
         name: 'shoppingLive',
         header: {
-            title: '购物直播 Shopping Live',
+            title: 'Shopping Live',
             date: 'April.2017 - June.2017',
             txt: 'Live streaming shopping APP'
         },
@@ -811,7 +811,7 @@ const modals = [
     {
         name: 'laishuati',
         header: {
-            title: '来刷题 laishuati.com',
+            title: 'laishuati.com',
             date: 'Jan.2018 - Mar.2018',
             txt: 'Coding Interview Preparation Platform.'
         },
@@ -1103,40 +1103,58 @@ const modals = [
         header: {
             title: 'Vision Tool',
             date: 'June.2016 - July.2018',
-            txt: 'Internal Debugging Tool for Yahoo Search Middleware.'
+            txt: 'UX Designer | Front-end Engineer',
+            header_img: 'image/portfolio/visionTool/header_img.png'
         },
         sections: [
             {
-                title: 'Introduction',
+                title: 'Overview',
                 data: [
                     {
-                        type: 'img',
-                        class: 'col-6',
-                        img: {
-                            style: 'img-sm',
-                            src: 'image/portfolio/visionTool/yahoo_logo.png',
-                            alt: 'Yahoo! logo'
-                        }
-
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Vision tool is an internal tool for debugging whole yahoo search system.I designed and developed this tool while I was working in Yahoo Search middleware team from 2016 to 2018.</p>' +
+                        '<p>The project was launched in late 2017 and finished in mid 2018. '
                     },
                     {
-                        type: 'img',
-                        class: 'col-6',
-                        img: {
-                            style: 'img-sm',
-                            src: 'image/portfolio/visionTool/vision_logo.png',
-                            alt: 'Yahoo! logo'
-                        }
-
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Yahoo Search System'
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Vision Tool is an internal debugging tool for Yahoo Search Middleware.</p>' +
-                        '<p>It contains debugging information such as search backend calling sequence, request latency, ' +
-                        'script running status, etc.'
+                        txt: 'Yahoo search system has three major parts: frontend, backend, and middleware. Yahoo Global Search Middleware is the most essential platform which connects search backend and frontend. GSM has two functionalities: parsing incoming queries from frontend to backend, and return triggered data from backend frontend. For both downstream(fe->be) and upstream(be->fe) mechanisms, we used a series of nodes to process the data. Each node will be responsible for one or more sub-tasks, either parse query into different user intents, or organize returned data into renderable page layout. </p>' +
+                        '<p>Yahoo Global Search Middleware platform is controlling everything about Yahoo search services. Yahoo search product serves millions of users and billions of traffic everyday, both on Web and Mobile sides.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Challenges'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Goals'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'My role'
                     }
                 ]
+            },
+            {
+                title: 'User Interviews',
+                data: []
+            },
+            {
+                title: 'Define Information Structure',
+                data: []
             },
             {
                 title: 'Background',
