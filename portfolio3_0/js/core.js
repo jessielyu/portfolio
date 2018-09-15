@@ -18,7 +18,7 @@ const template = {
     '{{#each sections}}<div class="section-block"><h2 class="col-12">{{title}}</h2>{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<p>{{{txt}}}</p>{{else ifCond type "===" "header"}}<{{header_class}}>{{header_txt}}</{{header_class}}>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
-    About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h2 class="center-align">Nice to meet you!</h2><h3>{{subtitle}}</h3><p>{{intro}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
+    About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h2 class="center-align">Hi, I\'m Jessie Lyu</h2><h3>{{subtitle}}</h3><p>{{{intro}}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
     '<div class="section-block"><h2 class="col-12 center-align">PERSISTENT &middot CREATIVITY &middot LOVE</h2>' +
     '<p class="col-12">{{{path}}}</p><h1 class="col-12 center-align"><a href="https://dribbble.com/jessielyu75" target="_blank"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/jiexin.lu/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://www.linkedin.com/in/jessielyu/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.pinterest.com/jiexinlu2/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="mailto:jessie_lyu@berkeley.edu"><i class="fa fa-envelope"></i></a></h1></div></div>'
 };

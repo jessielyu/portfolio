@@ -20,16 +20,15 @@ h1 {
 
 h2 {
     font-size: 38px;
-    color: #6B3F45
 }
 
 h3 {
-    font-size: 26px;
-    color: #B86C75;
+    font-size: 28px;
+    color: #6B3F45;
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 img {
@@ -123,6 +122,10 @@ a {
     max-height: 75px;
 }
 
+.img-nano {
+    max-height: 50px;
+}
+
 .img-sm {
     max-height: 125px;
 }
@@ -131,6 +134,10 @@ a {
     max-height: 125px;
     clip-path: circle(62.5px at 62.5px 62.5px);
     border-radius: 100px;
+}
+
+.img-smmd {
+    max-height: 180px;
 }
 
 .img-md {
@@ -144,7 +151,7 @@ a {
 }
 
 .img-mdlg {
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .img-lg {
@@ -156,6 +163,14 @@ a {
     width: 90%;
     margin-bottom: 20px;
     display: block;
+}
+
+.padding-sm {
+    padding: 20px;
+}
+
+.padding-md {
+    padding: 40px;
 }
 
 /* Navigation */
@@ -205,13 +220,18 @@ a {
 }
 
 #home .bg-image img {
-    height: 100%;
+    max-height: 100%;
     width: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+
 }
 
 #home .home-title {
     text-align: center;
-    margin-top: 20vh;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 
 #home .home-title h1 {
@@ -341,6 +361,14 @@ a {
 
 .sections .section-block {
     margin-bottom: 100px;
+}
+
+.sections h2 {
+    color: #EB8A96
+}
+
+.sections h4 {
+    color: #B86C75;
 }
 
 /* About */

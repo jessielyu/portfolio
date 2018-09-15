@@ -3,7 +3,7 @@
  */
 const thumbnails = {
     taskMate: {
-        name: 'TASK MATE',
+        name: 'Task Mate IOS Application',
         image: 'image/portfolio/thumbnail/taskMate.png',
         href: '#taskMate',
         position: "left",
@@ -11,7 +11,7 @@ const thumbnails = {
         desc: 'UX Research on Task Tracking Applications'
     },
     laishuati: {
-        name: '来刷题 LAISHUATI.COM',
+        name: 'Laishuati.com',
         image: 'image/portfolio/thumbnail/laishuati.png',
         href: '#laishuati',
         position: "right",
@@ -19,7 +19,7 @@ const thumbnails = {
         desc: 'Coding Interview Preparation Platform for Group Practicing'
     },
     dalian: {
-        name: '打脸APP DALIAN',
+        name: 'Dalian News IOS App',
         image: 'image/portfolio/thumbnail/dalian.png',
         href: '#dalian',
         position: "left",
@@ -27,7 +27,7 @@ const thumbnails = {
         desc: 'User-Generated Content News Digestion IOS APP'
     },
     shoppingLive: {
-        name: '购物直播 LIVE SHOPPING',
+        name: 'Live Shopping IOS App',
         image: 'image/portfolio/thumbnail/shoppingLive.png',
         href: '#shoppingLive',
         position: "right",
@@ -38,28 +38,19 @@ const thumbnails = {
 
 const thumbnails_work = {
     vision: {
-        name: 'VISION TOOL',
+        name: 'Yahoo! Vision Tool',
         image: 'image/portfolio/thumbnail/vision.png',
-        href: '#vision',
-        position: "left",
-        time: 'June.2016 - July.2018',
-        desc: 'Internal Debugging Tool for Yahoo Search System'
+        href: '#vision'
     },
     wizard: {
-        name: 'WIZARD TOOL',
+        name: 'Yahoo Wizard Tool',
         image: 'image/portfolio/thumbnail/wizard.png',
-        href: '#wizard',
-        position: "right",
-        time: 'June.2016 - July.2018',
-        desc: 'Frontend UI Configuration Tool for Yahoo Search System'
+        href: '#wizard'
     },
     quicket: {
-        name: 'QUICKET SOLUTIONS',
+        name: 'Quicket Solutions',
         image: 'image/portfolio/thumbnail/quicket.png',
-        href: '#quicket',
-        position: "left",
-        time: 'September.2015 - June.2016',
-        desc: 'Cloud Based E-Tickets System for Police Officers'
+        href: '#quicket'
     }
 };
 
@@ -1103,7 +1094,7 @@ const modals = [
         header: {
             title: 'Vision Tool',
             date: 'June.2016 - July.2018',
-            txt: 'UX Designer | Front-end Engineer',
+            txt: 'UX Designer | Full-stack Engineer',
             header_img: 'image/portfolio/visionTool/header_img.png'
         },
         sections: [
@@ -1114,7 +1105,7 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'Vision tool is an internal tool for debugging whole yahoo search system.I designed and developed this tool while I was working in Yahoo Search middleware team from 2016 to 2018.</p>' +
-                        '<p>The project was launched in late 2017 and finished in mid 2018. '
+                        '<p>The application was launched in late 2017 and finished in mid 2018. '
                     },
                     {
                         type: 'header',
@@ -1129,10 +1120,54 @@ const modals = [
                         '<p>Yahoo Global Search Middleware platform is controlling everything about Yahoo search services. Yahoo search product serves millions of users and billions of traffic everyday, both on Web and Mobile sides.'
                     },
                     {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-md',
+                            src: 'image/portfolio/visionTool/gsmFlow.png',
+                            alt: 'Yahoo Search Workflow'
+                        }
+                    },
+                    {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'Challenges'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'It is very important that we have a reliable and robust system since Yahoo GSM platform is the central hub for all other search functionalities. Over 100 developers in Search team, including engineers, designers, editor, and product managers, more or less work on search middleware system directly or indirectly. As people keep adding new features to search system, the difficulty of debugging increased dramatically. By Q2 2017, our search system has over hundred gigabytes data, more than 20 nodes and numerous sub-tasks. The ratio of bugs has increased steadily as the complexity of system grows.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-nano padding-sm',
+                            src: 'image/portfolio/visionTool/interview_quote.png',
+                            alt: 'user quote'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'However, the efficiency of troubleshooting was very low. During initial user research, we found that on average people would spend more than 2 hours on debugging. And normally a single bug would have more than one people working on it.</p>' +
+                        '<p>Contributors in search team used to rely on very bulky and time-consuming ways of debugging. Some engineers used built-in debugging tool in IDE(Integrated Development Environment), others debugged from system-generated runtime log file. However, as the volume of data and the complexity of system increase, these two methods of debugging became more inconvenient and less useful. Furthermore,since information in these two methods was displayed in machine-language(ie.heap traceback or Java logging messages), for non-technical developers it was hard to understand those information.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Existing debugging methods'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-md padding-sm',
+                            src: 'image/portfolio/visionTool/current_methods.png',
+                            alt: 'debugging methods'
+                        }
                     },
                     {
                         type: 'header',
@@ -1141,76 +1176,168 @@ const modals = [
                         header_txt: 'Goals'
                     },
                     {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-smmd padding-md',
+                            src: 'image/portfolio/visionTool/goals.png',
+                            alt: 'goals'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: 'With all kinds of problems and inconveniences, we received a lot of complaints about heavy debugging processes within and without the team. In Q2 2017, we’ve decided to build an internal debugging tool to debug the whole search system. We named this tool “Vision” since we wanted to keep an eye on the health of our search system. </p>' +
+                        '<p>The goal of this project is to build a stand-alone search system debugging tool for users of all levels and various technical backgrounds. The tool should allow users to easily debug problems within the search system, including search frontend, middleware, and backend. The tool should be easily accessed, and should not do any impact on the search system itself.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-center img-md padding-md',
+                            src: 'image/portfolio/visionTool/vision_logo.png',
+                            alt: 'vision_logo'
+                        }
+                    },
+                    {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'My role'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Throughout the project I worked as researchers, designers, and engineers.</p>' +
+                        '<p>At the beginning I did some brief user interviews with few engineers, editors, and designers to learn their pain points of debugging search system.</p>' +
+                        '<p>In the first half of the project I worked closely two more engineers on information retrieval and information structure design. We wrote code to extract useful debugging information from search system, according to our user interview result, and reorganize data in a way that could be easily visualized. </p>' +
+                        '<p>For the second half I designed and coded the whole tool user interface. Based on backend data structure and user problems collected before, I designed a prototype, did some user testing, perfected the features, and launched the product. During the process I also designed the whole tool frontend architecture and user-data interactions. I had experienced a complete product design process though it was just an internal tool.'
                     }
                 ]
             },
             {
                 title: 'User Interviews',
-                data: []
-            },
-            {
-                title: 'Define Information Structure',
-                data: []
-            },
-            {
-                title: 'Background',
                 data: [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Yahoo Search Middleware is the platform which connects search backend and frontend. ' +
-                        'It controls all incoming queries from users, parses queries using NLP algorithm, ' +
-                        'dispatches queries to different backend, then it organizes data returned by backend, ' +
-                        'and returns a page response for rendering by frontend to users.</p>' +
-                        '<p>Yahoo Search Middleware serves millions of users all over the world, and processes billions of user queries everyday.'
+                        txt: 'I interviewed three users who more or less need to debug search system through their daily work(for confidential reasons I hide their names). '
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Principal engineer in Search Middleware team'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-center img-smmd padding-md',
+                            src: 'image/portfolio/visionTool/avatar_1.png',
+                            alt: 'avatar_1'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: '- Worked in Yahoo Search Middleware team for almost 10 years.</p>' +
+                        '<p>- Designed and implemented whole search system, knew every part of the system very well.</p>' +
+                        '<p>- Normally used runtime logging file for debugging.</p>' +
+                        '<p><b>Problems when debugging: </b></p>' +
+                        '<p>- Log file is super long and non human-understandable</p>' +
+                        '<p>- He used page search to locate information, which was very low-efficient</p>' +
+                        '<p>- Even as an expert of search, sometimes he couldn\'t find some information and had to spend more time on debugging.</p>'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Senior engineer in Query Language Processing team'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-center img-smmd padding-md',
+                            src: 'image/portfolio/visionTool/avatar_2.png',
+                            alt: 'avatar_2'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: '- Worked in Yahoo Search Language Processing team for about 6 years.</p>' +
+                        '<p>- Needed to debug search middleware to get query status information for language processing algorithm debugging.</p>' +
+                        '<p>- Normally used IDE debugging tool for debugging.</p>' +
+                        '<p><b>Problems when debugging: </b></p>' +
+                        '<p>- Easily got lost in mixed and unorganized information provided by IDE.</p>' +
+                        '<p>- Sometimes broke the whole system because of breakpoint(timeout).</p>' +
+                        '<p>- Limited information displayed in programming language level.</p>'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Senior search UI designer/editor'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-4',
+                        img: {
+                            style: 'img-center img-smmd padding-md',
+                            src: 'image/portfolio/visionTool/avatar_3.png',
+                            alt: 'avatar_3'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: '- Worked as Search UI editor and designer for at least 4 years.</p>' +
+                        '<p>- Needed debugging search system to verify if a frontend module was rendered correctly with appropriate data.</p>' +
+                        '<p>- Used all kinds of debugging methods: browser inspector, other tools, etc.</p>' +
+                        '<p><b>Problems when debugging: </b></p>' +
+                        '<p>- Non-technical background made it hard to understand code and log messages.</p>' +
+                        '<p>- Spent more time on debugging because of limited access to debugging data.</p>' +
+                        '<p>- Always needed to ask other people for help.</p>'
+                    }
+                ]
+            },
+            {
+                title: 'First step: Define Information Structure',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'With various inquiries and usage scenarios from users, we need construct comprehensive information to accommodate different user needs. '
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-lg img-center',
-                            src: 'image/portfolio/visionTool/gsmFlow.png',
-                            alt: 'GSM Flow'
+                            style: 'img-center img-md padding-sm',
+                            src: 'image/portfolio/visionTool/user_needs.png',
+                            alt: 'user_needs'
                         }
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Debugging processes could be very painful for a large-scale system like this. ' +
-                        'For the past two years in Yahoo I was working on building a comprehensive debugging tool for engineers and editors, ' +
-                        'and here comes the <strong>Vision Tool</strong>.</p>' +
-                        '<p>Vision Tool covers debugging information for almost every steps in a single search query processing. ' +
-                        'From request analysis, backend call sequence, to module rendering UI components. ' +
-                        'It has been proved to be very helpful for developers in Yahoo Search Team.'
-                    }
-                ]
-            },
-            {
-                title: 'Problems',
-                data: []
-            },
-            {
-                title: 'Define Information Structure',
-                data: [
+                        txt: 'After discussion with two other engineers in our team, we had decided that the tool need to support rendering data like: '
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-md',
+                            src: 'image/portfolio/visionTool/data_structure.png',
+                            alt: 'data structure'
+                        }
+                    },
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Firstly I need to find out types of data for the tool, and how I could retrieve those information from Search platform.</p>' +
-                        '<p>I conducted user interviews with many teams, including engineers who are responsible for platform coding, ' +
-                        'and editors who are responsible for building search result data modules.</p>' +
-                        '<p>The interview result from users showed that the tool need to have the following debugging data in the tool:</p>' +
-                        '<p>' +
-                        '1. API information, including request information, dimension information(intl, device...), etc.<br>' +
-                        '2. Data parsing and configuration information for each steps. eg. script to parse data from raw backend data to UI component' +
-                        '(image, text, header...), and script to config data from UI components to UI module(a complete search result item).<br>' +
-                        '3. Overall search result data configuration and data layout.<br>' +
-                        '4. Search performance like backend calling latencies and data parsing time efficiency.' +
-                        '</p>' +
-                        '<p>All of the debugging information above could be retrieved from Search Middleware System.'
+                        txt: 'All of the debugging information above could be retrieved from Search Middleware System. Data will be logged from each task in the search chain, and will be grouped based on tags. After a search process debugging data will be constructed into organized and unified json format, then be handed over to tool frontend for rendering. '
                     }
                 ]
             },
@@ -1218,207 +1345,18 @@ const modals = [
                 title: 'Visual Design',
                 data: [
                     {
-                        type: 'txt',
+                        type: 'header',
                         class: 'col-12',
-                        txt: 'After discussions with users back and forth, I finally decided to use three types of ' +
-                        'visualization methods for the debugging data.'
+                        header_class: 'h3',
+                        header_txt: 'Initial round: how did we categorize information?'
                     },
                     {
-                        type: 'img',
-                        class: 'col-4',
-                        img: {
-                            style: 'img-sm-round img-center',
-                            src: 'image/portfolio/visionTool/json_format.png',
-                            alt: 'json format'
-                        }
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-4',
-                        img: {
-                            style: 'img-sm-round img-center',
-                            src: 'image/portfolio/visionTool/table_format.png',
-                            alt: 'table format'
-                        }
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-4',
-                        img: {
-                            style: 'img-sm-round img-center',
-                            src: 'image/portfolio/visionTool/graph_format.png',
-                            alt: 'graph format'
-                        }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-4 center-align',
-                        subtitle: 'json format'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-4 center-align',
-                        subtitle: 'table format'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-4 center-align',
-                        subtitle: 'graph format'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        title: 'Json Format',
-                        txt: 'Json format is best for rendering raw data. Since all of the debugging information is returned ' +
-                        'as json object. Json Format is the easiest way to render information.</p>' +
-                        '<p>However, users can\'t get a straightforward overview of information among json data. And sometimes ' +
-                        'it could be hard for non-technical users to understand pure json data.</p>' +
-                        '<p>So I used json format to render data which contains information that was hard to be visualized ' +
-                        'using graphs, and information used mostly by only engineers.'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        title: 'Table Format',
-                        txt: 'Table format is majorly used to debug entities. Each entity stands for a phase of data configuration. ' +
-                        'In Yahoo Search System, a query will be firstly parsed as <em>Intents</em>, and according to ' +
-                        'different Intents it will triggering different backend and get <em>DataObjects</em>. A DataObject could ' +
-                        'be formatted as a <em>Module</em>, which is also a UI component like text or image. Finally different ' +
-                        'Modules will form a <em>ModuleGroup</em>, which stands for a search result item.</p>' +
-                        '<p>All of the objects mentioned above are entities: DataObject, ModuleGroup, and Intents. ' +
-                        'Entity has information such as id, scripts, status, etc. The information is very suitable for table format visualization.</p>' +
-                        '<p>However, the downside of table format is that it could only render limited amount of information. ' +
-                        'For more complex information, we still need to use json format.'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        title: 'Graph Format',
-                        txt: 'Graph format is the best visualization method for a straightforward and user-friendly data view. ' +
-                        'It could be understandable by any users, especially users without tech background.</p>' +
-                        '<p>For graph format visualization the most difficult part is to construct and organize data for the graph. ' +
-                        'I used graphs for debugging data like backend calling latency, and search performance etc.'
+
                     }
                 ]
             },
             {
-                title: 'Version_1.0',
-                data: [
-                    {
-                        type: 'img',
-                        class: 'col-12',
-                        img: {
-                            style: 'img-center img-lg',
-                            src: 'image/portfolio/visionTool/version1_0.png',
-                            alt: 'version 1.0'
-                        }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12 center-align',
-                        subtitle: 'UI version 1.0'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        txt: 'The first version of UI is very simple, with only basic debugging information. ' +
-                        'Most of the information is rendered using table or json format. </p>' +
-                        '<p>I received a lot of useful feedback from the initial round of user testing. ' +
-                        'Some major potential enhancements I concluded from user feedback include:'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        subtitle: '1. Lack of Query Information',
-                        txt: 'Users didn\'t know what query they were searching for or debugging at. Query info was not shown on the UI.'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        subtitle: '2. Incomplete Debugging information',
-                        txt: 'Even though I thought I\'ve covered all major debugging data that an engineer or an editor could ever needs, ' +
-                        'there were still not sufficient enough to address all the user requirements.'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        subtitle: '3. Query and Header Update Functionality',
-                        txt: 'If users want to debug another query, or update header information to customize search result, ' +
-                        'they should be able to do it in the tool instead of going to search page to perform the task.'
-                    }
-                ]
-            },
-            {
-                title: 'Critiques',
-                data: []
-            },
-            {
-                title: 'Data Visualization Enhancements',
-                data: [
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        txt: 'Accroding to user feedback, I made some enhancements to the tool.'
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-8',
-                        txt: 'I added query information, so users could easily find out current query information.</p>' +
-                        '<p>I also added query and header update for users to conveniently update search request.</p>' +
-                        '<p>I added more panels with more thorough debugging information. In order to prevent long data loading time, ' +
-                        'I added debugging panel toggle button so users could choose types of information they want to see. ' +
-                        'That way users could eliminate loading time for panels they don\'t need.'
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-4',
-                        img: {
-                            style: 'img-md img-center',
-                            src: 'image/portfolio/visionTool/query_form.png',
-                            alt: 'query form'
-                        }
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-3',
-                        img: {
-                            style: 'img-md img-center',
-                            src: 'image/portfolio/visionTool/panel_menu.png',
-                            alt: 'panel menu'
-                        }
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-9',
-                        img: {
-                            style: 'img-md img-center',
-                            src: 'image/portfolio/visionTool/graph.png',
-                            alt: 'graph enhancement'
-                        }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12',
-                        txt: 'I also added more graphical data visualizations for users to understand debugging information easier.</p>' +
-                        '<p>Besides, I\'ve also changed the page to be responsible to accommodate users debugging using mobile devices.'
-                    },
-                    {
-                        type: 'txt',
-                        title: 'Feedback',
-                        txt: 'The second round of user testing went very well. Most users seemed to be pretty comfortable with the UI. ' +
-                        'I felt so grateful that more and more people are using the tool for debugging Search System, ' +
-                        'and I could make developing process more efficient. </p>' +
-                        '<p>I still received minor enhancements requests from users after the tool had been launched. ' +
-                        'Perfecting the tool is a long and on-going process since more data will be added to the system.</p>' +
-                        '<p>I learned a lot from this project in Yahoo, not only in technical perspective. I developed my user research skills, and user-centered product design skills. ' +
-                        'Through working with other teams I\'ve also practiced cross-team coordinating skills. ' +
-                        'Finally I learned the lifecycle of a product, from research, design to develop and launch. ' +
-                        'Thanks Yahoo of giving me this chance.'
-                    }
-                ]
-            },
-            {
-                title: 'Final Design',
+                title: 'Selected UI',
                 data: [
                     {
                         type: 'img',
@@ -1479,7 +1417,7 @@ const modals = [
                 ]
             },
             {
-                title: 'Feedback',
+                title: 'Impact',
                 data: []
             }
         ]
@@ -1948,7 +1886,9 @@ const modals = [
 const about = {
     header: 'image/about/header.jpg',
     subtitle: 'I\'m a designer based in bay area, California. ',
-    intro: 'Currently I\'m pursuing my master\'s degree of Information Management and Systems in University of California, Berkeley. ',
+    intro: 'I\'m a motivated product designer with strength in UX research, UX design, and software engineering. <br>' +
+    'I designed for creativity and love, aiming ar bringing innovation and joy from ordinary. <br>' +
+    'Currently I\' pursuing my master\'s degreen of Information Management and Systems in University of California, Berkeley.',
     resume: 'src/resume.pdf',
     path: 'I found my interests in HCI when I was still studying <b>Computer Engineering</b> in <a href="https://ece.illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>. ' +
     'In my junior year I took a class named <b>"User Interface Design"</b>, and that class changed my life. ' +
