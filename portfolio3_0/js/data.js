@@ -1116,15 +1116,14 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Yahoo search system has three major parts: frontend, backend, and middleware. Yahoo Global Search Middleware is the most essential platform which connects search backend and frontend. GSM has two functionalities: parsing incoming queries from frontend to backend, and return triggered data from backend frontend. For both downstream(fe->be) and upstream(be->fe) mechanisms, we used a series of nodes to process the data. Each node will be responsible for one or more sub-tasks, either parse query into different user intents, or organize returned data into renderable page layout. </p>' +
-                        '<p>Yahoo Global Search Middleware platform is controlling everything about Yahoo search services. Yahoo search product serves millions of users and billions of traffic everyday, both on Web and Mobile sides.'
+                        txt: 'Yahoo Global Search Middleware is the most essential platform which connects search backend and frontend, and did all the query processing and data organization work. Yahoo search product serves millions of users and billions of traffic everyday, both on Web and Mobile sides.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-center img-lg padding-md',
-                            src: 'image/portfolio/visionTool/gsmFlow.png',
+                            src: 'image/portfolio/visionTool/workflow.png',
                             alt: 'Yahoo Search Workflow'
                         }
                     },
@@ -1137,7 +1136,9 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'It is very important that we have a reliable and robust system since Yahoo GSM platform is the central hub for all other search functionalities. Over 100 developers in Search team, including engineers, designers, editor, and product managers, more or less work on search middleware system directly or indirectly. As people keep adding new features to search system, the difficulty of debugging increased dramatically. By Q2 2017, our search system has over hundred gigabytes data, more than 20 nodes and numerous sub-tasks. The ratio of bugs has increased steadily as the complexity of system grows.'
+                        txt: 'Since Yahoo GSM platform is the central hub for all other search functionalities. Everyone in search team, from engineers to designers, more or less need to read information from the system. The purpose of retrieving information varies, some might need to get system health status, some might need to get detailed data transformation info, some might simply want to troubleshoot errors in the system.' +
+                        '</p>' +
+                        '<p>However, since the complexity of system keeps growing, the time and effort people needed to spend on debugging increased dramatically. Especially to people with non-technical background:'
                     },
                     {
                         type: 'img',
@@ -1151,14 +1152,21 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'However, the efficiency of troubleshooting was very low. During initial user research, we found that on average people would spend more than 2 hours on debugging. And normally a single bug would have more than one people working on it.</p>' +
-                        '<p>Contributors in search team used to rely on very bulky and time-consuming ways of debugging. Some engineers used built-in debugging tool in IDE(Integrated Development Environment), others debugged from system-generated runtime log file. However, as the volume of data and the complexity of system increase, these two methods of debugging became more inconvenient and less useful. Furthermore,since information in these two methods was displayed in machine-language(ie.heap traceback or Java logging messages), for non-technical developers it was hard to understand those information.'
+                        txt: 'In the initial user survey, I was surprised by the burden and inefficiency of debugging process people had (on average): '
                     },
                     {
-                        type: 'header',
+                        type: 'img',
                         class: 'col-12',
-                        header_class: 'h4',
-                        header_txt: 'Existing debugging methods'
+                        img: {
+                            style: 'img-center img-sm padding-sm',
+                            src: 'image/portfolio/visionTool/old_data.png',
+                            alt: 'old data'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I also analyzed the methods people used for debugging and information retrieving. All of the following methods required knowledge background, and could be hard for new users to onboard. Furthermore, none of them covered complete information from the system.'
                     },
                     {
                         type: 'img',
@@ -1176,27 +1184,17 @@ const modals = [
                         header_txt: 'Goals'
                     },
                     {
+                        type: 'txt',
+                        class: 'col-8',
+                        txt: 'This project was initiated to improve people’s debugging process, by building a stand-alone debugging tool for users of various technical backgrounds. Based on previous user survey, the interface and information of the tool needed to have following characteristics:'
+                    },
+                    {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-center img-smmd padding-md',
                             src: 'image/portfolio/visionTool/goals.png',
                             alt: 'goals'
-                        }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-8',
-                        txt: 'With all kinds of problems and inconveniences, we received a lot of complaints about heavy debugging processes within and without the team. In Q2 2017, we’ve decided to build an internal debugging tool to debug the whole search system. We named this tool “Vision” since we wanted to keep an eye on the health of our search system. </p>' +
-                        '<p>The goal of this project is to build a stand-alone search system debugging tool for users of all levels and various technical backgrounds. The tool should allow users to easily debug problems within the search system, including search frontend, middleware, and backend. The tool should be easily accessed, and should not do any impact on the search system itself.'
-                    },
-                    {
-                        type: 'img',
-                        class: 'col-4',
-                        img: {
-                            style: 'img-center img-md padding-md',
-                            src: 'image/portfolio/visionTool/vision_logo.png',
-                            alt: 'vision_logo'
                         }
                     },
                     {
@@ -1208,10 +1206,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Throughout the project I worked as researchers, designers, and engineers.</p>' +
-                        '<p>At the beginning I did some brief user interviews with few engineers, editors, and designers to learn their pain points of debugging search system.</p>' +
-                        '<p>In the first half of the project I worked closely two more engineers on information retrieval and information structure design. We wrote code to extract useful debugging information from search system, according to our user interview result, and reorganize data in a way that could be easily visualized. </p>' +
-                        '<p>For the second half I designed and coded the whole tool user interface. Based on backend data structure and user problems collected before, I designed a prototype, did some user testing, perfected the features, and launched the product. During the process I also designed the whole tool frontend architecture and user-data interactions. I had experienced a complete product design process though it was just an internal tool.'
+                        txt: 'User Researcher | Information Architecture | UX Designer | Full-stack Engineer'
                     }
                 ]
             },
@@ -1304,12 +1299,12 @@ const modals = [
                 ]
             },
             {
-                title: 'First step: Define Information Structure',
+                title: 'Define Information Structure',
                 data: [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'With various inquiries and usage scenarios from users, we need construct comprehensive information to accommodate different user needs. '
+                        txt: 'Based on interview result, I briefly categorized users into three major groups according to their purpose of debugging.'
                     },
                     {
                         type: 'img',
@@ -1337,21 +1332,154 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'All of the debugging information above could be retrieved from Search Middleware System. Data will be logged from each task in the search chain, and will be grouped based on tags. After a search process debugging data will be constructed into organized and unified json format, then be handed over to tool frontend for rendering. '
+                        txt: 'This part of the project was mainly done in backend.'
                     }
                 ]
             },
             {
-                title: 'Visual Design',
+                title: 'Interface Design',
                 data: [
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
-                        header_txt: 'Initial round: how did we categorize information?'
+                        header_txt: 'Page layout'
                     },
                     {
-
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I’d decided to divide information into groups according to their functionalities and target users. Since each group would have various type of data, I decided to render them as different panels. Individual panel had its own data visualization mechanism.' +
+                        '</p><p>' +
+                        'As the designer, I intended to make the UI as simple as possible, but still be able to provide necessary functions for user needs. So I decided to have three major components:'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-md img-center padding-sm',
+                            src: 'image/portfolio/visionTool/layout.png',
+                            alt: 'layout'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Theme color'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'As for theme color, I thought it should convey a sign of calmness and serenity, helped to ease the debugging process(which in nature should be anxious). So I chose ocean blue, black and gray.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-sm img-center padding-sm',
+                            src: 'image/portfolio/visionTool/color.png',
+                            alt: 'theme color'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Data visualization'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I designed three types of data visualization, based on the purpose of debugging:'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Json Format'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center img-md padding-sm',
+                            src: 'image/portfolio/visionTool/json_format.png',
+                            alt: 'json format'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6',
+                        txt: '<b>Pros:</b><br>' +
+                        '&middot Easy to render<br>' +
+                        '&middot Clearly indicate information structure<br>' +
+                        '&middot Complete dataset</p>' +
+                        '<p><b>Cons:</b><br>' +
+                        '&middot Machine-oriented language<br>' +
+                        '&middot Require familiarity with the system and technical knowledge<br>' +
+                        '&middot Information overload</p>' +
+                        '<p><b>Usage Scenarios:</b><br>' +
+                        '&middot Work as complete reference for all dataset<br>' +
+                        '&middot Could be used to retrieve details of a specific debugging object'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Table Format'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center img-md padding-sm',
+                            src: 'image/portfolio/visionTool/table_format.png',
+                            alt: 'table format'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6',
+                        txt: '<b>Pros:</b><br>' +
+                        '&middot Straightforward view of overall search object status, used different colors to indicate the status<br>' +
+                        '&middot Details will be hidden by default, and expanded upon click, reducing page information overload</p>' +
+                        '<p><b>Cons:</b><br>' +
+                        '&middot Limited information displayed<br>' +
+                        '&middot Non-intuitive information organization</p>' +
+                        '<p><b>Usage Scenarios:</b><br>' +
+                        '&middot Display relatively independent node information, such as individual search output data block'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Graph Format'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center img-md padding-sm',
+                            src: 'image/portfolio/visionTool/graph_format.png',
+                            alt: 'graph format'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6',
+                        txt: '<b>Pros:</b><br>' +
+                        '&middot Succinct and essential information<br>' +
+                        '&middot Can concentrate and present information in a way that sticks<br>' +
+                        '&middot Straightforward to show information such as flow, performance, contrast, etc<br>' +
+                        '&middot Very human readable</p>' +
+                        '<p><b>Cons:</b><br>' +
+                        '&middot Information is limited<br>' +
+                        '&middot Require more data reorganization before rendering, increasing backend processing time</p>' +
+                        '<p><b>Usage Scenarios:</b><br>' +
+                        '&middot System overall performance<br>' +
+                        '&middot Search flow<br>' +
+                        '&middot Latencies, time and storage consumptions<br>' +
+                        '&middot Error rate'
                     }
                 ]
             },
@@ -1359,66 +1487,121 @@ const modals = [
                 title: 'Selected UI',
                 data: [
                     {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'In the header section I put icon and search query, so users could easily find out the query information. And for the menu, I appended a toggle selection for each panel, so users could turn off debug information they don’t need, to reduce data loading time.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'API Page'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'With function of query update and header update. This will also be the landing page of the tool.'
+                    },
+                    {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-lg img-center',
-                            src: 'image/portfolio/visionTool/visionAPI.png',
+                            src: 'image/portfolio/visionTool/api.png',
                             alt: 'Vision API'
                         }
                     },
                     {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Module Page'
+                    },
+                    {
                         type: 'txt',
-                        class: 'col-12 center-align',
-                        subtitle: 'Vision API'
+                        class: 'col-12',
+                        txt: 'With information of individual output modules on the search result page.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-lg img-center',
-                            src: 'image/portfolio/visionTool/entity.png',
-                            alt: 'Vision Entity'
+                            src: 'image/portfolio/visionTool/module_table.png',
+                            alt: 'Module Table'
                         }
                     },
                     {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Method Latency Page'
+                    },
+                    {
                         type: 'txt',
-                        class: 'col-12 center-align',
-                        subtitle: 'Vision Entity'
+                        class: 'col-12',
+                        txt: 'With column chart to indicate relative latencies of each search method.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-lg img-center',
-                            src: 'image/portfolio/visionTool/column_chart.png',
-                            alt: 'Column Chart'
+                            src: 'image/portfolio/visionTool/latency.png',
+                            alt: 'Latency'
                         }
                     },
                     {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Search Flow Page'
+                    },
+                    {
                         type: 'txt',
-                        class: 'col-12 center-align',
-                        subtitle: 'Column Chart'
+                        class: 'col-12',
+                        txt: 'Shows overall search flow and data transformation.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
                             style: 'img-lg img-center',
-                            src: 'image/portfolio/visionTool/network_chart.png',
-                            alt: 'Network Chart'
+                            src: 'image/portfolio/visionTool/flow.png',
+                            alt: 'Flow'
                         }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-12 center-align',
-                        subtitle: 'Network Chart'
                     }
                 ]
             },
             {
                 title: 'Impact',
-                data: []
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The tool was quickly been used by a large number of developers among search team after it was released.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-sm img-center',
+                            src: 'image/portfolio/visionTool/comments.png',
+                            alt: 'Comments'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Reflection'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Through this project, I learned how to study users and design product addressing user needs. My user research skills were greatly improved through the project.'
+                    }
+                ]
             }
         ]
     },

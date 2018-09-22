@@ -49,13 +49,13 @@ function portfolioEvent() {
     work.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
         if (target === '#vision' || target === '#wizard') {
-            // passwordPromp(target);
-            $('#portfolio').hide();
-            $('#work').hide();
-            $('#navigation').hide();
-            $(target).addClass('modal-active');
-            curTarget = target;
-            window.scrollTo(0, 0);
+            passwordPromp(target);
+            // $('#portfolio').hide();
+            // $('#work').hide();
+            // $('#navigation').hide();
+            // $(target).addClass('modal-active');
+            // curTarget = target;
+            // window.scrollTo(0, 0);
         } else {
             $('#portfolio').hide();
             $('#work').hide();
