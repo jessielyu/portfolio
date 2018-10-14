@@ -271,13 +271,13 @@ a {
     display: flex;
     max-height: 100%;
     margin: 5px;
+    box-shadow: 1px 1px 6px #9B9B9B;
 }
 
 .thumbnail-item .caption {
     position: absolute;
-    margin: 2px;
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
@@ -364,14 +364,6 @@ a {
     margin-bottom: 100px;
 }
 
-.sections h2 {
-    color: #EB8A96
-}
-
-.sections h4 {
-    color: #B86C75;
-}
-
 /* About */
 #about {
     text-align: center;
@@ -410,4 +402,68 @@ a {
 
 #about a:hover {
     text-decoration: underline;
+}
+
+/* Modal Specific */
+/* quicket solutions */
+#quicket h2 {
+    color: #F08F6C;
+}
+
+#quicket h3 {
+    color: #BD481C;
+}
+
+#quicket .header {
+    background-color: #F08F6C;
+}
+
+/* vision tool */
+#vision h2 {
+    color: #3478B7;
+}
+
+#vision h3 {
+    color: #265784;
+}
+
+#vision .header {
+    background-color: #3478B7;
+}
+
+/* laishuati.com */
+#laishuati h2 {
+    color: #5F9BA8;
+}
+
+#laishuati h3 {
+    color: #426C75;
+}
+
+#laishuati .header {
+    background-color: #5F9BA8;
+}
+
+/* dmv Redesign */
+#dmvRedesign h2 {
+    color: #819CB2;
+}
+
+#dmvRedesign h3 {
+    color: #2F5370;
+}
+
+#dmvRedesign .header {
+    background-color: #819CB2;
+}
+
+/* Mis */
+#youtube_embedded_video {
+    box-shadow: 1px 1px 6px #9B9B9B;
+    width: 800px;
+    height: 450px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

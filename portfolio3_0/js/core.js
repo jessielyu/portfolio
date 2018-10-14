@@ -1,7 +1,7 @@
 /**
  * Created by jessielyu on 7/10/18.
  */
-const passcode = 'loveYahoo2016';
+const passcode = 'sde2018';
 
 let curTarget;
 let curPage = '#placeholder';
@@ -14,7 +14,7 @@ const template = {
     '<a id="{{this.href}}" class="portfolio-link"><div class="caption"><p>{{this.name}}</p></div>' +
     '<img src="{{this.image}}" alt="{{this.name}}"></a></div>{{/each}}</div>',
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><hr><h4>{{header.date}}</h4><p>{{header.txt}}</p></div></div>' +
-    '<div class="sections">{{#if header.header_img}}<div class="col-12"><img src="{{header.header_img}}" class="header_img"></div>{{/if}}' +
+    '<div class="sections">{{#if header.header_img}}<div class="col-12 center-align">{{{header.header_img}}}</div>{{/if}}' +
     '{{#each sections}}<div class="section-block"><h2 class="col-12">{{title}}</h2>{{#each data}}' +
     '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<p>{{{txt}}}</p>{{else ifCond type "===" "header"}}<{{header_class}}>{{header_txt}}</{{header_class}}>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
@@ -48,7 +48,7 @@ function portfolioEvent() {
 
     work.on('click', 'a', function (e) {
         const target = e.currentTarget.getAttribute('id');
-        if (target === '#vision' || target === '#wizard') {
+        if (target === '#vision' || target === '#wizard' || target === '#quicket') {
             passwordPromp(target);
             // $('#portfolio').hide();
             // $('#work').hide();
