@@ -358,6 +358,7 @@ a {
 .sections {
     margin-left: 300px;
     padding: 100px;
+    width: 100%;
 }
 
 .sections .section-block {
@@ -466,4 +467,18 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#dmv_slide {
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center_block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

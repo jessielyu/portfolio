@@ -1113,11 +1113,203 @@ const modals = [
         header: {
             title: 'DMV Schedule System Redesign',
             date: 'September.2018',
-            txt: 'UX Researcher | UX Designer'
+            txt: 'UX Researcher | UX Designer',
+            header_img: '<div id="dmv_slide"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSFgnOTsZR7_-StUuZ1vqI75F2XLD81nzQ_HJGb2Lk7qiGNgnsPLF-wHsA0FOfD2gKrFKVEUMaUXJR4/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>'
         },
         sections: [
             {
-                title: 'Coming Soon >_<'
+                title: 'Introduction',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/intro_1.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/intro_2.png',
+                            alt: 'intro_2'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Task Analysis',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/task_analysis.png',
+                            alt: 'task_analysis'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Brainstorming Sketch',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/brainstorming.png',
+                            alt: 'brainstorming'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Paper Prototype',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/prototype_1.png',
+                            alt: 'prototype_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/prototype_2.png',
+                            alt: 'prototype_2'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/prototype_3.png',
+                            alt: 'prototype_3'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'User Testing',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/user_testing.png',
+                            alt: 'user_testing'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/critique.png',
+                            alt: 'critique'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Mockups',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_1.png',
+                            alt: 'mockup_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_2.png',
+                            alt: 'mockup_2'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_3.png',
+                            alt: 'mockup_3'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_4.png',
+                            alt: 'mockup_4'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_5.png',
+                            alt: 'mockup_5'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_6.png',
+                            alt: 'mockup_6'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_7.png',
+                            alt: 'mockup_7'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center',
+                            src: 'image/portfolio/dmvRedesign/mockup_8.png',
+                            alt: 'mockup_8'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Interactive prototype',
+                data: [
+                    {
+                        type: 'customized',
+                        class: 'col-12',
+                        customized_class: 'center_block',
+                        customized_tag: '<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWy9pp5Npb8HyFC0tCZuGViu3%2FDMV_Appt.Redesign%3Fnode-id%3D0%253A2" allowfullscreen></iframe>'
+                    }
+                ]
             }
         ]
     },

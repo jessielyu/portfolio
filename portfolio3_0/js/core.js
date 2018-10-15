@@ -16,7 +16,7 @@ const template = {
     Modal: '{{#each this}}<div id="{{name}}" class="modal"><div class="header"><a class="close-btn" href="#"><i class="fa fa-close"></i></a><div class="title"><h1>{{header.title}}</h1><hr><h4>{{header.date}}</h4><p>{{header.txt}}</p></div></div>' +
     '<div class="sections">{{#if header.header_img}}<div class="col-12 center-align">{{{header.header_img}}}</div>{{/if}}' +
     '{{#each sections}}<div class="section-block"><h2 class="col-12">{{title}}</h2>{{#each data}}' +
-    '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<p>{{{txt}}}</p>{{else ifCond type "===" "header"}}<{{header_class}}>{{header_txt}}</{{header_class}}>' +
+    '<div class="{{class}}">{{#ifCond type "===" "img"}}<img class="{{img.style}}" src="{{img.src}}" alt="{{img.alt}}">{{else ifCond type "===" "txt"}}<p>{{{txt}}}</p>{{else ifCond type "===" "header"}}<{{header_class}}>{{header_txt}}</{{header_class}}>{{else ifCond type "===" "customized"}}<div class="{{customized_class}}">{{{customized_tag}}}</div>' +
     '{{/ifCond}}</div>{{/each}}</div>{{/each}}</div></div>{{/each}}',
     About: '<div id="about"><div class="intro-body"><img src="{{header}}" alt="header background"><div class="center-align intro-text"><h2 class="center-align">Hi, I\'m Jessie Lyu</h2><h3>{{subtitle}}</h3><p>{{{intro}}}</p><a href="{{resume}}" target="_blank"><i class="fa fa-address-card"></i> Resume</a></div></div>' +
     '<div class="section-block"><h2 class="col-12 center-align">PERSISTENT &middot CREATIVITY &middot LOVE</h2>' +
