@@ -458,6 +458,45 @@ a {
     background-color: #819CB2;
 }
 
+/* wizard triggering */
+#wizard h2 {
+    color: #67B990;
+}
+
+#wizard h3 {
+    color: #60ACD1;
+}
+
+#wizard .header {
+    background-color: #67B990;
+}
+
+/* dalian */
+#dalian h2 {
+    color: #2C3E51;
+}
+
+#dalian h3 {
+    color: #7FB3EA;
+}
+
+#dalian .header {
+    background-color: #2C3E51;
+}
+
+/* shoppingLive */
+#shoppingLive h2 {
+    color: #DA827D;
+}
+
+#shoppingLive h3 {
+    color: #A76460;
+}
+
+#shoppingLive .header {
+    background-color: #DA827D;
+}
+
 /* Mis */
 #youtube_embedded_video {
     box-shadow: 1px 1px 6px #9B9B9B;

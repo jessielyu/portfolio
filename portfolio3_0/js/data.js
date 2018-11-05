@@ -36,7 +36,7 @@ const thumbnails_work = {
         href: '#vision'
     },
     wizard: {
-        name: 'Yahoo! Wizard Tool',
+        name: 'Yahoo! Triggering Tool',
         image: 'image/portfolio/thumbnail/wizard.png',
         href: '#wizard'
     },
@@ -53,9 +53,217 @@ const modals = [
         header: {
             title: 'DALIAN',
             date: 'June.2017 - August.2017',
-            txt: 'Product Design'
+            txt: 'User-generated news application'
         },
         sections: [
+            {
+                title: 'The Idea',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Dalian App is a news digest application on IOS mobile devices, which features user-generated news content. The purpose of it is to change the way people receive information.</p>' +
+                        '<p>Normally people digest news passively -- the content is pre-created for them by editors of TVs, websites, mobile apps, and newspapers. What if users could create the news themselves?</p>' +
+                        '<p>Dalian was designed based on this idea. It’s a news sharing platform that all the content is coming from the users themselves. Users could view other users’ posts, and they could react to those content by comments or thumb-up/down. Another distinguishable feature of Dalian is that users could debate each other’s news, by creating a new post that cites the original one and explain the reason for debating.</p>' +
+                        '<p>Our purpose is through this user-generated news platform, users could freely express their ideas and thoughts. We also hope everyone could develop a critical mind about the information they receive every day, and learn to filter out fake ones.'
+                    }
+                ]
+            },
+            {
+                title: 'The Team',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center img-smmd padding-sm',
+                            src: 'image/portfolio/dalianApp/Jessie_profile.jpg',
+                            alt: 'Jessie'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center img-smmd padding-sm',
+                            src: 'image/portfolio/dalianApp/Qi_profile.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6 center-align',
+                        txt: '<b>Jessie Lyu - Designer</b>'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-6 center-align',
+                        txt: '<b>Qiyuan Liu - Engineer</b>'
+                    }
+                ]
+            },
+            {
+                title: 'Competitive Analysis',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Analysis'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'There is no comprehensive platform currently in China that features user-generated news. Furthermore, as we could see, content from the few major news agencies are either polished or filtered, so the accuracy of that news is highly doubtable. However, none of the platforms features user critique on fake information.'
+                    }
+                ]
+            },
+            {
+                title: 'Brainstorming',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/wireframe.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The application we will develop should:'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: '1. Be mobile-based, since most people like to read news on-the-go, or during their spare time.</p>' +
+                        '<p>2. Features on user-generated content. The application itself will not produce any news for users.</p>' +
+                        '<p>3. Features on users critique -- the idea we want to promote is to allow users debating and reputing on each other.  Since much of the news we receive is fake, we want to facilitate users critical thinking skills, and help them filter our misleading news. This function should be easily accessed and distinguishable.'
+                    }
+                ]
+            },
+            {
+                title: 'Low-fidelity Sketches',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/uisketch.jpg',
+                            alt: 'Qi'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Prototype Iterations',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Version 1.0'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version1.1.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version1.2.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Version 2.0'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version2.1.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version2.2.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Version 3.0'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version3.1.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version3.2.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Version 4.0'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version4.1.jpg',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/version4.2.jpg',
+                            alt: 'Qi'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Final Deliverables',
+                data: [
+                ]
+            }
         ]
     },
     {
@@ -63,9 +271,137 @@ const modals = [
         header: {
             title: 'Shopping Live',
             date: 'April.2017 - June.2017',
-            txt: 'UX Design'
+            txt: 'An immersive online shopping experience design'
         },
         sections: [
+            {
+                title: 'The Problem',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'People\'s shopping habits have undergone tremendous changes because of globalization and hi-tech. Shopping over the world nowadays is easy for customers through e-commerce.</p>' +
+                        '<p>“Freelance retail consultants” arise with the popularity of e-commerce. For some countries, such as China, customers don’t have accesses to all e-commerce sites overseas. So “freelance retail consultants” work as the middleman for such customers to get their products. Most of “freelance retail consultants” are people in another country who part-time in helping others purchasing products. They always advertise themselves through social media or bbs websites. Mostly they will provide customized services for customers -- giving advise to the customers’ buying choices through conversations, images, and video clips.</p>' +
+                        '<p>The problem of this business model is obvious -- users could only get information about a product through arbitrary methods. Descriptions, images and video clips from a “freelance retail consultant”’s view are very biased. Furthermore, since most “freelance retail consultants” are part-time in shopping for others, they are not professional buyers and have no guarantees on either product price or product quality. So It’s hard to build trust between customers and buyers.'
+                    }
+                ]
+            },
+            {
+                title: 'The Idea',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The idea of LiveShopping is to build a trustworthy platform for “freelance retail consultants” and customers. The major feature is shopping with live streaming -- customers could actually “watch” how their buyers purchase the products. By creating an immersive shopping experience for customers, customers could have a more comprehensive view of the product itself, as well as build trust for the buyers.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Target users'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The target users of the application are customers.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Two major functions'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Customers should be able to see on-going and upcoming events for the buyers (freelance retail consultants). Furthermore, the application needs to support placing orders either within the live-streaming event or beforehand.'
+                    }
+                ]
+            },
+            {
+                title: 'Page Design',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Page flow'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Low-fidelity prototypes'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'High-fidelity prototypes'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Homepage'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'On the homepage, the first thing users should see is the on-going live (with a link to enter). Users should be able to see list upcoming shopping events of buyers.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Upcoming event page'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Include key information about the event -- brand, time, date, and shopping list (available products for the event).'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Product page'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Include information about a product: properties (color, size, etc.), price, and “place an order” button.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Live streaming page'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'On the live page, users should be able to see a collapsable dialogue about the current “product” been shopped. Users should be able to place an order from the live page.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Shopping cart and checkout pages'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Similar to other e-commerce applications, these pages are standard shopping cart and checkout pages, including functions like view/update shopping cart, fill billing/shipping information and order confirmation.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Final deliverables'
+                    }
+                ]
+            }
         ]
     },
     {
@@ -73,7 +409,7 @@ const modals = [
         header: {
             title: 'TechExchange website design',
             date: 'October.2018',
-            txt: 'UX Design'
+            txt: 'Redesign Project'
         },
         sections: [
             {
@@ -86,7 +422,7 @@ const modals = [
         header: {
             title: 'laishuati',
             date: 'Jan.2018 - Mar.2018',
-            txt: 'UX design'
+            txt: 'Group Coding Application Design'
         },
         sections: [
             {
@@ -387,7 +723,7 @@ const modals = [
         header: {
             title: 'DMV Redesign',
             date: 'September.2018',
-            txt: 'UX Researcher | UX Designer',
+            txt: 'Redesign Project',
             header_img: '<div id="dmv_slide"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSFgnOTsZR7_-StUuZ1vqI75F2XLD81nzQ_HJGb2Lk7qiGNgnsPLF-wHsA0FOfD2gKrFKVEUMaUXJR4/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>'
         },
         sections: [
@@ -418,13 +754,21 @@ const modals = [
                 title: 'Task Analysis',
                 data: [
                     {
+                        type: 'txt',
+                        class: 'col-3'
+                    },
+                    {
                         type: 'img',
-                        class: 'col-12',
+                        class: 'col-6',
                         img: {
                             style: 'img-center',
                             src: 'image/portfolio/dmvRedesign/task_analysis.png',
                             alt: 'task_analysis'
                         }
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-3'
                     }
                 ]
             },
@@ -592,7 +936,7 @@ const modals = [
         header: {
             title: 'Vision Tool',
             date: 'June.2016 - July.2018',
-            txt: 'UX Designer | Full-stack Engineer',
+            txt: 'Dat Visualization Design and Development',
             header_img: '<img src="image/portfolio/visionTool/header_img.png" class="header_img">'
         },
         sections: [
@@ -688,18 +1032,18 @@ const modals = [
                 data: [
                     {
                         type: 'img',
-                        class: 'col-12',
+                        class: 'col-6',
                         img: {
-                            style: 'img-center img-lg padding-sm',
+                            style: 'img-center img-mdlg padding-sm',
                             src: 'image/portfolio/visionTool/persona_1.png',
                             alt: 'avatar_1'
                         }
                     },
                     {
                         type: 'img',
-                        class: 'col-12',
+                        class: 'col-6',
                         img: {
-                            style: 'img-center img-lg padding-sm',
+                            style: 'img-center img-mdlg padding-sm',
                             src: 'image/portfolio/visionTool/persona_2.png',
                             alt: 'avatar_1'
                         }
@@ -975,13 +1319,346 @@ const modals = [
     {
         name: 'wizard',
         header: {
-            title: 'Wizard Tool',
+            title: 'Triggering Tool for Yahoo Search',
             date: 'June.2016 - July.2018',
-            txt: 'Configuration Tool for Yahoo Search Data Output.'
+            txt: 'Yahoo Internal Tool Development'
         },
         sections: [
             {
-                title: 'Coming Soon >_<'
+                title: 'Overview',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Yahoo triggering tool is used for content editors to update the search result. In the Yahoo search system, a user query will trigger a collection of backend data sources based on predefined rules, and the returned data sources will be filtered again based on selected criteria. The triggering tool is used for editors to set triggering rules and data filters.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Challenges'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The old triggering tool was built for the old Yahoo Search system. The system was replaced in late 2016 and early 2017, so we also needed to build a new triggering tool for the new search system. Before the system was built, editors needed to directly modify the configuration code to update the layout, which required extra effort and time.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Goals'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Build a tool to streamline the editing process and increase editors’ working efficiency.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Target user'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Yahoo Search Editors and Yahoo Search Engineers'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'My role'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'UX researcher | UX designer | Frontend developer'
+                    }
+                ]
+            },
+            {
+                title: 'User Interview',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Contextual Inquiry'
+                    }
+                ]
+            },
+            {
+                title: 'Flow',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Data Flow'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-mdlg padding-sm',
+                            src: 'image/portfolio/wizardTool/data flow.png',
+                            alt: 'Data Flow'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Page Flow'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'User Flow'
+                    }
+                ]
+            },
+            {
+                title: 'Visual Design',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Constraint'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'One constraint I had when designing the triggering tool is this tool need to be compatible with the general configuration tool for search layout. The triggering tool needed to be in harmony with the configuration tool, in terms of color and layout.</p>' +
+                        '<p>Another constraint I had is with the engineers (I’m one of the engineers as well). The triggering tool was going to share the same frontend framework with the configuration tool, so I needed to consider the limits of that framework when I designed the UI. Furthermore, I also needed to consider reusability of some components to save the effort of engineers.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Theme colors - comply with other already existing tools'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The theme color is: green, white, blue and black, which I carefully picked from the existing configuration tool and the old triggering tool. I believe these colors convey the sense of serenity and calmness.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Form design - reusable components + new components'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Since the engineering team (including myself) wished to reuse some UI component that already been built for other tools. I tried my best to design the UI that embed existing components as many as possible, without affecting its usability.</p>' +
+                        '<p>Another benefit of reusing some UI components is that it could increase the efficiency of usage since most users are already familiar with the existing UI components. '
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'A more user-friendly form structure'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'When designing the for structure, I considered the most common user flow to organize the form in a reasonable and natural way. The purpose of this to prevent users from scrolling up and down on the page to fill out the information.'
+                    }
+                ]
+            },
+            {
+                title: 'Deliverable',
+                data: [
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Overview pages'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/DomainView Retina.png',
+                            alt: 'Category view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/UseCaseView Retina.png',
+                            alt: 'Rule view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/RuleView Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/DisplayConflictsView Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/DispatchConflictsView Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/Publisher Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Form pages'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/CreateDomain Retina.png',
+                            alt: 'Category view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/CreateUC Retina.png',
+                            alt: 'Rule view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/CreateRule Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/CreateDisplayConflicts Retina.png',
+                            alt: 'Filter view'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/wizardTool/CreatePublisher Retina.png',
+                            alt: 'Filter view'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Usability Test',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'I presented the design to our content editors, and ask one of them to perform a usability test.</p>' +
+                        '<p>I asked Tracy, who has no coding background, to perform a complete chain of triggering configuration. The purpose of this test was to test the usability of interaction design, especially for non-tech users.'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: '<b>Testee: Tracy Lee, Senior Content Analysis Engineer</b></p>' +
+                        '<p><b>Task: Create a complete chain of configuration -- triggering rule and triggering filter</b>'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Result'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'Problems (based on heuristics):'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: '<b>Flexibility and Efficiency of use</b>: When she tried to search for the existing configs, she found its hard for her to search by the exact name (cause she didn’t remember). In many cases, she just wanted to search by attributes but the system didn’t support attribute search function.</p>' +
+                        '<p><b>Error prevention</b>: A configuration needed to be created under a category. But the system didn’t have any error prevention mechanism so the user accidentally created a configuration without assigning the category. Then she found she could never successfully save the configuration and needed to redo everything again with proper procedures.</p>' +
+                        '<p><b>Help and documentation</b>: Even though Tracy didn’t have any problems navigating and understanding terms and forms, she pointed out that for first-time users the onboard processes could be troublesome since there were no tutorials and help/tips for them.</p>' +
+                        '<p><b>Match between system and the real world</b>: She also mentioned that the terminology choices for the tool were not intuitive, ie. “domain”meant ”category”, and “use case” meat “rule” while “rule” actually meant “filter”. She felt this is really confusing. However, those terms were defined in the search system and we want to make the tool and the system consistent.'
+                    }
+                ]
+            },
+            {
+                title: 'Impact & Thoughts',
+                data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The tool has been used cross-teams, by developers from US, Taiwan, Hong Kong, and Europe. The tool has reduced the search triggering configuration creation and modifying time by at least half. Most of the user feedback was positive, saying that the flow was intuitive and easy to manipulate.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Future thoughts'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Even though the tool has made the work of search developers much faster and easier, I still found some potential areas of development for this tool:</p>' +
+                        '<p><b>Training and tutorial</b>: For first-time users, especially new hires, the tool is hard to learn and command even with help and tips. They normally spent more than 3 days to get familiar with the tool. A future to-do might be a tutorial for new users.</p>' +
+                        '<p><b>Minimize the functionality and information</b>: since the tool was built to follow the layout and design of another configuration tool, there are a lot of redundant information and functionalities. A future to-do could be to minimize the design and information to prevent information overload.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Retrospect'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'From this project, I greatly developed my skills of user study through user interviews, contextual inquiries, and user testings. In the end, I was able to interpret and analyze the collected interview result and adjust design decisions. This is also a major tool for search product which will be used by many developers, so I could make a huge impact on our team through this project.</p>' +
+                        '<p>One takeaway I got was balancing the requirements from users and engineers. In this project, I worked closely with engineers (as I was also one of them) and I found out sometimes I designed more for engineers rather than users. As I kept thinking about reducing engineers’ workload and increasing development easiness, I sometimes forgot about the real user needs. In my future career, I need to consider both stakeholders’ needs and design the best solution to balance their requirements.'
+                    }
+                ]
             }
         ]
     },
@@ -990,7 +1667,7 @@ const modals = [
         header: {
             title: 'Quicket Solutions',
             date: 'Sep.2015 - June.2016',
-            txt: 'UX Designer | Frontend Developer',
+            txt: 'Application Design for Police Department',
             header_img: '<div id="youtube_embedded_video"><div onclick="this.nextElementSibling.style.display=\'block\'; this.style.display=\'none\'"><img src="image/portfolio/quicket/intro.png" style="cursor:pointer" /></div><div style="display:none"><iframe width="800" height="450" frameborder="0" style="margin-bottom: 100px" src="https://www.youtube.com/embed/zFK0OadY21Q?autoplay=1&rel=0&showinfo=0"></iframe></div></div>'
         },
         sections: [
@@ -1064,7 +1741,7 @@ const modals = [
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-center img-lg padding-sm',
+                            style: 'img-center img-mdlg padding-sm',
                             src: 'image/portfolio/quicket/persona.png',
                             alt: 'Persona'
                         }
