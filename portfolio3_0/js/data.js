@@ -2,15 +2,15 @@
  * Created by jessielyu on 7/10/18.
  */
 const thumbnails = {
+    techExchange: {
+        name: 'TechExchange Website Design',
+        image: 'image/portfolio/thumbnail/techExchange.png',
+        href: '#techExchange'
+    },
     dmvRedesign: {
         name: 'DMV Schedule System Redesign',
         image: 'image/portfolio/thumbnail/dmvRedesign.png',
         href: '#dmvRedesign'
-    },
-    techExchange: {
-        name: 'TechExchange Website Design',
-        image: 'image/portfolio/thumbnail/taskMate.png',
-        href: '#techExchange'
     },
     laishuati: {
         name: 'Laishuati.com',
@@ -105,6 +105,15 @@ const modals = [
             {
                 title: 'Competitive Analysis',
                 data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/competitive analysis.png',
+                            alt: 'Qi'
+                        }
+                    },
                     {
                         type: 'header',
                         class: 'col-12',
@@ -262,6 +271,147 @@ const modals = [
             {
                 title: 'Final Deliverables',
                 data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-md',
+                            src: 'image/portfolio/dalianApp/final.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Selected UI'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'User on-board flow'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - welcome.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - login.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - sign up email.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - sign up user info (birth&profile pic).png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'News & posts flow'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - homepage.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - post page.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - create post photo.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - comment.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h4',
+                        header_txt: 'User profile & settings'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - user main.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - user edit info.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - user post history.png',
+                            alt: 'Qi'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/dalianApp/iPhone 7 - user settings.png',
+                            alt: 'Qi'
+                        }
+                    }
                 ]
             }
         ]
@@ -289,6 +439,15 @@ const modals = [
             {
                 title: 'The Idea',
                 data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/brainstorming.jpg',
+                            alt: 'Jessie'
+                        }
+                    },
                     {
                         type: 'txt',
                         class: 'col-12',
@@ -325,19 +484,31 @@ const modals = [
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
-                        header_txt: 'Page flow'
+                        header_txt: 'Low-fidelity prototypes'
                     },
                     {
-                        type: 'header',
+                        type: 'img',
                         class: 'col-12',
-                        header_class: 'h3',
-                        header_txt: 'Low-fidelity prototypes'
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/uisketch.jpg',
+                            alt: 'Jessie'
+                        }
                     },
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'High-fidelity prototypes'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/wireframe.png',
+                            alt: 'Jessie'
+                        }
                     },
                     {
                         type: 'header',
@@ -399,6 +570,42 @@ const modals = [
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'Final deliverables'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/img1.gif',
+                            alt: 'Jessie'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/img3.gif',
+                            alt: 'Jessie'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/img4.gif',
+                            alt: 'Jessie'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-6',
+                        img: {
+                            style: 'img-center span padding-sm',
+                            src: 'image/portfolio/shoppingApp/img6.gif',
+                            alt: 'Jessie'
+                        }
                     }
                 ]
             }
@@ -409,11 +616,305 @@ const modals = [
         header: {
             title: 'TechExchange website design',
             date: 'October.2018',
-            txt: 'Redesign Project'
+            txt: 'Non-profit Website Redesign'
         },
         sections: [
             {
-                title: 'Coming Soon >_<'
+                title: 'Our Team',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center padding-sm',
+                            src: 'image/portfolio/techExchange/team.jpg',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Our Client',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/client.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Mapping the user flow',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/userflow.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/userflow2.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Our goal',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/goal.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/goal2.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Personas',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/persona1.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/persona2.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/persona3.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Our process',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/process.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Final designs',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/home.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/home2.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/home3.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center shadow padding-sm',
+                            src: 'image/portfolio/techExchange/impact.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/impact2.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/impact3.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/about.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/about1.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/donate.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/donate2.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/donate3.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/volunteer.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/volunteer1.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/volunteer2.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Appendix',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/asset.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/asset2.png',
+                            alt: 'intro_1'
+                        }
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/asset3.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
+            },
+            {
+                title: 'Conclusion',
+                data: [
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-cente shadow padding-sm',
+                            src: 'image/portfolio/techExchange/conclusion.png',
+                            alt: 'intro_1'
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -1386,6 +1887,15 @@ const modals = [
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'Contextual Inquiry'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-sm',
+                            src: 'image/portfolio/wizardTool/contextual inquiry.png',
+                            alt: 'Contextual Inquiry'
+                        }
                     }
                 ]
             },
@@ -1414,10 +1924,13 @@ const modals = [
                         header_txt: 'Page Flow'
                     },
                     {
-                        type: 'header',
+                        type: 'img',
                         class: 'col-12',
-                        header_class: 'h3',
-                        header_txt: 'User Flow'
+                        img: {
+                            style: 'img-center img-mdlg padding-sm',
+                            src: 'image/portfolio/wizardTool/page flow.png',
+                            alt: 'Page Flow'
+                        }
                     }
                 ]
             },
@@ -1446,6 +1959,15 @@ const modals = [
                         type: 'txt',
                         class: 'col-12',
                         txt: 'The theme color is: green, white, blue and black, which I carefully picked from the existing configuration tool and the old triggering tool. I believe these colors convey the sense of serenity and calmness.'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-sm padding-sm',
+                            src: 'image/portfolio/wizardTool/theme.png',
+                            alt: 'Theme Color'
+                        }
                     },
                     {
                         type: 'header',
@@ -1745,12 +2267,6 @@ const modals = [
                             src: 'image/portfolio/quicket/persona.png',
                             alt: 'Persona'
                         }
-                    },
-                    {
-                        type: 'header',
-                        class: 'col-12',
-                        header_class: 'h3',
-                        header_txt: 'Storyboard'
                     }
                 ]
             },
@@ -1764,16 +2280,48 @@ const modals = [
                         header_txt: 'Initial Design'
                     },
                     {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-sm',
+                            src: 'image/portfolio/quicket/old_design.jpg',
+                            alt: 'Old Design'
+                        }
+                    },
+                    {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'User Testing'
                     },
                     {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Critiques from our users:'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-sm',
+                            src: 'image/portfolio/quicket/critique.png',
+                            alt: 'Critique'
+                        }
+                    },
+                    {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
                         header_txt: 'Final Design'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-lg padding-sm',
+                            src: 'image/portfolio/quicket/electronic_design.jpg',
+                            alt: 'Electronic Design'
+                        }
                     }
                 ]
             }

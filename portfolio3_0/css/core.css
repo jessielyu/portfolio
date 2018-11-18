@@ -175,13 +175,13 @@ a {
 
 /* Navigation */
 #navigation {
-    display: flex;
+    /*display: flex;*/
     padding-top: 15px;
-    position: fixed;
-    top: 0;
+    /*position: fixed;*/
+    /*top: 0;*/
     background-color: rgba(255,255,255,0.8);
     z-index: 999;
-    height: 80px;
+    /*height: 80px;*/
     /*border-bottom: 0.1mm solid #EED3D7;*/
 }
 
@@ -327,9 +327,7 @@ a {
 #content .header {
     background-color: #EB8A96;
     color: #FFFFFF;
-    height: 100vh;
-    position: fixed;
-    width: 300px;
+    height: 100%;
     word-wrap: break-word;
 }
 
@@ -356,7 +354,7 @@ a {
 }
 
 .sections {
-    margin-left: 300px;
+    /*margin-left: 300px;*/
     padding: 100px;
     width: 100%;
 }
@@ -497,6 +495,19 @@ a {
     background-color: #DA827D;
 }
 
+/* techExchange */
+#techExchange h2 {
+    color: #84C225;
+}
+
+#techExchange h3 {
+    color: #84C225;
+}
+
+#techExchange .header {
+    background-color: #4A4A4A;
+}
+
 /* Mis */
 #youtube_embedded_video {
     box-shadow: 1px 1px 6px #9B9B9B;
@@ -520,4 +531,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.shadow {
+    box-shadow: 1px 1px 6px #9B9B9B;
 }
