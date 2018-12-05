@@ -175,14 +175,9 @@ a {
 
 /* Navigation */
 #navigation {
-    /*display: flex;*/
     padding-top: 15px;
-    /*position: fixed;*/
-    /*top: 0;*/
     background-color: rgba(255,255,255,0.8);
     z-index: 999;
-    /*height: 80px;*/
-    /*border-bottom: 0.1mm solid #EED3D7;*/
 }
 
 #logo {

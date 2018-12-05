@@ -1447,8 +1447,36 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Vision tool is an internal tool built for debugging Yahoo search system. The debugging process of Yahoo search system was overly complicated before the tool was launched. The goal of Vision tool was to build a stand-alone web application that facilitates debugging speed and debugging convenience for Yahoo search developers.'
+                        txt: 'Vision tool is an internal debugging tool built for Yahoo search system. I designed and implemented this tool in early 2017, while I was a full-time software engineer in Yahoo. The whole project lasted about three months(1 quarter).'
                     },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'My roles'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'As an engineer working in the Search team, I realized that it’s urgent for us to have a easy-to-use and comprehensive debugging tool. In late 2017 I proposed to develop a universal search debugging tool for Yahoo employees working on Search system.</p>' +
+                        '<p>In 2018 the project was initiated and was included in the Search team’s Q1 goals. I was the person who led this project. During the development of Vision Tool, I worked as both the <b>designer</b> and the <b>engineer</b>. I coordinated with people across the whole search team and rapidly shipped a product in 3 months. '
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'The process'
+                    },
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'Identifying problems → interviewing users → designing interfaces → implementing → launching'
+                    }
+                ]
+            },
+            {
+                title: 'Identify problems',
+                data: [
                     {
                         type: 'header',
                         class: 'col-12',
@@ -1458,50 +1486,65 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Before Vision tool was introduced, people picked up different methods of debugging based on their technical backgrounds. Debugging processes varies from designers to engineers, and there was no unified debugging platform that could be used by everyone.</p>' +
-                        '<p>The difficulty of debugging had increased dramatically as the complexity of the search system grew. According to early project survey, on average people needed to spend too much time and effort on debugging.'
+                        txt: 'In early 2017, we transferred all the traffic of Yahoo Search from the old platform to the new platform. Over <b>100 Yahoo employees</b> were contributing to the system with <b>various backgrounds</b>.</p>' +
+                        'By the end of 2017, the new search system had provided search services for over 50 countries over the world and millions of users. Many problems emerged as well.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-center img-sm padding-sm',
+                            style: 'img-center img-md padding-md',
                             src: 'image/portfolio/visionTool/old_data.png',
-                            alt: 'old data'
+                            alt: 'Old Data'
                         }
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'The most common ways for debugging were leveraging on browser inspector (like Chrome inspector), using built-in IDE debugging tool, and reading runtime logging files. None of them had complete debugging dataset which could be used by everyone, and some of them required in-depth knowledge on technical aspects of the search system, which was not applicable to non-tech people like PMs.'
+                        txt: 'However, the debugging process is very inefficient for Yahoo! System. Some commonly used debugging methods like IDE built-in debugging portal, browser inspector, system log...all had major drawbacks. Debugging had become the most painful process of search system developing.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-center img-md padding-sm',
+                            style: 'img-lg img-center padding-md',
                             src: 'image/portfolio/visionTool/current_methods.png',
-                            alt: 'debugging methods'
+                            alt: 'layout'
                         }
                     },
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
-                        header_txt: 'Goals'
+                        header_txt: 'Purposes'
                     },
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'The goals of Vision tool were simple -- build a unified debugging platform accommodating people of various background.'
+                        txt: 'There are three major purposes of Vision Tool.'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-center img-smmd padding-md',
+                            style: 'img-center img-md padding-md',
                             src: 'image/portfolio/visionTool/goals.png',
-                            alt: 'goals'
+                            alt: 'Goals'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Success Matrix'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-center img-md padding-md',
+                            src: 'image/portfolio/visionTool/success_matrix.png',
+                            alt: 'Old Data'
                         }
                     },
                     {
@@ -1513,52 +1556,58 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Everyone in Search team who need to debug the system, including UI designer, content editors, system engineers, and product managers.'
-                    },
-                    {
-                        type: 'header',
-                        class: 'col-12',
-                        header_class: 'h3',
-                        header_txt: 'My role'
-                    },
+                        txt: 'Everyone Yahoo employee in Search team who needs to debug the system, including UI designer, content editors, system engineers, and product managers.'
+                    }
+                ]
+            },
+            {
+                title: 'Interview users',
+                data: [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'User Researcher | Information Architecture | UX Designer | Full-stack Engineer'
-                    }
-                ]
-            },
-            {
-                title: 'Personas',
-                data: [
+                        txt: 'I interviewed a bunch of employees in the Yahoo search team, including engineers, designers, content editors, and product managers. Debugging needs and expectations varied from user to user, depending on his/her position, duties, and technical backgrounds. Based on user interview result, I constructed two user personas:'
+                    },
                     {
-                        type: 'img',
-                        class: 'col-6',
-                        img: {
-                            style: 'img-center img-mdlg padding-sm',
-                            src: 'image/portfolio/visionTool/persona_1.png',
-                            alt: 'avatar_1'
-                        }
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Primary users: software engineers'
                     },
                     {
                         type: 'img',
-                        class: 'col-6',
+                        class: 'col-12',
                         img: {
-                            style: 'img-center img-mdlg padding-sm',
+                            style: 'img-lg img-center padding-sm',
+                            src: 'image/portfolio/visionTool/persona_1.png',
+                            alt: 'layout'
+                        }
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Secondary users: content editors'
+                    },
+                    {
+                        type: 'img',
+                        class: 'col-12',
+                        img: {
+                            style: 'img-lg img-center padding-sm',
                             src: 'image/portfolio/visionTool/persona_2.png',
-                            alt: 'avatar_1'
+                            alt: 'layout'
                         }
                     }
                 ]
             },
             {
-                title: 'Interface Design',
+                title: 'Design Interfaces',
                 data: [
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h3',
-                        header_txt: 'Page layout'
+                        header_txt: 'Page layout & theme colors'
                     },
                     {
                         type: 'txt',
@@ -1574,12 +1623,6 @@ const modals = [
                             src: 'image/portfolio/visionTool/layout.png',
                             alt: 'layout'
                         }
-                    },
-                    {
-                        type: 'header',
-                        class: 'col-12',
-                        header_class: 'h3',
-                        header_txt: 'Theme color'
                     },
                     {
                         type: 'txt',
@@ -1604,46 +1647,32 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'I designed three types of data visualization, based on the purpose of debugging:'
+                        txt: 'I designed three types of data visualization, based on the purpose of debugging. All visualization types had distinctive advantages. Even though each of them also had drawbacks, but those drawbacks could be compensated by other data visualization methods.'
                     },
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h4',
-                        header_txt: 'Json Format'
+                        header_txt: 'JSON collapsible list view'
                     },
                     {
                         type: 'img',
-                        class: 'col-6',
+                        class: 'col-12',
                         img: {
                             style: 'img-center img-md padding-sm',
                             src: 'image/portfolio/visionTool/json_format.png',
-                            alt: 'json format'
+                            alt: 'JSON collapsible list view'
                         }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-6',
-                        txt: '<b>Pros:</b><br>' +
-                        '&middot Easy to process and render (no need for 2nd-time data parsing)<br>' +
-                        '&middot Indicate information structure<br>' +
-                        '&middot Could display a large quantity of data</p>' +
-                        '<p><b>Cons:</b><br>' +
-                        '&middot Machine level language<br>' +
-                        '&middot Require system familiarity and technical knowledge<br>' +
-                        '&middot Information overload</p>' +
-                        '<p><b>Usage Scenarios:</b><br>' +
-                        '&middot Work as a complete data reference'
                     },
                     {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h4',
-                        header_txt: 'Table Format'
+                        header_txt: 'Table view'
                     },
                     {
                         type: 'img',
-                        class: 'col-6',
+                        class: 'col-12',
                         img: {
                             style: 'img-center img-md padding-sm',
                             src: 'image/portfolio/visionTool/table_format.png',
@@ -1651,53 +1680,37 @@ const modals = [
                         }
                     },
                     {
-                        type: 'txt',
-                        class: 'col-6',
-                        txt: '<b>Pros:</b><br>' +
-                        '&middot Straightforward view of overall search status, used different colors to indicate the condition<br>' +
-                        '&middot Details will be hidden by default, and expanded upon click, reducing page information overload</p>' +
-                        '<p><b>Cons:</b><br>' +
-                        '&middot Limited information displayed<br>' +
-                        '&middot Information overload</p>' +
-                        '<p><b>Usage Scenarios:</b><br>' +
-                        '&middot Display relatively independent node information'
-                    },
-                    {
                         type: 'header',
                         class: 'col-12',
                         header_class: 'h4',
-                        header_txt: 'Graph Format'
+                        header_txt: 'Graph view'
                     },
                     {
                         type: 'img',
-                        class: 'col-6',
+                        class: 'col-12',
                         img: {
                             style: 'img-center img-md padding-sm',
                             src: 'image/portfolio/visionTool/graph_format.png',
                             alt: 'graph format'
                         }
-                    },
-                    {
-                        type: 'txt',
-                        class: 'col-6',
-                        txt: '<b>Pros:</b><br>' +
-                        '&middot Succinct and intuitive<br>' +
-                        '&middot Very human readable<br>' +
-                        '&middot Good to show relationships, flow, percentage, etc.</p>' +
-                        '<p><b>Cons:</b><br>' +
-                        '&middot Limited information displayed<br>' +
-                        '&middot Requires more data processing time before rendering, causing display delay</p>' +
-                        '<p><b>Usage Scenarios:</b><br>' +
-                        '&middot System overall performance<br>' +
-                        '&middot Search flow<br>' +
-                        '&middot Latencies, time and storage consumptions<br>' +
-                        '&middot Error rate'
                     }
                 ]
             },
             {
-                title: 'Selected UI',
+                title: 'Implementation',
                 data: [
+                    {
+                        type: 'txt',
+                        class: 'col-12',
+                        txt: 'The whole tool was web-based. I programmed everything using HTML5, CSS3, JavaScript(with JQuery and Handlebar.js).</p>' +
+                        '<p>For data visualizations, I used: Canvas.js, VIS.js, HighChart.js, and D3.js.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Selected UI'
+                    },
                     {
                         type: 'txt',
                         class: 'col-12',
@@ -1712,7 +1725,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'With the function of query update and header update. This will also be the landing page of the tool.'
+                        txt: 'On the API page, there will be query information and header information. I also added a query/header update function for users to easily update those data.'
                     },
                     {
                         type: 'img',
@@ -1732,7 +1745,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'With information on individual output modules on the search result page.'
+                        txt: 'For individual modules, I used table view format. I used eye-catching colors to illustrate system status intuitively.'
                     },
                     {
                         type: 'img',
@@ -1752,7 +1765,8 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'With a column chart to indicate relative latencies of each search method.'
+                        txt: 'I chose bar-chart to show the overall time consumption of methods since bar-chart will be easy for comparison between each other. With units and interval information on the side, users could also know the general performance of methods.</p>' +
+                        '<p>Users could also hover over above each bar to view more information.'
                     },
                     {
                         type: 'img',
@@ -1772,7 +1786,7 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Shows overall search flow and data transformation.'
+                        txt: 'The flow chart was used for showing overall system flow. I choose different colors to indicate active/inactive flows. Users could highlight an individual node to view its relationships with other nodes.'
                     },
                     {
                         type: 'img',
@@ -1786,18 +1800,25 @@ const modals = [
                 ]
             },
             {
-                title: 'Impact',
+                title: 'Launch',
                 data: [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'The tool was quickly been used by a large number of developers among the search team after it was released.'
+                        txt: 'The development process of Vision Tool was iterative. I quickly launched the initial version and kept refining designs based on user feedback.</p>' +
+                        '<p>In the end, I was able to promote the tool to the whole search team and completed a major Q1 goal for the search team.'
+                    },
+                    {
+                        type: 'header',
+                        class: 'col-12',
+                        header_class: 'h3',
+                        header_txt: 'Feedback'
                     },
                     {
                         type: 'img',
                         class: 'col-12',
                         img: {
-                            style: 'img-smmd img-center padding-md',
+                            style: 'img-md img-center padding-md',
                             src: 'image/portfolio/visionTool/comments.png',
                             alt: 'Comments'
                         }
@@ -1811,7 +1832,9 @@ const modals = [
                     {
                         type: 'txt',
                         class: 'col-12',
-                        txt: 'Through this project, I learned how to study users and design product addressing user needs. My user research skills were greatly improved through the project. I also learned different methods of data visualization, and their pros and cons. This experience was also one of my major motivations to study HCI in the future.'
+                        txt: 'In this project, I went to through a <b>complete product development cycle</b> -- ideation, research, design, development, and launch. For the first time, I was the only person responsible for an important project.<p>' +
+                        '<p>In this project, I had worked on many aspects of product development -- management, design, coding -- and took different “roles” and duties. One major takeaway I had was <b>designing from an engineer’s perspective, while still addressing user needs.</b></p>' +
+                        '<p>This was the first design-oriented project I had done as an engineer, and also the shifting point of my career. From this project, I <b>discovered my huge passion for solving user problems</b> and finally had decided to go back to school and study product design.'
                     }
                 ]
             }
@@ -2336,7 +2359,7 @@ const about = {
     'I design for creativity and love, aiming at bringing innovation and usability from ordinary. <br>' +
     'Currently I\' pursuing my master\'s degreen of Information Management and Systems in University of California, Berkeley.',
     resume: 'src/resume.pdf',
-    path: 'I found my interests in HCI when I was still studying Computer Engineering in <a href="https://ece.illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a> . In my junior year I took a class named "User Interface Design", and that class changed my life. After finishing the course I started to do research with my HCI professor and learned a lot about the processes of <b>UX research</b> and <b>UX design</b>.</p>' +
+    path: 'I found my interests in HCI when I was still studying Computer Engineering in <a href="https://ece.illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>. In my junior year I took a class named "User Interface Design", and that class changed my life. After finishing the course I started to do research with my HCI professor and learned a lot about the processes of <b>UX research</b> and <b>UX design</b>.</p>' +
     '<p>In <b>2015</b> I joined a startup company <a href="https://www.quicketsolutions.com/qs/" target="_blank">Quicket Solutions, Inc.</a> in Chicago, working as a <b>Software Engineer</b>. In Quicket Solutions I firstly applied the HCI knowledge I learned in class to real industrial use. In a small company, I was not only the software developer, but also the UX researcher, visual designer, and interaction designer. Our team worked back and forth with our clients, conducting user tests, getting feedback, and adjusting our design. I learned a lot about user-centered product design strategies in this job.</p>' +
     '<p>In <b>2016</b> I joined <a href="https://search.yahoo.com/" target="_blank">Yahoo Inc.</a> and moved to California. I worked in the Yahoo Search team as a software engineer, supporting search system development. In Yahoo, I worked closely with UX researchers, designers, and product managers on improving user experience in the search product. I gained a lot of experience in iterative product development and corporating with people in different teams. Over two years, I designed and developed two internal tools for editors and engineers to config and debug search output.</p>' +
     '<p>In <b>2018</b> I decided to return back to school, and begin pursuing my master\'s degree in Information Management and Systems in <a href="https://www.ischool.berkeley.edu/" target="_blank">Unersity of California, Berkeley</a>.</p>' +
